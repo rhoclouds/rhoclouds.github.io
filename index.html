@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rhoclouds</title>
     <style>
-        body 
+        html, body 
         {
-            font-family: 'Cambria', serif;
-            line-height: 1.6;
+            height: 100%;
             margin: 0;
             padding: 0;
+            font-family: 'Cambria', serif;
+            line-height: 1.6;
             background-color: #f4f4f4;
         }
         .container 
@@ -18,57 +19,72 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
+            flex: 1;
         }
         section 
         {
             margin: 5px 0;
+            padding: 10px 20px;
             background-color: #fff;
-            padding: 10 px 20px;
         }
         footer 
         {
             text-align: center;
             padding: 10px 20px;
+            background-color: #fff; /* Ensure it has a background color */
+        }
+        .wrapper 
+        {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content 
+        {
+            flex: 1;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <section>
-        <h2>about me</h2>
-        <p>19, asian-american, e/acc</p>
-        <p>currently studying mechanical engineering, plan to work in aerospace some day...</p>
-    </section>
+<div class="wrapper">
+    <div class="content">
+        <div class="container">
+            <section>
+                <h2>about me</h2>
+                <p>19, asian-american, e/acc</p>
+                <p>currently studying mechanical engineering, plan to work in aerospace some day...</p>
+            </section>
 
-    <section>
-        <h2>some of my STEM interests:</h2>
-        <ul>
-            <li>energy infrastructure, particularly nuclear</li>
-            <li>alternate propulsion</li>
-            <li>cosmology and high energy astrophysics—large scale structure, compact binary systems</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>other stuff</h2>
-        <ul>
-            <li>sports
+            <section>
+                <h2>some of my STEM interests:</h2>
                 <ul>
-                    <li>tennis: ATP -> sinner, rune; WTA -> rybakina, xinyu wang, zheng qinwen</li>
-                    <li>football (soccer): real madrid + england</li>
-                    <li>f1: leclerc, piastri</li>
+                    <li>energy infrastructure, particularly nuclear</li>
+                    <li>alternate propulsion</li>
+                    <li>cosmology and high energy astrophysics—large scale structure, compact binary systems</li>
                 </ul>
-            </li>
-            <li>games: <em>elden ring</em>, <em>resident evil</em>, <em>risk of rain 2</em>, <em>rdr2</em>, <em>dbd</em></li>
-            <li>music: future, kanye, travis, yeat, marvin gaye, radiohead, thelonious monk, bowie</li>
-            <li>movies: <em>the wind rises</em>, <em>spirited away</em>, <em>interstellar</em>, <em>harakiri</em>, <em>before midnight</em></li>
-            <li>anime/manga: <em>evangelion</em>, <em>frieren</em>, <em>berserk</em>, <em>vinland saga</em>, <em>monster</em>, <em>aot</em></li>
-        </ul>
-    </section>
-</div>
+            </section>
 
-<footer>
-    <p>this is my personal page; please contact me for my school/work portfolio</p>
-</footer>
+            <section>
+                <h2>other stuff</h2>
+                <ul>
+                    <li>sports
+                        <ul>
+                            <li>tennis: ATP -> sinner, rune; WTA -> rybakina, xinyu wang, zheng qinwen</li>
+                            <li>football (soccer): real madrid + england</li>
+                            <li>f1: leclerc, piastri</li>
+                        </ul>
+                    </li>
+                    <li>games: <em>elden ring</em>, <em>resident evil</em>, <em>risk of rain 2</em>, <em>rdr2</em>, <em>dbd</em></li>
+                    <li>music: future, kanye, travis, yeat, marvin gaye, radiohead, thelonious monk, bowie</li>
+                    <li>movies: <em>the wind rises</em>, <em>spirited away</em>, <em>interstellar</em>, <em>harakiri</em>, <em>before midnight</em></li>
+                    <li>anime/manga: <em>evangelion</em>, <em>frieren</em>, <em>berserk</em>, <em>vinland saga</em>, <em>monster</em>, <em>aot</em></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>this is my personal pages; please contact me for my academic/work portfolio</p>
+    </footer>
+</div>
 </body>
 </html>
