@@ -12,7 +12,7 @@
             padding: 0;
             font-family: 'Cambria', serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: transparent;
         }
         .wrapper 
         {
@@ -29,14 +29,34 @@
             width: 80%;
             margin: auto;
         }
+        nav {
+            background-color: transparent;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a 
+        {
+            color: fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover 
+        {
+            text-decoration: underline;
+        }
         section 
         {
             margin: 2px 0;
             padding: 5px 10px;
             background-color: transparent;
         }
-        footer 
+        section p, section ul 
         {
+            margin: 5px 0;
+        }
+        footer {
             text-align: center;
             padding: 10px 20px;
             background-color: transparent;
@@ -45,9 +65,12 @@
 </head>
 <body>
 <div class="wrapper">
+    <nav>
+        <a href="index.html">home</a>
+        <a href="library.html">library</a>
+    </nav>
     <div class="content">
         <div class="container">
-            <section>
                 <h2>about me</h2>
                 <p><i>rhoclouds</i> refers to the rho ophiuchi cloud complex, a nearby region of interstellar clouds known for star formation
                 <p>19, asian-american, e/acc</p>
