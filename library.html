@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library - rhoclouds</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         html, body 
-      {
+        {
             height: 100%;
             margin: 0;
             padding: 0;
@@ -15,7 +16,7 @@
             background-color: transparent;
         }
         .wrapper 
-      {
+        {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -26,8 +27,22 @@
         }
         .container 
         {
-            width: 40%;
+            width: 80%;
             margin: auto;
+        }
+        @media (max-width: 768px) 
+        {
+            .container 
+            {
+                width: 90%;
+            }
+        }
+        @media (max-width: 480px) 
+        {
+            .container
+            {
+                width: 100%;
+            }
         }
         nav 
         {
@@ -55,12 +70,13 @@
         .shelf-label 
         {
             font-size: 1.2em;
+            font-weight: bold;
             margin-bottom: 5px;
         }
         .shelf 
         {
             display: flex;
-            gap: 5px;
+            justify-content: space-between;
             padding: 10px;
             background-color: #8b4513;
             margin-bottom: 20px;
@@ -68,7 +84,7 @@
         }
         .book 
         {
-            width: 120px;
+            width: calc(100% / 5 - 10px); /* Adjust book width to fit 5 books in the container */
             height: 200px;
             background-color: #a0522d;
             color: white;
@@ -100,44 +116,28 @@
                 <h2>library</h2>
                 <p>welcome</p>
                 <div class="bookcase">
-                    <div class="shelf-label">i recommend these recent books</div>
+                    <div class="shelf-label">recent books that are worth reading</div>
                     <div class="shelf">
                         <div class="book">Book 1</div>
                         <div class="book">Book 2</div>
                         <div class="book">Book 3</div>
                         <div class="book">Book 4</div>
                         <div class="book">Book 5</div>
+                    </div>
+                    <div class="shelf-label">all time favorites</div>
+                    <div class="shelf">
                         <div class="book">Book 6</div>
                         <div class="book">Book 7</div>
                         <div class="book">Book 8</div>
                         <div class="book">Book 9</div>
                         <div class="book">Book 10</div>
                     </div>
-                    <div class="shelf-label">all time favorites</div>
                     <div class="shelf">
                         <div class="book">Book 11</div>
                         <div class="book">Book 12</div>
                         <div class="book">Book 13</div>
                         <div class="book">Book 14</div>
                         <div class="book">Book 15</div>
-                        <div class="book">Book 16</div>
-                        <div class="book">Book 17</div>
-                        <div class="book">Book 18</div>
-                        <div class="book">Book 19</div>
-                        <div class="book">Book 20</div>
-                    </div>
-                    <div class="shelf-label">all time favorites</div>
-                    <div class="shelf">
-                        <div class="book">Book 21</div>
-                        <div class="book">Book 22</div>
-                        <div class="book">Book 23</div>
-                        <div class="book">Book 24</div>
-                        <div class="book">Book 25</div>
-                        <div class="book">Book 26</div>
-                        <div class="book">Book 27</div>
-                        <div class="book">Book 28</div>
-                        <div class="book">Book 29</div>
-                        <div class="book">Book 30</div>
                     </div>
                 </div>
             </section>
