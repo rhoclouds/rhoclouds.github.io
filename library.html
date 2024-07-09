@@ -32,14 +32,13 @@
         }
         @media (max-width: 768px) 
         {
-            .container 
-            {
+            .container {
                 width: 90%;
             }
         }
         @media (max-width: 480px) 
         {
-            .container
+            .container 
             {
                 width: 100%;
             }
@@ -75,16 +74,16 @@
         }
         .shelf 
         {
+            max-width: 500px;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             padding: 5px;
             background-color: #8b4513;
-            margin-bottom: 10px;
+            margin: 0 auto 20px;
             border-radius: 5px;
         }
-        .book 
+        .book, .book-spine 
         {
-            width: 30px;
             height: 150px;
             background-color: #a0522d;
             color: white;
@@ -94,7 +93,19 @@
             text-align: center;
             border-radius: 3px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            margin-right: 10px;
+            position: relative;
+        }
+        .book 
+        {
+            width: 90px;
+            margin-right: 1px;
+        }
+        .book-spine 
+        {
+            width: 45px;
+            margin-right: 1px;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
         }
         footer 
         {
@@ -114,56 +125,9 @@
     <div class="content">
         <div class="container">
             <section>
-                <h2>library</h2>
-                <p>welcome</p>
+                <h2>welcome!</h2>
                 <div class="bookcase">
-                    <div class="shelf-label">recent books that are worth reading</div>
-                    <div class="shelf">
-                        <div class="book">Book 1</div>
-                        <div class="book">Book 2</div>
-                        <div class="book">Book 3</div>
-                        <div the "book">Book 4</div>
-                        <div class="book">Book 5</div>
-                    </div>
-                    <div class="shelf-label">all time favorites</div>
-                    <div class="shelf">
-                        <div class="book">Book 6</div>
-                        <div the "book">Book 7</div>
-                        <div class="book">Book 8</div>
-                        <div the "book">Book 9</div>
-                        <div the "book">Book 10</div>
-                    </div>
-                    <div class="shelf">
-                        <div class="book">Book 11</div>
-                        <div class="book">Book 12</div>
-                        <div the "book">Book 13</div>
-                        <div the "book">Book 14</div>
-                        <div the "book">Book 15</div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <footer>
-        <p>this is my personal page; please contact me for my academic/work portfolio</p>
-    </footer>
-</div>
-</body>
-</html>
-<body>
-<div class="wrapper">
-    <nav>
-        <a href="index.html">home</a>
-        <a href="library.html">library</a>
-        <a href="writing.html">writing</a>
-    </nav>
-    <div class="content">
-        <div class="container">
-            <section>
-                <h2>library</h2>
-                <p>welcome</p>
-                <div class="bookcase">
-                    <div class="shelf-label">recent books that are worth reading</div>
+                    <div class="shelf-label"><p>recent books that i recommend</p></div>
                     <div class="shelf">
                         <div class="book">Book 1</div>
                         <div class="book">Book 2</div>
@@ -171,20 +135,30 @@
                         <div class="book">Book 4</div>
                         <div class="book">Book 5</div>
                     </div>
-                    <div class="shelf-label">all time favorites</div>
+                    <div class="shelf-label"><p>my all time favorites</p></div>
                     <div class="shelf">
-                        <div class="book">Book 6</div>
-                        <div class="book">Book 7</div>
-                        <div class="book">Book 8</div>
-                        <div class="book">Book 9</div>
-                        <div class="book">Book 10</div>
+                        <div class="book-spine">Book 6</div>
+                        <div class="book-spine">Book 7</div>
+                        <div class="book-spine">Book 8</div>
+                        <div class="book-spine">Book 9</div>
+                        <div class="book-spine">Book 10</div>
+                        <div class="book-spine">Book 11</div>
+                        <div class="book-spine">Book 12</div>
+                        <div class="book-spine">Book 13</div>
+                        <div class="book-spine">Book 14</div>
+                        <div class="book-spine">Book 15</div>
                     </div>
                     <div class="shelf">
-                        <div class="book">Book 11</div>
-                        <div class="book">Book 12</div>
-                        <div class="book">Book 13</div>
-                        <div class="book">Book 14</div>
-                        <div class="book">Book 15</div>
+                        <div class="book-spine">Book 16</div>
+                        <div class="book-spine">Book 17</div>
+                        <div class="book-spine">Book 18</div>
+                        <div class="book-spine">Book 19</div>
+                        <div class="book-spine">Book 20</div>
+                        <div class="book-spine">Book 21</div>
+                        <div class="book-spine">Book 22</div>
+                        <div class="book-spine">Book 23</div>
+                        <div class="book-spine">Book 24</div>
+                        <div class="book-spine">Book 25</div>
                     </div>
                 </div>
             </section>
