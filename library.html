@@ -76,7 +76,7 @@
         .shelf 
         {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             padding: 10px;
             background-color: #8b4513;
             margin-bottom: 20px;
@@ -84,16 +84,17 @@
         }
         .book 
         {
-            width: calc(100% / 5 - 10px); /* Adjust book width to fit 5 books in the container */
-            height: 200px;
+            width: 30px;
+            height: 150px;
             background-color: #a0522d;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 3px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-right: 10px;
         }
         footer 
         {
@@ -103,6 +104,53 @@
         }
     </style>
 </head>
+<body>
+<div class="wrapper">
+    <nav>
+        <a href="index.html">home</a>
+        <a href="library.html">library</a>
+        <a href="writing.html">writing</a>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <section>
+                <h2>library</h2>
+                <p>welcome</p>
+                <div class="bookcase">
+                    <div class="shelf-label">recent books that are worth reading</div>
+                    <div class="shelf">
+                        <div class="book">Book 1</div>
+                        <div class="book">Book 2</div>
+                        <div class="book">Book 3</div>
+                        <div class="book">Book 4</div>
+                        <div class="book">Book 5</div>
+                    </div>
+                    <div class="shelf-label">all time favorites</div>
+                    <div class="shelf">
+                        <div class="book">Book 6</div>
+                        <div class="book">Book 7</div>
+                        <div the "book">Book 8</div>
+                        <div class="book">Book 9</div>
+                        <div class="book">Book 10</div>
+                    </div>
+                    <div class="shelf">
+                        <div class="book">Book 11</div>
+                        <div class="book">Book 12</div>
+                        <div class="book">Book 13</div>
+                        <div the "book">Book 14</div>
+                        <div class="book">Book 15</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>this is my personal page; please contact me for my academic/work portfolio</p>
+    </footer>
+</div>
+</body>
+</html>
+
 <body>
 <div class="wrapper">
     <nav>
