@@ -9,10 +9,10 @@
     <link rel="icon" href="icons/blazePowder.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Details - rhoclouds</title>
+    <title>book details - rhoclouds</title>
     <style>
         html, body 
-	{
+        {
             height: 100%;
             margin: 0;
             padding: 0;
@@ -21,50 +21,63 @@
             background-color: transparent;
         }
         .wrapper 
-	{
+        {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
         .content 
-	{
+        {
             flex: 1;
         }
         .container 
-	{
+        {
             width: 80%;
             margin: auto;
         }
-        nav {
+        nav 
+        {
             background-color: transparent;
             color: #fff;
             padding: 10px 0;
             text-align: center;
         }
         nav a 
-	{
+        {
             color: #555;
             margin: 0 15px;
             text-decoration: none;
             font-size: 18px;
         }
         nav a:hover 
-	{
+        {
             color: #555;
             text-decoration: underline;
         }
-        section 
-	{
+        .details-link 
+        {
+            text-decoration: none;
+            color: #0000EE;
+        }
+        .details-link:hover 
+        {
+            text-decoration: underline;
+        }
+		.details-link:visited 
+        {
+    	color: #551A8B;
+      	}
+        section {
             margin: 2px 0;
             padding: 5px 10px;
             background-color: transparent;
         }
-        section p, section ul 
-	{
+        section p, section ul, section h4 
+        {
             margin: 5px 0;
         }
         footer 
-	{
+        {
             text-align: center;
             padding: 10px 20px;
             background-color: transparent;
@@ -76,7 +89,7 @@
     <div class="content">
         <div class="container">
             <section>
-            <h3>information on every book featured on my shelves</h3>
+                <h3>details for every book featured on my shelves</h3>
                 <h2>recent books worth reading</h2>
                 <article>
                     <h4><li><em>Book Title</em> by Author</li></h4>
@@ -92,20 +105,20 @@
                 <article>
                     <h4><li><em>Invisible Man</em> by Ralph Ellison</li></h4>
                     <p>this serves as one of, if not the most influential pieces of african-american literature ever. an existentialist, disquieting, and murky masterpiece that takes the reader from the likes of a hellscape capitalist paint factory to riots on the streets of harlem. its words live on to this day, through both its influence and message.</p>
-			 	</article>
-				<article>
+                </article>
+                <article>
                     <h4><li><em>The Selected Poetry of Rainer Maria Rilke</em></li></h4>
-                    <p>is this the greatest poetry collection ever? perhaps. it's difficult to put into words how complex, transcendent, and inspirational his poetry is.  </p>
+                    <p>is this the greatest poetry collection ever? perhaps. it's difficult to put into words how complex, transcendent, and inspirational his poetry is.</p>
                 </article>
                 <article>
                     <h4><li><em>After Dark</em> by Haruki Murakami</li></h4>
-                    <p>surrealism and beautiful loneliness are common for murakami, but this is different. a "one night stand" into the world of nocturnal tokyo that is perfectly encapsulated by by its opening scene: spending the night in a diner, running into someone you used to know, and then diving into an offbeat city of neon with them. </p>
+                    <p>surrealism and beautiful loneliness are common for murakami, but this is different. a "one night stand" into the world of nocturnal tokyo that is perfectly encapsulated by by its opening scene: spending the night in a diner, running into someone you used to know, and then diving into an offbeat city of neon with them.</p>
                 </article>
             </section>
         </div>
     </div>
     <footer>
-        <p>return to <a href="library.html">library</a></p>
+        <p>return to <a href="library.html" class="details-link">library</a></p>
     </footer>
 </div>
 </body>
