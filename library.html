@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="icons/blazePowder16x16.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder32x32.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder512x512.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder192x192.png" type="image/png">
-    <link rel="icon" href="icons/blazePowderAppleTouchIcon.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder.ico" type="image/x-icon">
+<head>
+    <link rel="icon" href="/icons/blazePowder32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/icons/blazePowder192x192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="/icons/blazePowderAppleTouchIcon.png">
+    <link rel="shortcut icon" href="/icons/blazePowder.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>library - rhoclouds</title>
+    <title>Library - rhoclouds</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         html, body 
         {
@@ -52,9 +52,10 @@
             {
                 padding: 20px 0;
             }
-            .shelf {
+            .shelf 
+		{
                 margin-bottom: 30px;
-            }
+            	}
         }
         nav 
         {
@@ -80,6 +81,15 @@
             text-align: center;
             margin-top: 20px;
         }
+		.details-link 
+        {
+    		text-decoration: none;
+    		color: #0000EE;
+		}
+			.details-link:hover 
+		{
+   		text-decoration: underline;
+		}
         .bookcase 
         {
             padding: 10px 0;
@@ -189,7 +199,7 @@
                         <div class="book-spine">Book 25</div>
                     </div>
 			 <section class="centered-text">
-                <p>why i chose these books: <a href="bookdetails.html" class="details-link">details and reviews</a></p>
+                <p>why i chose these books: <a href="bookdetails.html" class="details-link">details and reviews<a><p>
             </section>
                 </div>
             </section>
@@ -201,4 +211,3 @@
 </div>
 </body>
 </html>
-
