@@ -141,7 +141,7 @@
             padding: 0 5px;
             font-size: 0.9em;
         }
-        .book-spine em 
+        .book-spine em <!-- This unused class should be combined with .book-spine to truncate book titles that are too long with an ellipsis but doing so results in the text moving down because of display having the block property. Setting it to flex centers the titles but removes the truncation -->
         {
             max-width: 140px;
             overflow: hidden;
