@@ -134,21 +134,22 @@
         }
         .book-spine 
         {
-            width: 45px;
-            margin-right: 1px;
-            writing-mode: vertical-lr;
-            transform: rotate(180deg);
-            padding: 0 5px;
-            font-size: 0.9em;
-        }
-        .book-spine em <!-- This unused class should be combined with .book-spine to truncate book titles that are too long with an ellipsis but doing so results in the text moving down because of display having the block property. Setting it to flex centers the titles but removes the truncation -->
-        {
-            max-width: 140px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            display: block;
-        }
+  			width: 45px;
+  			height: 150px;
+  			margin-right: 1px;
+  			background-color: #a0522d;
+  			color: white;
+  			display: block;
+  			align-content: center;
+  			justify-content: center;
+  			writing-mode: vertical-lr;
+  			transform: rotate(180deg);
+  			text-overflow: ellipsis;
+  			white-space: nowrap;
+  			overflow: hidden;
+  			border-radius: 3px;
+  			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		}
         footer 
         {
 	    color: #555;
@@ -182,7 +183,7 @@
                     <div class="shelf">
                         <div class="book-spine">The Great Gatsby</div>
                         <div class="book-spine">Invisible Man</div>
-                        <div class="book-spine">Selected Poetry of Rilke</div>
+                        <div class="book-spine">The Selected Poetry of Rainer Maria Rilke</div>
                         <div class="book-spine">After Dark</div>
                         <div class="book-spine">Book 10</div>
                         <div class="book-spine">Book 11</div>
