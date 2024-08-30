@@ -64,18 +64,24 @@
             border-top: 1px solid #555;
             border-bottom: 1px solid #555;
             text-align: center;
+            line-height: 1.5;
         }
         .post-list 
         {
             list-style-type: none;
             padding: 0;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+            max-width: 600px;
         }
         .post-list li 
         {
+            display: contents;
             margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
         .post-list a 
         {
@@ -91,7 +97,8 @@
         {
             font-size: 18px;
             color: #888;
-            margin-left: 20px;
+            text-align: right;
+            white-space: nowrap;
         }
         footer 
         {
@@ -99,6 +106,26 @@
             text-align: center;
             padding: 10px 20px;
             background-color: transparent;
+        }
+
+        @media (max-width: 600px) 
+        {
+            .post-list {
+                display: block;
+                max-width: none;
+            }
+
+            .post-list li {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .post-date {
+                margin-left: 0;
+                margin-top: 5px;
+                text-align: right;
+                display: block;
+            }
         }
     </style>
 </head>
