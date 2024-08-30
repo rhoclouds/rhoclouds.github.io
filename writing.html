@@ -29,16 +29,11 @@
         .content 
         {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
         .container 
         {
             width: 80%;
             margin: auto;
-            text-align: center;
         }
         nav 
         {
@@ -59,20 +54,44 @@
             color: #555;
             text-decoration: underline;
         }
-        .wip 
-        {
-            font-size: 24px;
-            margin-bottom: 40px;
-        }
         .quote 
         {
             font-style: italic;
             font-size: 20px;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             border-top: 1px solid #555;
             border-bottom: 1px solid #555;
+            text-align: center;
+        }
+        .post-list 
+        {
+            list-style-type: none;
+            padding: 0;
+        }
+        .post-list li 
+        {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .post-list a 
+        {
+            font-size: 24px;
+            text-decoration: none;
+            color: #000000;
+        }
+        .post-list a:hover 
+        {
+            text-decoration: underline;
+        }
+        .post-date 
+        {
+            font-size: 18px;
+            color: #888;
+            margin-left: 20px;
         }
         footer 
         {
@@ -84,25 +103,36 @@
     </style>
 </head>
 <body>
-<div class="wrapper">
-    <nav>
-        <a href="index.html">home</a>
-        <a href="library.html">library</a>
-        <a href="writing.html">writing</a>
-    </nav>
-    <div class="content">
-        <div class="container">
-            <div class="wip">wip</div>
-            <!-- placeholder quote
-            <div class="quote">
-                "then, as if no one had ever tried before, try to say what you see and feel and love and lose"&mdashrilke
+    <div class="wrapper">
+        <nav>
+            <a href="index.html">home</a>
+            <a href="library.html">library</a>
+            <a href="writing.html">writing</a>
+        </nav>
+        <div class="content">
+            <div class="container">
+                <div class="quote">
+                    "then, as if no one had ever tried before, try to say what you see and feel and love and lose"&mdash;rilke
+                </div>
+                <ul class="post-list">
+                    <li>
+                        <a href="post1.html">Post 3</a>
+                        <div class="post-date">Date</div>
+                    </li>
+                    <li>
+                        <a href="post2.html">Post 2</a>
+                        <div class="post-date">Date</div>
+                    </li>
+                    <li>
+                        <a href="post3.html">Writing Template</a>
+                        <div class="post-date">Date</div>
+                    </li>
+                </ul>
             </div>
-            -->
         </div>
+        <footer>
+            <p>if you are interested, please contact me for my cv</p>
+        </footer>
     </div>
-    <footer>
-        <p>if you are interested, please contact me for my cv</p>
-    </footer>
-</div>
 </body>
 </html>
