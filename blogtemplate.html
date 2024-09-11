@@ -22,17 +22,13 @@
         }
         .wrapper 
         {
-            display: flex;
-            flex-direction: column;
+            display: block;
             min-height: 100vh;
         }
         .content 
         {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            padding-top: 20px;
+            text-align: center;
         }
         .container 
         {
@@ -62,14 +58,13 @@
         .post-title 
         {
             font-size: 32px;
-            padding: 5px 10px;
-            margin: 2px 0;
+            margin: 10px 0;
         }
         .post-date
         {
             font-size: 18px;
             color: #888;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .post-content 
         {
@@ -103,7 +98,7 @@
     </nav>
     <div class="content">
         <div class="container">
-            <div class="post-title">Title</div>
+            <h1 class="post-title">Title</h1>
             <div class="post-date">Date</div>
             <div class="post-content">
                 <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</em></p>
@@ -118,5 +113,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
+    </div>
+</div>
 </body>
 </html>
