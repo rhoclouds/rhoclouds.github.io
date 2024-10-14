@@ -88,6 +88,9 @@
         {
             color: #551A8B;
         }
+        #timer {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -102,9 +105,11 @@
                 <section>
                     <h2>about me</h2> <!-- section 1 -->
                     <ul>
-                        <li><i>rhoclouds</i> refers to the rho ophiuchi cloud complex, a nearby region of interstellar clouds known for star formation</li>
-                        <li>19, asian-american, california</li>
-                        <li>MechE student, hope to work in aerospace some day</li>
+                        <!-- <li><i>rhoclouds</i> refers to the rho ophiuchi cloud complex, a nearby region of interstellar clouds known for star formation</li> -->
+                        <li>time orbiting the sun: <span id="timer">Calculating</span></li>
+                        <li>chinese-american</li>
+                        <li>from the san francisco bay area</li>
+                        <li>mechE student, hope to work in aerospace some day</li>
                         <li>im interested in electrochemical energy storage and alternate propulsion</li>
                     </ul>
                 </section>
@@ -116,7 +121,7 @@
                         <li>astrophysics</li>
                         <li>history</li>
                         <li>tea connoisseur</li>
-                        <li><a href="https://drive.google.com/file/d/1ttJDVKSfRetj_hNRfjbzeqKQPFPo01am/view?usp=drive_link" class="album-link" onclick="window.open(this.href, '_blank'); return false;">some of my favorite albums</a></li>
+                        <!-- <li><a href="https://drive.google.com/file/d/1ttJDVKSfRetj_hNRfjbzeqKQPFPo01am/view?usp=drive_link" class="album-link" onclick="window.open(this.href, '_blank'); return false;">some of my favorite albums</a></li> -->
                     </ul>
                 </section>
             </div>
@@ -125,5 +130,26 @@
             <p>if you are interested, please contact me for my cv</p>
         </footer>
     </div>
+
+    <script>
+        const birthDate = new Date("2005-01-04T00:58:00");
+
+        function updateTimer() {
+            const now = new Date();
+            const elapsed = now - birthDate;
+
+            const years = Math.floor(elapsed / (1000 * 60 * 60 * 24 * 365.25));
+            const days = Math.floor((elapsed % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").textContent =
+                `${years} years, ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
 </body>
 </html>
