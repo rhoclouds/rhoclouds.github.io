@@ -50,7 +50,7 @@
             font-size: 18px;
         }
         nav a:hover 
-        {    
+        {
             color: #555;
             text-decoration: underline;
         }
@@ -75,20 +75,86 @@
             padding: 10px 20px;
             background-color: transparent;
         }
-        .album-link 
+        .emoji-button 
         {
-            color: #0000EE;
-            text-decoration: none;
+            background-color: #ffffff;
+            border: 2px solid #cccccc;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
-        .album-link:hover 
+        .emoji-button:hover 
+        {
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .popup-modal 
+        {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content 
+        {
+            background: #ffffff;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .popup-header 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .popup-header input 
+        {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .popup-header .close-button 
+        {
+            font-size: 1.5em;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .popup-links 
+        {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .popup-links li 
+        {
+            margin: 10px 0;
+        }
+        .popup-links a 
+        {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.2em;
+        }
+        .popup-links a:hover 
         {
             text-decoration: underline;
         }
-        .album-link:visited 
+        #timer 
         {
-            color: #551A8B;
-        }
-        #timer {
             font-weight: bold;
         }
     </style>
@@ -103,7 +169,7 @@
         <div class="content">
             <div class="container">
                 <section>
-                    <h2>about me</h2> <!-- section 1 -->
+                    <h2>about me</h2>
                     <ul>
                         <li>time orbiting the sun: <span id="timer">Calculating</span></li>
                         <li>chinese-american</li>
@@ -112,9 +178,8 @@
                         <li>research interests: alternate propulsion, thermal energy storage, space systems</li>
                     </ul>
                 </section>
-
                 <section>
-                    <h2>fun facts</h2> <!-- section 2 -->
+                    <h2>fun facts</h2>
                     <ul>
                         <li>i follow tennis, f1, and football (real madrid and england)</li>
                         <li>my coffee order: triple shot iced oat milk latte or flat white</li>
@@ -125,10 +190,28 @@
             </div>
         </div>
         <footer>
-            <p>if you are interested, please contact me for my cv</p>
+            <button id="emojiButton" class="emoji-button" aria-label="Open Navigation Popup">
+                🌉 🏭 🚀 🛰️ 🌌
+            </button>
         </footer>
     </div>
 
+    <!-- Modal -->
+    <div id="popupModal" class="popup-modal" aria-hidden="true">
+        <div class="popup-content">
+            <div class="popup-header">
+                <input type="text" id="popupSearch" placeholder="Search..." />
+                <span class="close-button" aria-label="Close Popup">&times;</span>
+            </div>
+            <ul class="popup-links">
+                <!-- <li><a href="https://twitter.com">Twitter</a></li> -->
+                <p>Discord: rhoclouds</p>
+                <p>CV: work in progress</p>
+            </ul>
+        </div>
+    </div>
+
+    <script src="button.js"></script>
     <script>
         const birthDate = new Date("2005-01-04T00:58:00");
 
