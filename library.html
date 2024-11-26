@@ -18,21 +18,25 @@
             line-height: 1.6;
             background-color: transparent;
         }
+
         .wrapper 
         {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
+
         .content 
         {
             flex: 1;
         }
+
         .container 
         {
             width: 80%;
             margin: auto;
         }
+
         @media (max-width: 768px) 
         {
             .container 
@@ -40,21 +44,15 @@
                 width: 90%;
             }
         }
+
         @media (max-width: 480px) 
         {
             .container 
             {
                 width: 95%;
             }
-            .bookcase 
-            {
-                padding: 20px 0;
-            }
-            .shelf 
-            {
-                margin-bottom: 30px;
-            }
         }
+
         nav 
         {
             background-color: transparent;
@@ -62,6 +60,7 @@
             padding: 10px 0;
             text-align: center;
         }
+
         nav a 
         {
             color: #555;
@@ -69,84 +68,67 @@
             text-decoration: none;
             font-size: 18px;
         }
+
         nav a:hover 
         {
             text-decoration: underline;
         }
-        .centered-text 
+
+        .book-section-label 
         {
+            font-size: 1.0em;
+            font-weight: normal;
             text-align: center;
-            margin-top: 20px;
+            margin: 20px 0;
         }
-        .details-link 
+        .book-grid 
         {
-            text-decoration: none;
-            color: #0000EE;
+            display: grid;
+            gap: 20px;
+            margin-bottom: 40px;
         }
-        .details-link:hover 
+
+        /* grid configurations */
+        .shelf-1 
         {
-            text-decoration: underline;
+            grid-template-columns: repeat(5, 1fr);
         }
-        .details-link:visited 
+
+        .shelf-2, .shelf-3 
         {
-            color: #551A8B;
+            grid-template-columns: repeat(6, 1fr); /* desktop cover sizing */
         }
-        .bookcase 
+
+        @media (max-width: 768px) 
         {
-            padding: 10px 0;
+            .shelf-2, .shelf-3 
+            {
+                grid-template-columns: repeat(3, 1fr); /* mobile cover sizing */
+            }
         }
-        .shelf-label 
-        {
-            font-size: 1em;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .shelf 
-        {
-            max-width: 500px;
-            display: flex;
-            justify-content: space-between;
-            padding: 5px;
-            background-color: #8b4513;
-            margin: 0 auto 20px;
-            border-radius: 5px;
-        }
-        .book, .book-spine 
-        {
-            height: 150px;
-            background-color: #a0522d;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-radius: 3px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            position: relative;
-        }
+
         .book 
         {
-            width: 90px;
-            margin-right: 1px;
-        }
-        .book-spine 
-        {
-            width: 45px;
-            height: 150px;
-            margin-right: 1px;
-            background-color: #a0522d;
-            color: white;
-            display: block;
-            align-content: center;
-            justify-content: center;
-            writing-mode: vertical-lr;
-            transform: rotate(180deg);
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
             overflow: hidden;
-            border-radius: 3px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .book:hover 
+        {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .book img 
+        {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
         footer 
         {
             color: #555;
@@ -165,49 +147,68 @@
         </nav>
         <div class="content">
             <div class="container">
-                <section>
-                    <div class="bookcase">
-                        <div class="shelf-label">recent books worth reading</div>
-                        <div class="shelf">
-                            <div class="book">Book 1</div>
-                            <div class="book">Book 2</div>
-                            <div class="book">Book 3</div>
-                            <div class="book">Book 4</div>
-                            <div class="book">Book 5</div>
-                        </div>
-                        <div class="shelf-label">all time favorites</div>
-                        <div class="shelf">
-                            <div class="book-spine">The Great Gatsby</div>
-                            <div class="book-spine">Invisible Man</div>
-                            <div class="book-spine">The Selected Poetry of Rainer Maria Rilke</div>
-                            <div class="book-spine">After Dark</div>
-                            <div class="book-spine">Book 10</div>
-                            <div class="book-spine">Book 11</div>
-                            <div class="book-spine">Book 12</div>
-                            <div class="book-spine">Book 13</div>
-                            <div class="book-spine">Book 14</div>
-                            <div class="book-spine">Book 15</div>
-                        </div>
-                        <!-- 
-                        <div class="shelf">
-                            <div class="book-spine">Book 16</div>
-                            <div class="book-spine">Book 17</div>
-                            <div class="book-spine">Book 18</div>
-                            <div class="book-spine">Book 19</div>
-                            <div class="book-spine">Book 20</div>
-                            <div class="book-spine">Book 21</div>
-                            <div class="book-spine">Book 22</div>
-                            <div class="book-spine">Book 23</div>
-                            <div class="book-spine">Book 24</div>
-                            <div class="book-spine">Book 25</div>
-                        </div>
-                        -->
-                        <section class="centered-text">
-                            <p>why i chose these books: <a href="/bookdetails.html" class="details-link">details and reviews</a></p>
-                        </section>
+                <h2 class="book-section-label">best books of 2024</h2>
+                <div class="book-grid shelf-1">
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
                     </div>
-                </section>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                </div>
+
+                <h2 class="book-section-label">all-time shelf</h2>
+                <div class="book-grid shelf-2">
+                    <div class="book">
+                        <img src="https://m.media-amazon.com/images/I/61dRoDRubtL._SL1500_.jpg" alt="The Great Gatsby">
+                    </div>
+                    <div class="book">
+                        <img src="https://m.media-amazon.com/images/I/51eMmsxaN8L._SL1200_.jpg" alt="Invisible Man">
+                    </div>
+                    <div class="book">
+                        <img src="https://m.media-amazon.com/images/I/61mAOr2aCwL._SL1200_.jpg" alt="The Selected Poetry of Rainer Maria Rilke">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                </div>
+                <div class="book-grid shelf-3">
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                    <div class="book">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="title">
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
 </body>
 </html>
