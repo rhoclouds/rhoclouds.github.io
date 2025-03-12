@@ -47,7 +47,7 @@
             color: #555;
             text-decoration: underline;
         }
-        .quote {
+        .tagline {
             font-style: italic;
             font-size: 19px;
             max-width: 600px;
@@ -59,6 +59,12 @@
             line-height: 1.5;
             white-space: nowrap;
         }
+        @media (max-width: 600px) {
+            .tagline {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+}
         .post-list {
             list-style-type: none;
             padding: 0;
@@ -128,7 +134,7 @@
         </nav>
         <div class="content">
             <div class="container">
-                <div class="quote">
+                <div class="tagline">
                     my pretentious thoughts on culture, history, politics, science, and engineering
                 </div>
                 <ul class="post-list">
