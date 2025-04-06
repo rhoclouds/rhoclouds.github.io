@@ -10,6 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home - rhoclouds</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         html, body {
             height: 100%;
@@ -119,14 +123,21 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            font-size: 16px;
         }
         .popup-links li {
-            margin: 10px 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .popup-links i {
+            margin-right: 8px;
+            color: #555;
+            min-width: 20px;
         }
         .popup-links a {
+            color: #1a1a1a;
             text-decoration: none;
-            color: #007BFF;
-            font-size: 1.2em;
         }
         .popup-links a:hover {
             text-decoration: underline;
@@ -159,10 +170,11 @@
                     <h2>fun facts</h2>
                     <ul>
                         <li>i follow football, f1, and tennis</li>
-                        <li>im a history buff—my favorite eras are classical antiquity, the US from the gilded age to the roaring twenties, and WWII</li>
+                        <li>my favorite eras of history are the early roman republic, the US from the gilded age to the roaring twenties, and WWII</li>
                         <li>my coffee order: triple shot iced oat milk latte or flat white</li>
                         <li>i will pretentiously judge you based on your math notation</li>
-                        <li>other: i love soulslike games, impressionism, and mediterranean food</li>
+                        <li>i love soulslike games, impressionism, and thinking about how we're archiving the world</li>
+                        <li>im currently working on learning a third language (way too slowly)</li>
                     </ul>
                 </section>
             </div>
@@ -180,16 +192,15 @@
             <div class="popup-header">
                 <input type="text" id="popupSearch" placeholder="Search..." />
                 <span class="close-button" aria-label="Close Popup">&times;</span>
-            </div>
-            <ul class="popup-links">
-                <p>Discord: rhoclouds</p>
-                <p>CV: placeholder</p>
-                <p>Github: placeolder</p>
-                <p>LinkedIn: placeholder</p>
-                <p>Twitter: placeholder</p>
-            </ul>
-        </div>
-    </div>
+	</div>
+		<ul class="popup-links">
+    		<li><i class="fab fa-discord"></i> rhoclouds</li>
+    		<li><i class="fas fa-file-alt"></i> <a href="#" target="_blank">CV (placeholder)</a></li>
+    		<li><i class="fab fa-github"></i> <a href="https://github.com/rhoclouds" target="_blank">rhoclouds</a></li>
+    		<li><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn (placeholder)</a></li>
+    		<li><i class="fab fa-twitter"></i> <a href="#" target="_blank">Twitter (placeholder)</a></li>
+    		<li><i class="fas fa-book"></i> <a href="https://www.goodreads.com/user/show/yourid" target="_blank">Goodreads</a></li>
+		</ul>
 
     <script src="button.js"></script>
     <script>
