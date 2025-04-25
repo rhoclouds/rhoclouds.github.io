@@ -1,230 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="icons/blazePowder16x16.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder32x32.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder512x512.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder192x192.png" type="image/png">
-    <link rel="icon" href="icons/blazePowderAppleTouchIcon.png" type="image/png">
-    <link rel="icon" href="icons/blazePowder.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home - rhoclouds</title>
-    <meta name="description" content="rhoclouds' archive of the world">
+  <link rel="icon" href="icons/blazePowder16x16.png" type="image/png">
+  <link rel="icon" href="icons/blazePowder32x32.png" type="image/png">
+  <link rel="icon" href="icons/blazePowder512x512.png" type="image/png">
+  <link rel="icon" href="icons/blazePowder192x192.png" type="image/png">
+  <link rel="icon" href="icons/blazePowderAppleTouchIcon.png" type="image/png">
+  <link rel="icon" href="icons/blazePowder.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home - rhoclouds</title>
+  <meta name="description" content="rhoclouds' archive of the world">
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Cambria', serif;
-            line-height: 1.6;
-            background-color: transparent;
-        }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .content {
-            flex: 1;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-        nav {
-            background-color: transparent;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #555;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #555;
-            text-decoration: underline;
-        }
-        section {
-            margin: 2px 0;
-            padding: 5px 10px;
-            background-color: transparent;
-        }
-        section h2 {
-            margin-bottom: 0;
-        }
-        section p, section ul {
-            margin: 5px 0;
-        }
-        footer {
-            color: #555;
-            text-align: center;
-            padding: 10px 20px;
-            background-color: transparent;
-        }
-        .emoji-button {
-            background-color: #ffffff;
-            border: 2px solid #cccccc;
-            border-radius: 8px;
-            padding: 10px 20px;
-            font-size: 1.5em;
-            cursor: pointer;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-        .emoji-button:hover {
-            background-color: #f0f0f0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .popup-modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-        .popup-content {
-            background: #ffffff;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 400px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
-        .popup-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        .popup-header input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .popup-header .close-button {
-            font-size: 1.5em;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-        .popup-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            font-size: 16px;
-        }
-        .popup-links li {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .popup-links i {
-            margin-right: 8px;
-            color: #555;
-            min-width: 20px;
-        }
-        .popup-links a {
-            color: #1a1a1a;
-            text-decoration: none;
-        }
-        .popup-links a:hover {
-            text-decoration: underline;
-        }
-        #timer {
-            font-weight: bold;
-        }
-    </style>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #f0f0f0;
+      background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
+        radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
+      filter: blur(30px);
+      opacity: 0.8;
+      z-index: -1;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .main-header {
+      background: transparent;
+      padding: 3rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin: 0 1rem;
+    }
+    nav a:hover {
+      color: #E5B95F;
+      text-decoration: underline;
+    }
+
+    .content { flex: 1; }
+    .container {
+      width: 80%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      color: #222;
+      border-radius: 20px;
+      padding: 2rem 2rem 1.5rem;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      box-shadow:
+        0 8px 30px rgba(0,0,0,0.08),
+        inset 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    .contact-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.5rem 0.75rem;
+      display: flex;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+      color: #1c2541;
+      cursor: pointer;
+    }
+
+    .profile {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: url('https://www.vincentvangogh.org/assets/img/paintings/cafe-terrace-at-night.jpg') center/cover no-repeat;
+      border: 5px solid #E5B95F;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .info { flex-grow: 1; }
+    .name { font-size: 2rem; font-weight: bold; margin-bottom: 0.3rem; }
+    .location {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 0.6rem;
+    }
+    .blurb {
+      font-style: italic;
+      color: #3a4b68;
+      margin-bottom: 0.6rem;
+    }
+    .about-list {
+      padding-left: 1.2rem;
+      margin-top: 1rem;
+      list-style: disc;
+    }
+    .about-list li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .section-inner { padding-left: 190px; }
+    .section h2 { margin-top: 0; border-bottom: none; }
+    .fun-facts {
+      padding-left: 1.2rem;
+    }
+    .fun-facts li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .popup-modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .popup-content {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    .popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .popup-header input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .popup-header .close-button {
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #333;
+    }
+    .popup-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+    }
+    .popup-links li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .popup-links i {
+      margin-right: 8px;
+      color: #555;
+      min-width: 20px;
+    }
+    .popup-links a {
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+    .popup-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .profile { flex-direction: column; text-align: center; }
+      .section-inner { padding-left: 0; }
+    }
+  </style>
 </head>
 <body>
-    <div class="wrapper">
-        <nav>
-            <a href="/index.html">home</a>
-            <a href="/library.html">library</a>
-            <a href="/blog.html">blog</a>
-        </nav>
-        <div class="content">
-            <div class="container">
-                <section>
-                    <h2>about me</h2>
-                    <ul>
-                        <li>time orbiting the sun: <span id="timer">Calculating</span></li>
-                        <li>chinese-american</li>
-                        <li>born and raised in the san francisco bay area</li>
-                        <li>mechE major with a focus in aerospace</li>
-                        <li>im interested in the next generation of space propulsion and thermal energy storage</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>fun facts</h2>
-                    <ul>
-                        <li>i endure football, f1, and tennis</li>
-                        <li>my favorite eras of history are the early roman empire, the US from the gilded age to the roaring twenties, and WWII</li>
-                        <li>my coffee order: triple shot iced oat milk latte or flat white</li>
-                        <li>i will pretentiously judge you based on your math notation</li>
-                        <li>i love soulslike games, impressionism, and thinking about how we're archiving the world</li>
-                        <li>im currently working on learning a third language (way too slowly)</li>
-                    </ul>
-                </section>
-            </div>
+  <div class="wrapper">
+
+    <header class="main-header">
+      <nav>
+        <a href="/index.html">home</a>
+        <a href="/library.html">library</a>
+        <a href="/blog.html">blog</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="container">
+
+        <!-- Profile Card -->
+        <div class="card profile">
+          <button id="contactButton" class="contact-button">
+            <i class="fab fa-discord"></i>
+            <i class="fab fa-github"></i>
+            <i class="fas fa-envelope"></i>
+          </button>
+
+          <div class="profile-pic"></div>
+          <div class="info">
+            <div class="name">rhoclouds</div>
+            <div class="location">📍San Francisco Bay Area</div>
+            <div class="blurb">archiving the world and harnessing the stars</div>
+            <ul class="about-list">
+              <li>mechE major with a focus in aerospace</li>
+              <li>interested in next-gen space propulsion and thermal energy storage</li>
+              <li>chinese-american</li>
+              <li>time orbiting the sun: <span id="timer">Calculating</span></li>
+            </ul>
+          </div>
         </div>
-        <footer>
-            <button id="emojiButton" class="emoji-button" aria-label="Open Navigation Popup">
-                🌉 🏭 🚀 🛰️ 🌌
-            </button>
-        </footer>
+
+        <!-- Fun Facts Section -->
+        <div class="card section">
+          <div class="section-inner">
+            <h2>fun facts</h2>
+            <ul class="fun-facts">
+              <li>i endure football, f1, and tennis</li>
+              <li>my favorite historical eras are the early roman empire and roaring twenties</li>
+              <li>coffee order: a flat white or triple shot iced oat milk latte</li>
+              <li>i’ll judge you based on your math notation</li>
+              <li>love soulslike games and impressionism
+              <li>im currently learning a third language (very slowly)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Contact Modal -->
     <div id="popupModal" class="popup-modal" aria-hidden="true">
-        <div class="popup-content">
-            <div class="popup-header">
-                <input type="text" id="popupSearch" placeholder="Search..." />
-                <span class="close-button" aria-label="Close Popup">&times;</span>
-	</div>
-		<ul class="popup-links">
-    		<li><i class="fab fa-discord"></i>rhoclouds</li>
-    		<li><i class="fas fa-file-alt"></i> <a href="#" target="_blank">CV (placeholder)</a></li>
-            <li><i class="fas fa-envelope"></i> Website inquiries: <span>rhoclouds [at] gmail [dot] com</span></li>
-    		<li><i class="fab fa-github"></i> <a href="https://github.com/rhoclouds" target="_blank">Personal GitHub</a></li>
-            <li><i class="fab fa-github"></i> <a href="#" target="_blank">School GitHub (placeholder)</a></li>
-    		<li><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn (placeholder)</a></li>
-    		<li><i class="fab fa-twitter"></i> <a href="#" target="_blank">Twitter (placeholder)</a></li>
-    		<li><i class="fas fa-book"></i> <a href="https://www.goodreads.com/rhoclouds" target="_blank">Goodreads</a></li>
-		</ul>
+      <div class="popup-content">
+        <div class="popup-header">
+          <input type="text" id="popupSearch" placeholder="Search..." />
+          <span class="close-button">&times;</span>
+        </div>
+        <ul class="popup-links">
+          <li><i class="fab fa-discord"></i> rhoclouds</li>
+          <li><i class="fas fa-file-alt"></i> <a href="#" target="_blank">CV (placeholder)</a></li>
+          <li><i class="fas fa-envelope"></i><span>rhoclouds [at] gmail [dot] com</span></li>
+          <li><i class="fab fa-github"></i> <a href="https://github.com/rhoclouds" target="_blank">Personal GitHub</a></li>
+          <li><i class="fab fa-github"></i> <a href="#" target="_blank">School GitHub (placeholder)</a></li>
+          <li><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn (placeholder)</a></li>
+          <li><i class="fab fa-twitter"></i> <a href="#" target="_blank">Twitter (placeholder)</a></li>
+          <li><i class="fas fa-book"></i> <a href="https://www.goodreads.com/rhoclouds" target="_blank">Goodreads</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <script src="button.js"></script>
-    <script>
-        const birthDate = new Date("2005-01-04T00:58:00");
+  </div>
 
-        function updateTimer() {
-            const now = new Date();
-            const elapsed = now - birthDate;
+  <script>
+    // Live timer
+    const birthDate = new Date("2005-01-04T00:58:00");
+    function updateTimer() {
+      const now = Date.now(), diff = now - birthDate;
+      const yrs  = Math.floor(diff / 31557600000),
+            days = Math.floor((diff % 31557600000) / 86400000),
+            hrs  = Math.floor((diff % 86400000) / 3600000),
+            mins = Math.floor((diff % 3600000) / 60000),
+            secs = Math.floor((diff % 60000) / 1000);
+      document.getElementById("timer").textContent =
+        `${yrs} years, ${days} days, ${hrs} hours, ${mins} minutes, and ${secs} seconds`;
+    }
+    setInterval(updateTimer, 1000);
+    updateTimer();
 
-            const years = Math.floor(elapsed / (1000 * 60 * 60 * 24 * 365.25));
-            const days = Math.floor((elapsed % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((elapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((elapsed % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((elapsed % (1000 * 60)) / 1000);
+    // Modal toggle
+    const btn   = document.getElementById('contactButton'),
+          modal = document.getElementById('popupModal'),
+          close = modal.querySelector('.close-button');
 
-            document.getElementById("timer").textContent =
-                `${years} years, ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
-        }
-
-        setInterval(updateTimer, 1000);
-        updateTimer();
-    </script>
+    btn.addEventListener('click', () => modal.style.display = 'flex');
+    close.addEventListener('click', () => modal.style.display = 'none');
+  </script>
 </body>
 </html>
