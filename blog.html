@@ -12,153 +12,158 @@
     <title>blog - rhoclouds</title>
     <style>
         html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: 'Cambria', serif;
-            line-height: 1.6;
-            background-color: transparent;
+          height: 100%; margin: 0; padding: 0;
+          font-family: 'Georgia', serif; line-height: 1.6;
+          color: #f0f0f0;
+          background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
+          overflow-x: hidden; box-sizing: border-box;
         }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+        *, *::before, *::after { box-sizing: inherit; }
+        body::before {
+          content:""; position:fixed; top:0; left:0;
+          width:100%; height:100%;
+          background:
+            radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
+            radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
+          filter:blur(30px); opacity:0.8; z-index:-1;
         }
-        .content {
-            flex: 1;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-        }
+    
+        .wrapper { display:flex; flex-direction:column; min-height:100vh; }
         nav {
-            background-color: transparent;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
+          text-align:center; padding:3rem 0;
         }
         nav a {
-            color: #555;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
+          color:#f0f0f0; margin:0 1rem; font-size:1.1rem;
+          text-decoration:none;
         }
-        nav a:hover {    
-            color: #555;
-            text-decoration: underline;
+        nav a:hover {
+          color:#E5B95F; text-decoration:underline;
         }
+    
+        .content { flex:1; }
+        .container {
+          width:85%; max-width:960px; margin:0 auto;
+          display:flex; flex-direction:column; align-items:center;
+          gap:2rem;
+        }
+    
+        .card {
+          background:white; color:#222;
+          border-radius:20px; padding:2rem;
+          width:100%; max-width:800px;
+          box-shadow:
+            0 8px 30px rgba(0,0,0,0.08),
+            inset 0 0 15px rgba(255,255,255,0.4);
+        }
+    
         .tagline {
-            font-style: italic;
-            font-size: 19px;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border-top: 1px solid #555;
-            border-bottom: 1px solid #555;
-            text-align: center;
-            line-height: 1.5;
-            white-space: nowrap;
+          font-style:italic; font-size:19px;
+          padding:16px 0; margin:0 auto 1rem;
+          border-top:1px solid #555;
+          border-bottom:1px solid #555;
+          text-align:center; line-height:1.5;
+          white-space:nowrap;
         }
-        @media (max-width: 600px) {
-            .tagline {
-        white-space: normal;
-        word-wrap: break-word;
-    }
-}
+    
+        .second-blurb {
+          font-style:italic; font-size:19px;
+          padding:16px 0; margin:0 auto 1rem;
+          text-align:center; line-height:1.5;
+          white-space:nowrap;
+        }
+        .second-blurb a {
+          color:#1c2541; text-decoration:none;
+          font-weight:bold;
+        }
+        .second-blurb a:hover {
+          text-decoration:underline;
+        }
+    
+        @media (max-width:600px) {
+          .tagline, .second-blurb {
+            white-space:normal; word-wrap:break-word;
+          }
+        }
+    
         .post-list {
-            list-style-type: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: 1fr auto;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            margin: auto;
-            max-width: 600px;
+          list-style:none; padding:0; margin:0 auto;
+          width:100%; max-width:600px;
         }
         .post-list li {
-            display: contents;
-            margin-bottom: 20px;
+          display:flex; justify-content:space-between;
+          align-items:center; padding:12px 0;
+          border-bottom:1px solid rgba(0,0,0,0.05);
         }
         .post-list a {
-            font-size: 24px;
-            text-decoration: none;
-            color: #000000;
+          font-size:24px; text-decoration:none; color:#000;
         }
         .post-list a:hover {
-            text-decoration: underline;
+          text-decoration:underline;
         }
         .post-date {
-            font-size: 18px;
-            color: #888;
-            text-align: right;
-            white-space: nowrap;
+          font-size:18px; color:#888; white-space:nowrap;
+          margin-left:20px;
         }
+        @media (max-width:600px) {
+          .post-list li {
+            flex-direction:column; align-items:flex-start;
+          }
+          .post-list a { font-size:22px; }
+          .post-date {
+            margin-top:5px; font-size:16px;
+          }
+        }
+    
         footer {
-            color: #555;
-            text-align: center;
-            padding: 10px 20px;
-            background-color: transparent;
+          color:#555; text-align:center; padding:20px;
         }
-        @media (max-width: 600px) {
-            .post-list {
-                display: block;
-                max-width: none;
-            }
-            .post-list li {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-            .post-list a {
-                font-size: 22px;
-                flex: 1;
-                text-align: left;
-            }
-            .post-date {
-                margin-left: 10px;
-                font-size: 18px;
-                text-align: right;
-                white-space: nowrap;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="wrapper">
+      </style>
+    </head>
+    <body>
+      <div class="wrapper">
+    
         <nav>
-            <a href="/index.html">home</a>
-            <a href="/library.html">library</a>
-            <a href="/blog.html">blog</a>
+          <a href="/index.html">home</a>
+          <a href="/library.html">library</a>
+          <a href="/blog.html">blog</a>
         </nav>
+    
         <div class="content">
-            <div class="container">
-                <div class="tagline">
-                    my pretentious thoughts on culture, history, politics, science, and engineering
-                </div>
-                <ul class="post-list">
-                    <li>
-                        <a href="/blog/post3.html">The Annual Admissions Rat Race is Over</a>
-                        <div class="post-date">04/15/25</div>
-                    </li>
-
-                    <li>
-                        <a href="/blog/post2.html">Some Takeaways From 2024</a>
-                        <div class="post-date">12/31/24</div>
-                    </li>
-                    
-                    <li>
-                        <a href="/blog/post1.html">The Absence of Purpose Led Us Here</a>
-                        <div class="post-date">12/01/24</div>
-                    </li>
-                    
-                    <li>
-                        <a href="/blog/post-template.html">Post Template</a>
-                        <div class="post-date">Date</div>
-                    </li>
-                </ul>
+          <div class="container">
+    
+            <div class="card">
+              <p class="tagline">
+                my pretentious thoughts on culture, history, politics, science, and engineering
+              </p>
+              <p class="second-blurb">
+                if you are new, check out <a href="/blog/post-template.html">directory</a>
+              </p>
             </div>
+    
+            <div class="card">
+              <ul class="post-list">
+                <li>
+                  <a href="/blog/post3.html">The Annual Admissions Rat Race is Over</a>
+                  <div class="post-date">04/15/25</div>
+                </li>
+                <li>
+                  <a href="/blog/post2.html">Some Takeaways From 2024</a>
+                  <div class="post-date">12/31/24</div>
+                </li>
+                <li>
+                  <a href="/blog/post1.html">The Absence of Purpose Led Us Here</a>
+                  <div class="post-date">12/01/24</div>
+                </li>
+                <li>
+                  <a href="/blog/post-template.html">Post Template</a>
+                  <div class="post-date">Date</div>
+                </li>
+              </ul>
+            </div>
+    
+          </div>
         </div>
-</body>
-</html>
+      </div>
+    </body>
+    </html>
+    
