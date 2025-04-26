@@ -104,15 +104,37 @@
           font-size:18px; color:#888; white-space:nowrap;
           margin-left:20px;
         }
-        @media (max-width:600px) {
-          .post-list li {
-            flex-direction:column; align-items:flex-start;
-          }
-          .post-list a { font-size:22px; }
-          .post-date {
-            margin-top:5px; font-size:16px;
+        @media (max-width: 640px) {
+        .container {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        }
+        .card {
+        margin: 0 auto 1.5rem;
+        width: 100%;
+        max-width: 95%;
+        padding: 1.5rem;
+        box-sizing: border-box;
           }
         }
+        @media (max-width: 600px) {
+        .post-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0;
+        }
+        .post-list a {
+        font-size: 22px;
+        margin-bottom: 5px;
+        }
+        .post-date {
+        font-size: 16px;
+        margin: 0;
+        color: #888;
+        white-space: normal;
+        }
+    }
     
         footer {
           color:#555; text-align:center; padding:20px;
