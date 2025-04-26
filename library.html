@@ -115,12 +115,27 @@
     }
   
     @media (max-width: 640px) {
-      .card {
-        max-width: 90%;
-        margin: 0 auto 1.5rem;
-        padding: 1.5rem;
-      }
-    }
+  .container {
+    width: 100%;
+    padding: 0 1rem; /* Add horizontal padding to prevent edge hugging */
+    box-sizing: border-box;
+  }
+
+  .card {
+    margin: 0 auto 1.5rem; /* Center and space cards evenly */
+    width: 100%;
+    max-width: 95%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .book-grid.shelf-1,
+  .book-grid.shelf-2,
+  .book-grid.shelf-3 {
+    grid-template-columns: repeat(3, 1fr); /* More mobile-friendly shelf layout */
+  }
+}
 
     footer {
       color: #555;
