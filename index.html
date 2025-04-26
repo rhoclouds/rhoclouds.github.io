@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home - rhoclouds</title>
+  <meta name="description" content="rhoclouds' archive of the world">
   <link rel="icon" href="icons/blazePowder16x16.png" type="image/png">
   <link rel="icon" href="icons/blazePowder32x32.png" type="image/png">
   <link rel="icon" href="icons/blazePowder512x512.png" type="image/png">
   <link rel="icon" href="icons/blazePowder192x192.png" type="image/png">
   <link rel="icon" href="icons/blazePowderAppleTouchIcon.png" type="image/png">
   <link rel="icon" href="icons/blazePowder.ico" type="image/x-icon">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home - rhoclouds</title>
-  <meta name="description" content="rhoclouds' archive of the world">
-
-  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -24,12 +22,13 @@
       line-height: 1.6;
       color: #f0f0f0;
       background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
-      position: relative;
       overflow-x: hidden;
+      position: relative;
     }
     body::before {
       content: "";
-      position: fixed; top: 0; left: 0;
+      position: fixed;
+      top: 0; left: 0;
       width: 100%; height: 100%;
       background:
         radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
@@ -79,6 +78,8 @@
       border-radius: 20px;
       padding: 2rem 2rem 1.5rem;
       width: 100%;
+      margin: 0 1rem;
+      box-sizing: border-box;
       position: relative;
       z-index: 1;
       box-shadow:
@@ -140,8 +141,13 @@
       line-height: 1.6;
     }
 
-    .section-inner { padding-left: 190px; }
-    .section h2 { margin-top: 0; border-bottom: none; }
+    .section-inner {
+      padding-left: 190px;
+    }
+    .section h2 {
+      margin-top: 0;
+      border-bottom: none;
+    }
     .fun-facts {
       padding-left: 1.2rem;
     }
@@ -150,6 +156,7 @@
       line-height: 1.6;
     }
 
+    /* Popup Modal */
     .popup-modal {
       display: none;
       position: fixed;
@@ -211,25 +218,33 @@
       text-decoration: underline;
     }
 
-  @media (max-width: 640px) {
-    .profile { flex-direction: column; text-align: center; }
-    .section-inner { padding-left: 0; }
-
-    /* ← Paste these two rules: */
-    .location {
-      justify-content: center;
+    /* Mobile adjustments */
+    @media (max-width: 640px) {
+      .profile { flex-direction: column; text-align: center; }
+      .section-inner { padding-left: 0; }
+      .location { justify-content: center; }
+      .about-list, .fun-facts {
+        list-style-position: outside;
+        padding-left: 2rem;
+      }
+      .container {
+        width: 100%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+      }
+      .card {
+        margin: 0 auto 1.5rem;
+        width: 100%;
+        max-width: 95%;
+        padding: 1.5rem;
+        box-sizing: border-box;
+      }
     }
-    .about-list,
-    .fun-facts {
-      list-style-position: outside;
-      padding-left: 2rem;
-    }
-  }
   </style>
 </head>
+
 <body>
   <div class="wrapper">
-
     <header class="main-header">
       <nav>
         <a href="/index.html">home</a>
@@ -248,7 +263,6 @@
             <i class="fab fa-github"></i>
             <i class="fas fa-envelope"></i>
           </button>
-
           <div class="profile-pic"></div>
           <div class="info">
             <div class="name">rhoclouds</div>
@@ -290,12 +304,12 @@
         </div>
         <ul class="popup-links">
           <li><i class="fab fa-discord"></i> rhoclouds</li>
-          <li><i class="fas fa-file-alt"></i> <a href="#" target="_blank">CV (placeholder)</a></li>
+          <li><i class="fas fa-file-alt"></i> <a href="#">CV (placeholder)</a></li>
           <li><i class="fas fa-envelope"></i><span>rhoclouds [at] gmail [dot] com</span></li>
           <li><i class="fab fa-github"></i> <a href="https://github.com/rhoclouds" target="_blank">Personal GitHub</a></li>
-          <li><i class="fab fa-github"></i> <a href="#" target="_blank">School GitHub (placeholder)</a></li>
-          <li><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn (placeholder)</a></li>
-          <li><i class="fab fa-twitter"></i> <a href="#" target="_blank">Twitter (placeholder)</a></li>
+          <li><i class="fab fa-github"></i> <a href="#">School GitHub (placeholder)</a></li>
+          <li><i class="fab fa-linkedin"></i> <a href="#">LinkedIn (placeholder)</a></li>
+          <li><i class="fab fa-twitter"></i> <a href="#">Twitter (placeholder)</a></li>
           <li><i class="fas fa-book"></i> <a href="https://www.goodreads.com/rhoclouds" target="_blank">Goodreads</a></li>
         </ul>
       </div>
@@ -304,13 +318,12 @@
   </div>
 
   <script>
-    // Live timer
     const birthDate = new Date("2005-01-04T00:58:00");
     function updateTimer() {
       const now = Date.now(), diff = now - birthDate;
-      const yrs  = Math.floor(diff / 31557600000),
+      const yrs = Math.floor(diff / 31557600000),
             days = Math.floor((diff % 31557600000) / 86400000),
-            hrs  = Math.floor((diff % 86400000) / 3600000),
+            hrs = Math.floor((diff % 86400000) / 3600000),
             mins = Math.floor((diff % 3600000) / 60000),
             secs = Math.floor((diff % 60000) / 1000);
       document.getElementById("timer").textContent =
@@ -319,10 +332,9 @@
     setInterval(updateTimer, 1000);
     updateTimer();
 
-    // Modal toggle
-    const btn   = document.getElementById('contactButton'),
-          modal = document.getElementById('popupModal'),
-          close = modal.querySelector('.close-button');
+    const btn = document.getElementById('contactButton');
+    const modal = document.getElementById('popupModal');
+    const close = modal.querySelector('.close-button');
 
     btn.addEventListener('click', () => modal.style.display = 'flex');
     close.addEventListener('click', () => modal.style.display = 'none');
