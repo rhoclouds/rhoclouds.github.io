@@ -314,10 +314,10 @@
         </div>
         <ul class="popup-links">
           <li><i class="fab fa-discord"></i> rhoclouds</li>
+          <li><i class="fab fa-github"></i> <a href="#">GitHub (placeholder)</a></li>
+           <li><i class="fas fa-envelope"></i><span>rhoclouds [at] gmail [dot] com</span></li>
           <li><i class="fas fa-file-alt"></i> <a href="#">CV (placeholder)</a></li>
-          <li><i class="fas fa-envelope"></i><span>rhoclouds [at] gmail [dot] com</span></li>
-          <li><i class="fab fa-github"></i> <a href="https://github.com/rhoclouds" target="_blank">Personal GitHub</a></li>
-          <li><i class="fab fa-github"></i> <a href="#">School GitHub (placeholder)</a></li>
+          <!-- <li><i class="fab fa-github"></i> <a href="https://github.com/rhoclouds" target="_blank">Personal GitHub</a></li> -->
           <li><i class="fab fa-linkedin"></i> <a href="#">LinkedIn (placeholder)</a></li>
           <li><i class="fab fa-twitter"></i> <a href="#">Twitter (placeholder)</a></li>
           <li><i class="fas fa-book"></i> <a href="https://www.goodreads.com/rhoclouds" target="_blank">Goodreads</a></li>
@@ -328,26 +328,53 @@
   </div>
 
   <script>
-    const birthDate = new Date("2005-01-04T00:58:00");
-    function updateTimer() {
-      const now = Date.now(), diff = now - birthDate;
-      const yrs = Math.floor(diff / 31557600000),
-            days = Math.floor((diff % 31557600000) / 86400000),
-            hrs = Math.floor((diff % 86400000) / 3600000),
-            mins = Math.floor((diff % 3600000) / 60000),
-            secs = Math.floor((diff % 60000) / 1000);
-      document.getElementById("timer").textContent =
-        `${yrs} years, ${days} days, ${hrs} hours, ${mins} minutes, and ${secs} seconds`;
-    }
-    setInterval(updateTimer, 1000);
-    updateTimer();
+  /* ---------- Live age timer ---------- */
+  const birthDate = new Date("2005-01-04T00:58:00");
+  function updateTimer() {
+    const now = Date.now(), diff = now - birthDate;
+    const yrs = Math.floor(diff / 31557600000),
+          days = Math.floor((diff % 31557600000) / 86400000),
+          hrs = Math.floor((diff % 86400000) / 3600000),
+          mins = Math.floor((diff % 3600000) / 60000),
+          secs = Math.floor((diff % 60000) / 1000);
+    document.getElementById("timer").textContent =
+      `${yrs} years, ${days} days, ${hrs} hours, ${mins} minutes, and ${secs} seconds`;
+  }
+  setInterval(updateTimer, 1000);
+  updateTimer();
 
-    const btn = document.getElementById('contactButton');
-    const modal = document.getElementById('popupModal');
-    const close = modal.querySelector('.close-button');
+  /* ---------- Modal and Search ---------- */
+  const btn        = document.getElementById("contactButton");
+  const modal      = document.getElementById("popupModal");
+  const close      = modal.querySelector(".close-button");
+  const searchBox  = document.getElementById("popupSearch");
+  const linkItems  = document.querySelectorAll(".popup-links li");
 
-    btn.addEventListener('click', () => modal.style.display = 'flex');
-    close.addEventListener('click', () => modal.style.display = 'none');
-  </script>
+  btn.addEventListener("click", () => {
+    modal.style.display = "flex";
+    searchBox.focus();
+  });
+  close.addEventListener("click", () => (modal.style.display = "none"));
+
+  /* Add synonym keywords for special icons */
+  function extraKeywords(iconClass) {
+    if (iconClass.includes("fa-envelope")) return " email mail ";
+    if (iconClass.includes("fa-discord"))  return " discord ";
+    return "";
+  }
+
+  searchBox.addEventListener("input", function () {
+    const filter = this.value.toLowerCase().trim();
+    linkItems.forEach(item => {
+      const iconCls  = item.querySelector("i")?.className.toLowerCase() || "";
+      const visible  = item.innerText.toLowerCase();   // text from <span>, <a>, etc.
+      const keywords = extraKeywords(iconCls);         // inject synonyms
+
+      const haystack = `${iconCls} ${visible} ${keywords}`;
+      item.style.display = haystack.includes(filter) ? "flex" : "none";
+    });
+  });
+</script>
+
 </body>
 </html>
