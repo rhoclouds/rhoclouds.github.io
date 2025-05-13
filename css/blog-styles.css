@@ -105,12 +105,23 @@ blockquote {
   text-align: center;
   margin: 40px 0;
 }
+
 .image-block img {
-  max-width: 100%;
-  max-width: 700px;
-  height: auto;
-  border-radius: 8px;
+    max-width: 700px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 15px;
 }
+
+@media (max-width: 600px) {
+  .image-block img {
+    max-width: 90vw;
+    padding: 0 15px;
+  }
+}
+
 .image-caption {
   font-size: 15px;
   color: #666;
