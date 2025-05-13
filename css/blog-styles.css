@@ -50,6 +50,15 @@ nav a:hover {
     margin: 10px 0;
 }
 
+.post-subheader {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #444;
+    font-size: 17px;
+    font-style: italic;
+}
+
 .post-date {
     font-size: 18px;
     color: #888;
@@ -118,7 +127,8 @@ blockquote {
 @media (max-width: 600px) {
   .image-block img {
     max-width: 90vw;
-    padding: 0 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
