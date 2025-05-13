@@ -100,3 +100,19 @@ blockquote {
     background-color: #ADD8E6; /* Light blue highlight */
     transition: background-color 1s ease-out;
 }
+
+.image-block {
+  text-align: center;
+  margin: 40px 0;
+}
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.image-caption {
+  font-size: 15px;
+  color: #666;
+  font-style: italic;
+  margin-top: 8px;
+}
