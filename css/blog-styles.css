@@ -123,6 +123,8 @@ blockquote {
   height: auto;
   border-radius: 8px;
   display: block;
+  box-shadow: 0 0 0 0 transparent; /* might help with some browser rendering engines? */
+  overflow: hidden; /* radius clips if needed */
 }
 
 .image-caption {
