@@ -110,26 +110,24 @@ blockquote {
 }
 
 .image-block {
-  text-align: center;
-  margin: 40px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 40px 0;
 }
 
 .image-block img {
     max-width: 700px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px !important;
     display: block;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 @media (max-width: 600px) {
-  .image-block img {
-    max-width: 90vw;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 0;
+  .image-block {
+    padding: 0 15px;
   }
 }
 
