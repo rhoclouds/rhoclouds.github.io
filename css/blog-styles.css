@@ -23,7 +23,6 @@ html, body {
 .container {
     width: 80%;
     margin: auto;
-    text-align: center;
 }
 
 nav {
@@ -127,8 +126,10 @@ blockquote {
 @media (max-width: 600px) {
   .image-block img {
     max-width: 90vw;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
