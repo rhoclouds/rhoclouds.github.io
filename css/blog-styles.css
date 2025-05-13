@@ -82,7 +82,7 @@ p:last-of-type {
 }
 
 blockquote {
-    font-family: Cambria, serif;
+    font-family: 'Cambria', 'Georgia', serif;
     font-style: italic;
     font-size: 17px;
     margin: 40px auto 30px auto;
