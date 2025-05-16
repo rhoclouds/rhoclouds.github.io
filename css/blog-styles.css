@@ -136,6 +136,20 @@ blockquote {
   margin-top: 8px;
 }
 
+.pdf-embed {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 auto 2rem auto;
+}
+
+.pdf-embed iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .pdf-embed {
     max-height: 300px;
