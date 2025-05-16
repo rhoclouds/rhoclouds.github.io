@@ -32,19 +32,19 @@ body {
 }
 
 nav {
-    font-size: 1.1rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 3rem 0;
-    text-align: center;
-    all: revert-layer;
+  background-color: transparent;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+  font-family: 'Georgia', serif;
 }
 
 nav a {
-    color: #555;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-size: inherit;
+  color: #555;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: inherit;
 }
 
 nav a:hover {
