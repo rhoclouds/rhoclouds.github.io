@@ -34,9 +34,9 @@ nav {
 
 nav a {
     color: #555;
-    margin: 0 15px;
+    margin: 0 1rem;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
