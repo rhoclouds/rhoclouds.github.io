@@ -10,137 +10,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog - rhoclouds</title>
-    <style>
-        html, body {
-          height: 100%; margin: 0; padding: 0;
-          font-family: 'Georgia', serif; line-height: 1.6;
-          color: #f0f0f0;
-          background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
-          overflow-x: hidden; box-sizing: border-box;
-        }
-        *, *::before, *::after { box-sizing: inherit; }
-        body::before {
-          content:""; position:fixed; top:0; left:0;
-          width:100%; height:100%;
-          background:
-            radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
-            radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
-          filter:blur(30px); opacity:0.8; z-index:-1;
-        }
-    
-        .wrapper { display:flex; flex-direction:column; min-height:100vh; }
-        nav {
-          text-align:center; padding:3rem 0;
-        }
-        nav a {
-          color:#f0f0f0; margin:0 1rem; font-size:1.1rem;
-          text-decoration:none;
-        }
-        nav a:hover {
-          color:#E5B95F; text-decoration:underline;
-        }
-    
-        .content { flex:1; }
-        .container {
-          width:85%; max-width:960px; margin:0 auto;
-          display:flex; flex-direction:column; align-items:center;
-          gap:2rem;
-        }
-    
-        .card {
-          background:white; color:#222;
-          border-radius:20px; padding:2rem;
-          width:100%; max-width:800px;
-          box-shadow:
-            0 8px 30px rgba(0,0,0,0.08),
-            inset 0 0 15px rgba(255,255,255,0.4);
-        }
-    
-        .tagline {
-          font-style:italic; font-size:19px;
-          padding:16px 0; margin:0 auto 1rem;
-          border-top:1px solid #555;
-          border-bottom:1px solid #555;
-          text-align:center; line-height:1.5;
-          white-space:nowrap;
-        }
-    
-        .second-blurb {
-          font-style:italic; font-size:19px;
-          padding:16px 0; margin:0 auto 1rem;
-          text-align:center; line-height:1.5;
-          white-space:nowrap;
-        }
-        .second-blurb a {
-          color:#1c2541; text-decoration:none;
-          font-weight:bold;
-        }
-        .second-blurb a:hover {
-          text-decoration:underline;
-        }
-    
-        @media (max-width:600px) {
-          .tagline, .second-blurb {
-            white-space:normal; word-wrap:break-word;
-          }
-        }
-    
-        .post-list {
-          list-style:none; padding:0; margin:0 auto;
-          width:100%; max-width:600px;
-        }
-        .post-list li {
-          display:flex; justify-content:space-between;
-          align-items:center; padding:12px 0;
-          border-bottom:1px solid rgba(0,0,0,0.05);
-        }
-        .post-list a {
-          font-size:24px; text-decoration:none; color:#000;
-        }
-        .post-list a:hover {
-          text-decoration:underline;
-        }
-        .post-date {
-          font-size:18px; color:#888; white-space:nowrap;
-          margin-left:20px;
-        }
-        @media (max-width: 640px) {
-        .container {
-        width: 100%;
-        padding: 0 1rem;
-        box-sizing: border-box;
-        }
-        .card {
-        margin: 0 auto 1.5rem;
-        width: 100%;
-        max-width: 95%;
-        padding: 1.5rem;
-        box-sizing: border-box;
-          }
-        }
-        @media (max-width: 600px) {
-        .post-list li {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 12px 0;
-        }
-        .post-list a {
-        font-size: 22px;
-        margin-bottom: 5px;
-        }
-        .post-date {
-        font-size: 16px;
-        margin: 0;
-        color: #888;
-        white-space: normal;
-        }
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
+      radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
+    filter: blur(30px);
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  nav {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  nav a {
+    color: #f0f0f0;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #E5B95F;
+    text-decoration: underline;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .container {
+    width: 85%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card {
+    background: white;
+    color: #222;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow:
+      0 8px 30px rgba(0,0,0,0.08),
+      inset 0 0 15px rgba(255,255,255,0.4);
+  }
+
+  .tagline {
+    font-style: italic;
+    font-size: 19px;
+    padding: 16px 0;
+    margin: 0 auto 1rem;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  .second-blurb {
+    font-style: italic;
+    font-size: 19px;
+    padding: 16px 0;
+    margin: 0 auto 1rem;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  .second-blurb a {
+    color: #1c2541;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .second-blurb a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .tagline,
+    .second-blurb {
+      white-space: normal;
+      word-wrap: break-word;
     }
-    
-        footer {
-          color:#555; text-align:center; padding:20px;
-        }
-      </style>
-    </head>
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .post-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .post-list a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .post-list a:hover {
+    text-decoration: underline;
+  }
+
+  .post-date {
+    font-size: 18px;
+    color: #888;
+    white-space: nowrap;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    .card {
+      margin: 0 auto 1.5rem;
+      width: 100%;
+      max-width: 95%;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .post-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 12px 0;
+    }
+
+    .post-list a {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .post-date {
+      font-size: 16px;
+      margin: 0;
+      color: #888;
+      white-space: normal;
+    }
+  }
+
+  footer {
+    color: #555;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+
     <body>
       <div class="wrapper">
     

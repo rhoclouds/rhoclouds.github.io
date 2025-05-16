@@ -8,140 +8,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>library - rhoclouds</title>
-    <style>
-        
-    html, body {
-      margin: 0; padding: 0; height: 100%;
-      font-family: 'Georgia', serif;
-      line-height: 1.6;
-      color: #f0f0f0;
-      background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
-      position: relative;
-      overflow-x: hidden;
-    }
-    body::before {
-      content: "";
-      position: fixed; top: 0; left: 0;
-      width: 100%; height: 100%;
-      background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
-        radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
-      filter: blur(30px);
-      opacity: 0.8;
-      z-index: -1;
-    }
-    
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
+    position: relative;
+    overflow-x: hidden;
+  }
 
-    nav {
-  text-align: center;
-  padding: 3rem 0;
-    }
-    nav a {
-  color: #f0f0f0;
-  margin: 0 1rem;
-  font-size: 1.1rem;
-  text-decoration: none;
-    }
-    nav a:hover {
-  color: #E5B95F;
-  text-decoration: underline;
-    }
-
-    .content { flex: 1; }
-    .container {
-      width: 80%;
-      max-width: 1000px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .card {
-      background: white;
-      color: #222;
-      border-radius: 20px;
-      padding: 1.5rem;
-      width: 100%;
-      box-shadow:
-        0 8px 30px rgba(0,0,0,0.08),
-        inset 0 0 15px rgba(255,255,255,0.4);
-    }
-
-    .book-section-label {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .book-grid {
-      display: grid;
-      gap: 20px;
-      margin-top: 1rem;
-    }
-
-    .shelf-1 { grid-template-columns: repeat(5, 1fr); }
-    .shelf-2, .shelf-3 { grid-template-columns: repeat(5, 1fr); }
-
-    .book {
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .book:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .book img {
-      display: block;
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-
-    @media (max-width: 480px) {
-      .container { width: 95%; }
-    }
-  
-    @media (max-width: 640px) {
-  .container {
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 0 1rem; /* Add horizontal padding to prevent edge hugging */
-    box-sizing: border-box;
+    height: 100%;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
+      radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
+    filter: blur(30px);
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  nav {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  nav a {
+    color: #f0f0f0;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #E5B95F;
+    text-decoration: underline;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .card {
-    margin: 0 auto 1.5rem; /* Center and space cards evenly */
-    width: 100%;
-    max-width: 95%;
-    padding: 1.5rem;
+    background: white;
+    color: #222;
     border-radius: 20px;
-    box-sizing: border-box;
+    padding: 1.5rem;
+    width: 100%;
+    box-shadow:
+      0 8px 30px rgba(0,0,0,0.08),
+      inset 0 0 15px rgba(255,255,255,0.4);
   }
 
-  .book-grid.shelf-1,
-  .book-grid.shelf-2,
-  .book-grid.shelf-3 {
-    grid-template-columns: repeat(3, 1fr); /* More mobile-friendly shelf layout */
+  .book-section-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
   }
-}
 
-    footer {
-      color: #555;
-      text-align: center;
-      padding: 20px;
+  .book-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 1rem;
+  }
+
+  .shelf-1 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .shelf-2,
+  .shelf-3 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .book {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .book img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
     }
-  </style>
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      width: 100%;
+      padding: 0 1rem; /* Add horizontal padding to prevent edge hugging */
+      box-sizing: border-box;
+    }
+
+    .card {
+      margin: 0 auto 1.5rem; /* Center and space cards evenly */
+      width: 100%;
+      max-width: 95%;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+
+    .book-grid.shelf-1,
+    .book-grid.shelf-2,
+    .book-grid.shelf-3 {
+      grid-template-columns: repeat(3, 1fr); /* More mobile-friendly shelf layout */
+    }
+  }
+
+  footer {
+    color: #555;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+
 </head>
 <body>
   <div class="wrapper">

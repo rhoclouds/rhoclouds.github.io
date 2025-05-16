@@ -13,244 +13,292 @@
   <link rel="icon" href="icons/blazePowder.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Georgia', serif;
-      line-height: 1.6;
-      color: #f0f0f0;
-      background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
-      overflow-x: hidden;
-      position: relative;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
-        radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
-      filter: blur(30px);
-      opacity: 0.8;
-      z-index: -1;
-    }
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c) fixed;
+    overflow-x: hidden;
+    position: relative;
+  }
 
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
+      radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
+    filter: blur(30px);
+    opacity: 0.8;
+    z-index: -1;
+  }
 
-    /* Navbar */
-    .main-header {
-      background: transparent;
-      padding: 3rem 0;
-      text-align: center;
-    }
-    nav a {
-      color: #f0f0f0;
-      text-decoration: none;
-      font-size: 1.1rem;
-      margin: 0 1rem;
-    }
-    nav a:hover {
-      color: #E5B95F;
-      text-decoration: underline;
-    }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-    .content { flex: 1; }
-    .container {
-      width: 80%;
-      max-width: 900px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-    }
+  /* Navbar */
+  .main-header {
+    background: transparent;
+    padding: 3rem 0;
+    text-align: center;
+  }
 
-    .card {
-      background: white;
-      color: #222;
-      border-radius: 20px;
-      padding: 2rem 2rem 1.5rem;
-      width: 100%;
-      margin: 0 1rem;
-      box-sizing: border-box;
-      position: relative;
-      z-index: 1;
-      box-shadow:
-        0 8px 30px rgba(0,0,0,0.08),
-        inset 0 0 15px rgba(255,255,255,0.4);
-    }
+  nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
 
-    .contact-button {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: white;
-      border: none;
-      border-radius: 8px;
-      padding: 0.5rem 0.75rem;
-      display: flex;
-      gap: 0.5rem;
-      font-size: 1.2rem;
-      color: #1c2541;
-      cursor: pointer;
-    }
+  nav a:hover {
+    color: #E5B95F;
+    text-decoration: underline;
+  }
 
+  .content {
+    flex: 1;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: white;
+    color: #222;
+    border-radius: 20px;
+    padding: 2rem 2rem 1.5rem;
+    width: 100%;
+    margin: 0 1rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    box-shadow:
+      0 8px 30px rgba(0,0,0,0.08),
+      inset 0 0 15px rgba(255,255,255,0.4);
+  }
+
+  .contact-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    color: #1c2541;
+    cursor: pointer;
+  }
+
+  .profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: url('https://www.vincentvangogh.org/assets/img/paintings/cafe-terrace-at-night.jpg') center/cover no-repeat;
+    border: 5px solid #E5B95F;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+  }
+
+  .info {
+    flex-grow: 1;
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.6rem;
+  }
+
+  .blurb {
+    font-style: italic;
+    color: #3a4b68;
+    margin-bottom: 0.6rem;
+  }
+
+  .about-list {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+    list-style: disc;
+  }
+
+  .about-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .section-inner {
+    padding-left: 190px;
+  }
+
+  .section h2 {
+    margin-top: 0;
+    border-bottom: none;
+  }
+
+  .fun-facts {
+    padding-left: 1.2rem;
+  }
+
+  .fun-facts li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  /* Popup Modal */
+  .popup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 1rem;
+  }
+
+  .popup-header input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .popup-header .close-button {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .popup-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .popup-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .popup-links i {
+    margin-right: 8px;
+    color: #555;
+    min-width: 20px;
+  }
+
+  .popup-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+
+  .popup-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 640px) {
     .profile {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
-    .profile-pic {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      background: url('https://www.vincentvangogh.org/assets/img/paintings/cafe-terrace-at-night.jpg') center/cover no-repeat;
-      border: 5px solid #E5B95F;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      flex-shrink: 0;
-    }
-    .info { flex-grow: 1; }
-    .name { font-size: 2rem; font-weight: bold; margin-bottom: 0.3rem; }
-    .location {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 1rem;
-      color: #666;
-      margin-bottom: 0.6rem;
-    }
-    .blurb {
-      font-style: italic;
-      color: #3a4b68;
-      margin-bottom: 0.6rem;
-    }
-    .about-list {
-      padding-left: 1.2rem;
-      margin-top: 1rem;
-      list-style: disc;
-    }
-    .about-list li {
-      margin-bottom: 0.5rem;
-      line-height: 1.6;
+      flex-direction: column;
+      text-align: center;
     }
 
     .section-inner {
-      padding-left: 190px;
-    }
-    .section h2 {
-      margin-top: 0;
-      border-bottom: none;
-    }
-    .fun-facts {
-      padding-left: 1.2rem;
-    }
-    .fun-facts li {
-      margin-bottom: 0.5rem;
-      line-height: 1.6;
+      padding-left: 0;
     }
 
-    /* Popup Modal */
-    .popup-modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.5);
+    .location {
       justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-    .popup-content {
-      background: white;
-      border-radius: 8px;
-      padding: 20px;
-      width: 90%;
-      max-width: 400px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      position: relative;
-    }
-    .popup-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 15px;
-      gap: 1rem;
-    }
-    .popup-header input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .popup-header .close-button {
-      font-size: 1.5em;
-      cursor: pointer;
-      color: #333;
-    }
-    .popup-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 16px;
-    }
-    .popup-links li {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-      color: #333;
-    }
-    .popup-links i {
-      margin-right: 8px;
-      color: #555;
-      min-width: 20px;
-    }
-    .popup-links a {
-      color: #1a1a1a;
-      text-decoration: none;
-    }
-    .popup-links a:hover {
-      text-decoration: underline;
     }
 
-    /* Mobile adjustments */
-    @media (max-width: 640px) 
-    {
-    .profile { flex-direction: column; text-align: center; }
-    .section-inner { padding-left: 0; }
-    .location { justify-content: center; }
-    .about-list, .fun-facts {
-    list-style: disc inside;
-    padding-left: 0;
-    text-align: left;
+    .about-list,
+    .fun-facts {
+      list-style: disc inside;
+      padding-left: 0;
+      text-align: left;
+    }
+
+    .contact-button {
+      top: auto;
+      right: auto;
+      position: static;
+      align-self: flex-end;
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    .card {
+      margin: 0 auto 1.5rem;
+      width: 100%;
+      max-width: 95%;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
   }
-  .contact-button {
-    top: auto;
-    right: auto;
-    position: static;
-    align-self: flex-end;
-    margin-bottom: 1rem;
-  }
-  .container {
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-  }
-  .card {
-    margin: 0 auto 1.5rem;
-    width: 100%;
-    max-width: 95%;
-    padding: 1.5rem;
-    box-sizing: border-box;
-  }
-}
-  </style>
+</style>
 </head>
 
 <body>
