@@ -1,18 +1,12 @@
 /* blog-style.css: shared stylesheet for blog posts */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-body {
-  font-size: 17px; /* larger blog text */
-  font-family: 'Georgia', serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: transparent;
+    font-size: 17px;
 }
 
 .wrapper {
