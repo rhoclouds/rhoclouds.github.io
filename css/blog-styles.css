@@ -137,20 +137,15 @@ blockquote {
 }
 
 @media screen and (max-width: 768px) {
-  /* PDF Embed Wrapper: mobile only */
   .pdf-embed {
-    position: relative;
-    width: 100%;
-    padding-bottom: 75%;
-    margin-bottom: 2rem;
-    overflow: hidden;
+    max-height: 300px;
+    padding-bottom: 0;
+    height: 300px;
   }
 
   .pdf-embed iframe {
-    position: absolute;
-    top: 0; left: 0;
+    position: static;
     width: 100%;
     height: 100%;
-    border: none;
   }
 }
