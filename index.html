@@ -23,7 +23,7 @@
   html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     font-family: 'Georgia', serif;
     line-height: 1.6;
     color: #f0f0f0;
@@ -37,8 +37,8 @@
     position: fixed;
     top: 0; 
     left: 0;
-    width: 100%; 
-    height: 100%;
+    width: 100vw; /* fix for Firefox rendering */
+    height: 100vh; /* fix for Firefox rendering */
     background:
       radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
       radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
@@ -270,7 +270,7 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   /* Reset the inner padding on both cards */
   .section-inner {
     padding: 0 !important;
