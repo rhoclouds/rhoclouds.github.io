@@ -22,7 +22,12 @@ html, body {
 
 .container {
     width: 80%;
-    margin: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 nav {
@@ -37,7 +42,7 @@ nav a {
   color: #555;
   margin: 0 15px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-family: inherit;
 }
 
