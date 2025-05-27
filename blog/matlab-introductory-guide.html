@@ -12,25 +12,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MATLAB Introductory Guide - rhoclouds</title><style type="text/css">
 
- nav {
-  margin-top: -2px;
+/* ——— Self-contained nav container ——— */
+nav {
+  /* Reset defaults */
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 3rem 0;
+
+  /* Typography & spacing carried in from html, body */
+  font-family: 'Georgia', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  
+  /* Colors & background */
   background-color: transparent;
   color: #fff;
-  padding: 3rem 0;
+
+  /* Layout */
   text-align: center;
-  font-family: 'Georgia', serif;
+  box-sizing: border-box;
 }
 
+/* ——— Self-contained nav link styles ——— */
 nav a {
-  color: #555;
-  margin: 0 15px;
-  text-decoration: none;
+  display: inline-block;    /* allow margin to take effect */
+  margin: 0 1rem;
   font-size: 18px;
-  font-family: inherit;
+  font-family: inherit;      /* same as nav */
+  color: #555;
+  text-decoration: none;
 }
 
+/* ——— Self-contained nav hover state ——— */
 nav a:hover {
-  color: #555;
+  color: #555;               /* same gray on hover */
   text-decoration: underline;
 }    
 
