@@ -263,41 +263,60 @@
   }
 
   /* Mobile adjustments */
-  @media (max-width: 640px) {
-    .profile {
-      flex-direction: column;
-      text-align: center;
-    }
-    .section-inner {
-      padding: 0 !important;
-    }
-    .location {
-      justify-content: center;
-    }
-    .about-list,
-    .fun-facts {
-      list-style: disc inside;
-      padding-left: 0;
-      text-align: left;
-    }
-    .contact-button {
-      position: static;
-      align-self: flex-end;
-      margin-bottom: 1rem;
-    }
-    .container {
-      width: 100%;
-      padding: 0 1rem;
-      box-sizing: border-box;
-    }
-    .card {
-      margin: 0 auto 1.5rem;
-      width: 100%;
-      max-width: 95%;
-      padding: 1.5rem;
-      box-sizing: border-box;
-    }
+@media (max-width: 640px) {
+  /* Stack profile vertically on mobile */
+  .profile {
+    flex-direction: column;
+    text-align: center;
   }
+  
+  /* Reset the inner padding on both cards */
+  .section-inner {
+    padding: 0 !important;
+  }
+
+  /* Center the location icon/text */
+  .location {
+    justify-content: center;
+  }
+
+  /* Make lists full-width with inside discs */
+  .about-list,
+  .fun-facts {
+    list-style: disc inside;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  /* Contact button flows into the layout */
+  .contact-button {
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  /* Container takes up full width with padding */
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Reset the fun-facts card’s left padding so it matches */
+  .card.section {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem;
+  }
+
+  /* All cards share this base mobile styling */
+  .card {
+    margin: 0 auto 1.5rem;
+    width: 100%;
+    max-width: 95%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+}
 </style>
 
 </head>
