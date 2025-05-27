@@ -21,31 +21,32 @@
   }
 
   html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: 'Georgia', serif;
-    line-height: 1.6;
-    color: #f0f0f0;
-    background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c);
-    overflow-x: hidden;
-    position: relative;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: #f0f0f0;
+  background: linear-gradient(to bottom, #0b1120, #1c2746 50%, #2e3d5c);
+  position: relative;
+  overflow-x: hidden;
+}
 
   body::before {
-    content: "";
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 100vw; /* fix for Firefox rendering */
-    height: 100vh; /* fix for Firefox rendering */
-    background:
-      radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
-      radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
-    filter: blur(30px);
-    opacity: 0.8;
-    z-index: -1;
-  }
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* ← NOT 100vh — this is more stable across devices with dynamic toolbars */
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.05) 0%, transparent 70%),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.04) 0%, transparent 80%);
+  filter: blur(30px);
+  opacity: 0.8;
+  z-index: -1;
+  pointer-events: none;
+}
 
   .wrapper {
     display: flex;
