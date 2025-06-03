@@ -148,9 +148,9 @@ blockquote {
 }
 
 body.light-mode nav a {
-  color: #555;
+  color: #555 !important;
 }
 
 body.light-mode nav a:hover {
-  color: #1c2541;
+  color: #1c2541 !important;
 }
