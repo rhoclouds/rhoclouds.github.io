@@ -1,5 +1,9 @@
 /* blog-style.css: shared stylesheet for blog posts */
-html, body {
+html {
+  font-size: 16px;
+}
+
+body {
     height: 100%;
     margin: 0;
     padding: 0;
