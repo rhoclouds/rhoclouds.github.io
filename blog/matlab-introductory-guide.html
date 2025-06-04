@@ -16,11 +16,25 @@
 <link rel="stylesheet" href="/css/blog-style.css">
 
   <style>
+    /* Added body margin reset */
+    body {
+        margin: 0;
+    }
+
+    /* Added wrapper styles for centering and width */
+    .wrapper {
+        width: 747px;
+        margin: 0 auto;
+        padding: 0 0 50px;
+    }
+
     nav {
       background-color: transparent;
       text-align: center;
       font-family: 'Georgia', serif;
       padding: 3rem 0;
+      /* Added nav line height */
+      line-height: 27.2px;
     }
     body.light-mode nav a {
       color: #555          !important;
@@ -28,12 +42,15 @@
       font-size: 1.1rem        !important;
       font-family: inherit   !important;
       text-decoration: none  !important;
+      /* Added link line height */
+      line-height: 28.16px !important;
     }
     body.light-mode nav a:hover {
       color: #1c2541         !important;
       text-decoration: underline !important;
     }
   </style>
+
 
 <!-- Inline styles from LiveScript start below -->
 <style type="text/css">
@@ -146,6 +163,7 @@
 </head>
 
 <body class="light-mode">
+<div class="wrapper">     
 <nav>
   <a href="https://rhoclouds.github.io/">home</a>
   <a href="/library.html">library</a>
@@ -6823,4 +6841,4 @@ box on;
 %
 ##### SOURCE END #####
 -->
-</div></body></html>
+</div></div></body></html>
