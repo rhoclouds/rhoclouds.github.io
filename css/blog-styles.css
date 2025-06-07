@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    color: #2a2a2a;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -53,10 +54,32 @@ body {
     text-align: left;
 }
 
+.post-content h1 {
+  color: #111;
+  font-weight: bold;
+}
+
 .post-content h2 {
-    margin-top: 40px;
-    font-size: 24px;
-    color: #444;
+  margin-top: 40px;
+  font-size: 24px;
+  color: #222;
+  font-weight: bold
+}
+
+.post-content h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+.post-content h4 {
+  color: #444;
+  font-weight: bold;
+}
+
+.post-content h5,
+.post-content h6 {
+  color: #555;
+  font-weight: bold;
 }
 
 .post-content p {
