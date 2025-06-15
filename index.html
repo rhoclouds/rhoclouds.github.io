@@ -306,12 +306,19 @@
   }
 }
 
+.playlist-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 .playlist-embeds {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  margin-top: 1rem;
+  width: 100%;
+  max-width: 500px; /* or 600px if you want slightly wider embeds */
 }
 
 .playlist-embeds iframe {
@@ -369,23 +376,28 @@
           </div>
         </div>
 
- <!-- Listening Section -->
+<!-- Listening Section -->
 <div class="card section">
   <div class="section-inner">
     <h2>what i've been listening to</h2>
     <p>be careful with volume!</p>
-    <div class="playlist-embeds">
-      <iframe src="https://open.spotify.com/embed/track/0EYoG9Z0q0C0K1MCs1hQQl" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/0LZy30mVmxqUpdQmaXKXBd" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/21aVkXDch0A1nXo9he3j8L" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/6qqrTXSdwiJaq8SO0X2lSe" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      <iframe src="https://open.spotify.com/embed/track/3WgSSo4SoHQjodjiRG71eX" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+    <div class="playlist-wrapper">
+      <div class="playlist-embeds">
+        <iframe src="https://open.spotify.com/embed/track/0EYoG9Z0q0C0K1MCs1hQQl" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <iframe src="https://open.spotify.com/embed/track/0LZy30mVmxqUpdQmaXKXBd" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <iframe src="https://open.spotify.com/embed/track/21aVkXDch0A1nXo9he3j8L" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <iframe src="https://open.spotify.com/embed/track/6qqrTXSdwiJaq8SO0X2lSe" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <iframe src="https://open.spotify.com/embed/track/3WgSSo4SoHQjodjiRG71eX" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
     </div>
+
   </div>
 </div>
-
- </div>
-    </div>
 
     <!-- Contact Modal -->
     <div id="popupModal" class="popup-modal" aria-hidden="true">
