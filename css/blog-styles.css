@@ -178,3 +178,13 @@ body.light-mode nav a {
 body.light-mode nav a:hover {
   color: #1c2541 !important;
 }
+
+.spotify-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 350px;
+  margin: 2rem auto 0 auto;
+  padding: 0 1rem;
+}
