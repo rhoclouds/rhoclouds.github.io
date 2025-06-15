@@ -11,7 +11,8 @@
   <link rel="icon" href="icons/blazePowder192x192.png" type="image/png">
   <link rel="icon" href="icons/blazePowderAppleTouchIcon.png" type="image/png">
   <link rel="icon" href="icons/blazePowder.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <link rel="stylesheet" href="/css/main-style.css">
 
 <style>
@@ -107,6 +108,7 @@
     align-items: center;
   }
 
+  /* This could be optimized by converting to <img> */
   .profile-pic {
     width: 160px;
     height: 160px;
