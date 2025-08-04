@@ -2,79 +2,85 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rhoclouds.github.io/index.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/library.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/bay-area-culture-war-on-math.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/directory.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/frieren.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/inventor-portfolio.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/matlab-applications-part1.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/matlab-introductory-guide.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/multivariable-calculus.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rhoclouds.github.io/blog/naivete-of-elite-colleges.html</loc>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/takeaways-2024.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/the-absence-of-purpose-led-us-here.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rhoclouds.github.io/blog/the-annual-admissions-rat-race.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
