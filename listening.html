@@ -10,10 +10,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>what i've been listening to lately - rhoclouds</title>
+    <link rel="stylesheet" href="/css/static-styles.css">
     <link rel="stylesheet" href="/css/main-style.css">
     <link rel="stylesheet" href="/css/blog-styles.css">
     <link rel="preconnect" href="https://open.spotify.com">
     <link rel="preconnect" href="https://i.scdn.co">
+
+<style>
+   .card {
+    background: white;
+    color: #222;
+    border-radius: 20px;
+    padding: 2rem 2rem 1.5rem;
+    width: 100%;
+    margin: 0 1rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    box-shadow:
+      0 8px 30px rgba(0,0,0,0.08),
+      inset 0 0 15px rgba(255,255,255,0.4);
+  }
+</style>
 </head>
 
 <body class="light-mode">
@@ -23,56 +41,54 @@
         <a href="/library.html">library</a>
         <a href="/blog.html">blog</a>
     </nav>
-    <div class="content">
-        <div class="container">
-            <h1 class="post-title">what i've been listening to lately</h1>
-            <div class="post-content">
-                <div class="post-subheader">be careful with volume!</div>
-                
-                <section class="listen-archive" aria-label="Listening history carousel">
-  <header class="la-header">
-    <div class="la-controls">
-      <button class="la-btn" data-dir="-1" aria-label="Previous">‹</button>
-      <button class="la-btn" data-dir="1"  aria-label="Next">›</button>
+
+ <div class="content">
+    <div class="container">
+      <h1 class="post-title">what i've been listening to lately</h1>
+      <div class="post-subheader">be careful with volume!</div>
+
+      <!-- Card-wrapped, button-only carousel -->
+      <div class="card listening-card">
+        <section class="listen-archive" aria-label="Listening history">
+          <header class="la-header">
+            <h2 class="la-title">listening history</h2>
+            <div class="la-controls">
+              <button class="la-btn" data-dir="-1" aria-label="Previous">‹</button>
+              <button class="la-btn" data-dir="1"  aria-label="Next">›</button>
+            </div>
+          </header>
+
+          <div class="la-track" id="la-track">
+            <!-- SLIDE: most recent -->
+            <article class="la-slide" data-date="2025-08-09" aria-label="August 9, 2025">
+              <h3 class="la-date">august 9, 2025</h3>
+              <div class="la-cards">
+                <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
+              </div>
+            </article>
+
+            <!-- SLIDE: Jun 15, 2025 -->
+            <article class="la-slide" data-date="2025-06-15" aria-label="June 15, 2025">
+              <h3 class="la-date">june 15, 2025</h3>
+              <div class="la-cards">
+                <div class="embed" data-src="https://open.spotify.com/embed/track/0EYoG9Z0q0C0K1MCs1hQQl"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/0LZy30mVmxqUpdQmaXKXBd"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/21aVkXDch0A1nXo9he3j8L"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/6qqrTXSdwiJaq8SO0X2lSe"></div>
+                <div class="embed" data-src="https://open.spotify.com/embed/track/3WgSSo4SoHQjodjiRG71eX"></div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <!-- /card -->
     </div>
-  </header>
-
-  <div class="la-track" id="la-track">
-<article class="la-slide" data-date="2025-08-09" aria-label="August 9, 2025">
-  <h3 class="la-date">august 9, 2025</h3>
-  <div class="la-cards">
-    <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
-    <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
-    <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
-    <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
-    <div class="embed" data-src="https://open.spotify.com/embed/track/5sBDrrtLGbV64QJnEqfjer"></div>
   </div>
-</article>
-
-    <!-- SLIDE: Jun 15, 2025 -->
-    <article class="la-slide" data-date="2025-06-15" aria-label="June 15, 2025">
-      <h3 class="la-date">june 15, 2025</h3>
-      <div class="la-cards">
-        <div class="embed" data-src="https://open.spotify.com/embed/track/0EYoG9Z0q0C0K1MCs1hQQl"></div>
-        <div class="embed" data-src="https://open.spotify.com/embed/track/0LZy30mVmxqUpdQmaXKXBd"></div>
-        <div class="embed" data-src="https://open.spotify.com/embed/track/21aVkXDch0A1nXo9he3j8L"></div>
-        <div class="embed" data-src="https://open.spotify.com/embed/track/6qqrTXSdwiJaq8SO0X2lSe"></div>
-        <div class="embed" data-src="https://open.spotify.com/embed/track/3WgSSo4SoHQjodjiRG71eX"></div>
-      </div>
-    </article>
-
-    <!-- add new dates above -->
-    <!--
-    <article class="la-slide" data-date="2025-08-09" aria-label="August 9, 2025">
-      <h3 class="la-date">august 9, 2025</h3>
-      <div class="la-cards">
-        <div class="embed" data-src="https://open.spotify.com/embed/track/XXXXXXXX"></div>
-        ...
-      </div>
-    </article>
-    -->
-  </div>
-</section>
+</div>
 
 <script>
 (function(){
@@ -120,27 +136,23 @@
     const prev = slides[currentIndex];
     const next = slides[index];
 
-    // Hide old, unmount its iframes
     if (prev){
       prev.removeAttribute('data-active');
       unmountEmbeds(prev);
     }
 
-    // Show new first (so it’s visible before we mount, avoids weirdness)
     next.setAttribute('data-active','true');
-
-    // Mount iframes AFTER it’s visible
     requestAnimationFrame(() => mountEmbeds(next));
 
     currentIndex = index;
     updateButtons();
   }
 
-  // Button handlers
+  // Buttons
   if (prevBtn) prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
   if (nextBtn) nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
 
-  // Init: show first slide and mount it
+  // Init
   slides.forEach(s => s.removeAttribute('data-active'));
   if (slides.length){
     slides[0].setAttribute('data-active','true');
@@ -151,4 +163,5 @@
 </script>
 
 </body>
+
 </html>
