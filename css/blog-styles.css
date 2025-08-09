@@ -186,57 +186,97 @@ body.light-mode nav a:hover {
 }
 
 /* --- Listening carousel sizing + centering --- */
-.listen-archive { max-width: 860px; margin: 1rem auto; }
+.listen-archive {
+  max-width: 860px;
+  margin: 1rem auto;
+}
 
-/* Container + slide frame */
-.listen-archive { max-width: 860px; margin: 1rem auto; }
+/* Header and controls */
+.la-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
 
-.la-header { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
-.la-controls { display:flex; gap:.5rem; }
-.la-btn { border:1px solid #ddd; background:#fff; padding:.3rem .65rem; border-radius:.5rem; cursor:pointer; }
-.la-btn:disabled { opacity:.5; cursor:not-allowed; }
+.la-controls {
+  display: flex;
+  gap: .5rem;
+}
 
-/* Button-only carousel: no scrolling, fixed viewport for one slide */
+.la-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: .3rem .65rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.la-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+/* Button-only carousel: one slide at a time, no scrollbars */
 .la-track {
-  position: relative;
-  overflow: hidden;          /* no scrollbars */
-  min-height: 420px;         /* prevents jump when slides change; tune to your tallest slide */
+  overflow: hidden;   /* hides any scrollbar */
 }
 
-/* Slides stack on top of each other; we show one at a time */
+/* Slides naturally size; hidden by default */
 .la-slide {
-  display: none;             /* hidden by default */
-  border:1px solid #eaeaea; border-radius:16px;
-  padding:1rem; background:#fff; box-shadow:0 4px 16px rgba(0,0,0,.05);
+  display: none;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .05);
 }
 
+/* Show only the active slide */
 .la-slide[data-active="true"] {
-  display: block;            /* show only active slide */
+  display: block;
 }
 
-/* Inner layout: same compact, centered embeds as before */
-.la-date { margin:0 0 .75rem 0; opacity:.8; text-transform: lowercase; }
+.la-date {
+  margin: 0 0 .75rem 0;
+  opacity: .8;
+  text-transform: lowercase;
+}
 
+/* Center the embeds and keep them compact */
 .la-cards {
-  display:flex; flex-direction:column; gap:.6rem; align-items:center; width:100%;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  align-items: center;
+  width: 100%;
 }
 
 .embed {
-  width:100%;
-  max-width:500px;
-  display:flex; 
+  width: 100%;
+  max-width: 500px; /* Adjust to taste for narrower/wider */
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  justify-content:center;
 }
 
 .embed iframe {
-  display:block; width:100%; height:80px; border:0; border-radius:12px;
+  display: block;
+  width: 100%;
+  height: 80px; /* Compact Spotify player height */
+  border: 0;
+  border-radius: 12px;
 }
 
-/* Mobile: let players grow a bit taller if you prefer */
-@media (max-width:700px){
-  .embed { max-width:100%; }
-  .embed iframe { height:152px; }
+/* Mobile: let them grow taller if needed */
+@media (max-width: 700px) {
+  .embed {
+    max-width: 100%;
+  }
+  .embed iframe {
+    height: 152px;
+  }
 }
+
 
 

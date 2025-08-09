@@ -85,72 +85,70 @@
 
   let currentIndex = 0;
 
+  function makeIframe(src){
+    const f = document.createElement('iframe');
+    f.setAttribute('allow','autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture');
+    f.setAttribute('loading','lazy');
+    f.setAttribute('width','100%');
+    f.setAttribute('height','80');
+    f.setAttribute('frameborder','0');
+    f.setAttribute('allowtransparency','true');
+    f.src = src;
+    return f;
+  }
+
   function mountEmbeds(slide){
     slide.querySelectorAll('.embed').forEach(holder => {
       if (holder.firstChild) return;
       const src = holder.getAttribute('data-src');
-      if (!src) return;
-      const f = document.createElement('iframe');
-      f.setAttribute('allow','autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture');
-      f.setAttribute('loading','lazy');
-      f.src = src;
-      holder.appendChild(f);
+      if (src) holder.appendChild(makeIframe(src));
     });
   }
 
   function unmountEmbeds(slide){
-    slide.querySelectorAll('.embed').forEach(holder => { holder.innerHTML = ''; });
+    slide.querySelectorAll('.embed').forEach(h => { h.innerHTML = ''; });
   }
 
   function updateButtons(){
-    prevBtn.disabled = (currentIndex === 0);
-    nextBtn.disabled = (currentIndex === slides.length - 1);
+    if (prevBtn) prevBtn.disabled = (currentIndex === 0);
+    if (nextBtn) nextBtn.disabled = (currentIndex === slides.length - 1);
   }
 
   function showSlide(index){
-    if (index < 0) index = 0;
-    if (index >= slides.length) index = slides.length - 1;
-    if (index === currentIndex) return;
+    if (index < 0 || index >= slides.length || index === currentIndex) return;
 
-    // Deactivate old
-    const old = slides[currentIndex];
-    if (old){
-      old.removeAttribute('data-active');
-      unmountEmbeds(old);
-      old.setAttribute('aria-hidden', 'true');
+    const prev = slides[currentIndex];
+    const next = slides[index];
+
+    // Hide old, unmount its iframes
+    if (prev){
+      prev.removeAttribute('data-active');
+      unmountEmbeds(prev);
     }
 
-    // Activate new
-    const s = slides[index];
-    s.setAttribute('data-active','true');
-    s.removeAttribute('aria-hidden');
-    mountEmbeds(s);
+    // Show new first (so it’s visible before we mount, avoids weirdness)
+    next.setAttribute('data-active','true');
+
+    // Mount iframes AFTER it’s visible
+    requestAnimationFrame(() => mountEmbeds(next));
 
     currentIndex = index;
     updateButtons();
   }
 
   // Button handlers
-  prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
-  nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
+  if (prevBtn) prevBtn.addEventListener('click', () => showSlide(currentIndex - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => showSlide(currentIndex + 1));
 
-  // Keyboard arrows (when buttons or slide are focused)
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') { showSlide(currentIndex - 1); }
-    if (e.key === 'ArrowRight') { showSlide(currentIndex + 1); }
-  });
-
-  // Initialize: show first slide only
-  slides.forEach(s => { s.setAttribute('aria-hidden','true'); s.inert = true; });
+  // Init: show first slide and mount it
+  slides.forEach(s => s.removeAttribute('data-active'));
   if (slides.length){
     slides[0].setAttribute('data-active','true');
-    slides[0].removeAttribute('aria-hidden');
-    slides[0].inert = false;
     mountEmbeds(slides[0]);
   }
   updateButtons();
-
 })();
 </script>
+
 </body>
 </html>
