@@ -12,6 +12,23 @@
   gap: 1rem;
 }
 
+.la-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.la-title {
+  margin: 0;
+}
+
+.la-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #555;
+}
+
 .la-controls {
   display: flex;
   gap: .5rem;
