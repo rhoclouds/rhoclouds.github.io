@@ -185,36 +185,56 @@ body.light-mode nav a:hover {
   color: #1c2541 !important;
 }
 
-.spotify-wrapper {
+/* --- Listening carousel sizing + centering --- */
+.listen-archive { max-width: 860px; margin: 1rem auto; }
+
+.la-track {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  max-width: 400px;
-  margin: 2rem auto 0 auto;
-  padding: 0 1rem;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: .5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* --- Listening carousel sizing + centering --- */
-.listen-archive { max-width: 860px; margin: 1rem auto; }   /* centers whole section */
-
-.la-track { display:flex; gap:1.25rem; overflow-x:auto; padding-bottom:.5rem;
-            scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; }
-
-.la-slide { flex:0 0 100%; scroll-snap-align:start;
-            border:1px solid #eaeaea; border-radius:16px;
-            padding:1rem; background:#fff; box-shadow:0 4px 16px rgba(0,0,0,.05); }
+.la-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,.05);
+}
 
 /* one column, centered cards */
-.la-cards { display:flex; flex-direction:column; gap:.6rem; align-items:center; }
+.la-cards {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  align-items: center;
+  width: 100%; /* ensures centering applies correctly */
+}
 
-/* constrain width and restore the short player height */
-.embed { width:100%; max-width: 780px; }   /* adjust 700–820 to taste */
-.embed, .embed iframe {
-  height: 80px;             /* was 152/172 — this is the Spotify “short” row */
+/* constrain width and restore short player height */
+.embed {
   width: 100%;
+  max-width: 700px; /* match your old player width */
+  display: flex;
+  justify-content: center;
+}
+
+.embed iframe {
+  display: block;
+  width: 100%;
+  height: 80px; /* compact player height */
   border: 0;
   border-radius: 12px;
-  background: #f6f6f6;      /* skeleton before iframe mounts */
 }
-@media (max-width: 700px) { .embed, .embed iframe { height:152px; } }
+
+/* on small screens, let them go full width */
+@media (max-width: 700px) {
+  .embed { max-width: 100%; }
+  .embed iframe { height: 152px; }
+}
+
