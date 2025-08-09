@@ -12,6 +12,8 @@
     <title>what i've been listening to lately - rhoclouds</title>
     <link rel="stylesheet" href="/css/main-style.css">
     <link rel="stylesheet" href="/css/blog-styles.css">
+    <link rel="preconnect" href="https://open.spotify.com">
+    <link rel="preconnect" href="https://i.scdn.co">
 </head>
 
 <body class="light-mode">
@@ -23,27 +25,110 @@
     </nav>
     <div class="content">
         <div class="container">
-            <h1 class="post-title">what i've been listening to lately</h1>
-            <div class="post-date">last updated june 15, 2025</div>
+            <div class="post-date">june 15, 2025</div>
             <div class="post-content">
                 <div class="post-subheader">be careful with volume!</div>
                 
-                <div class="spotify-wrapper">
-                    <div class="playlist-embeds">
-                        <iframe src="https://open.spotify.com/embed/track/0EYoG9Z0q0C0K1MCs1hQQl" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        
-                        <iframe src="https://open.spotify.com/embed/track/0LZy30mVmxqUpdQmaXKXBd" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        
-                        <iframe src="https://open.spotify.com/embed/track/21aVkXDch0A1nXo9he3j8L" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        
-                        <iframe src="https://open.spotify.com/embed/track/6qqrTXSdwiJaq8SO0X2lSe" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                        
-                        <iframe src="https://open.spotify.com/embed/track/3WgSSo4SoHQjodjiRG71eX" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <section class="listen-archive" aria-label="Listening history carousel">
+  <header class="la-header">
+    <div class="post-subheader">be careful with volume!</div>
+    <div class="la-controls">
+      <button class="la-btn" data-dir="-1" aria-label="Previous">‹</button>
+      <button class="la-btn" data-dir="1"  aria-label="Next">›</button>
     </div>
-</div>
+  </header>
+
+  <div class="la-track" id="la-track">
+    <!-- SLIDE: Jun 15, 2025 -->
+    <article class="la-slide" data-date="2025-06-15" aria-label="June 15, 2025">
+      <h3 class="la-date">june 15, 2025</h3>
+      <div class="la-cards">
+        <!-- Use data-src placeholders; we’ll create/destroy iframes in JS -->
+        <div class="embed" data-src="https://open.spotify.com/embed/track/0EYoG9Z0q0C0K1MCs1hQQl"></div>
+        <div class="embed" data-src="https://open.spotify.com/embed/track/0LZy30mVmxqUpdQmaXKXBd"></div>
+        <div class="embed" data-src="https://open.spotify.com/embed/track/21aVkXDch0A1nXo9he3j8L"></div>
+        <div class="embed" data-src="https://open.spotify.com/embed/track/6qqrTXSdwiJaq8SO0X2lSe"></div>
+        <div class="embed" data-src="https://open.spotify.com/embed/track/3WgSSo4SoHQjodjiRG71eX"></div>
+      </div>
+    </article>
+
+    <!-- add new dates above -->
+    <!--
+    <article class="la-slide" data-date="2025-08-09" aria-label="August 9, 2025">
+      <h3 class="la-date">august 9, 2025</h3>
+      <div class="la-cards">
+        <div class="embed" data-src="https://open.spotify.com/embed/track/XXXXXXXX"></div>
+        ...
+      </div>
+    </article>
+    -->
+  </div>
+</section>
+
+<script>
+(function(){
+  const track = document.getElementById('la-track');
+  if (!track) return;
+  const slides = Array.from(track.querySelectorAll('.la-slide'));
+
+  function mountEmbeds(slide){
+    slide.querySelectorAll('.embed').forEach(holder => {
+      if (holder.firstChild) return;
+      const src = holder.getAttribute('data-src');
+      if (!src) return;
+      const f = document.createElement('iframe');
+      f.setAttribute('allow','autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture');
+      f.setAttribute('loading','lazy');
+      f.src = src;
+      holder.appendChild(f);
+    });
+  }
+
+  function unmountEmbeds(slide){
+    slide.querySelectorAll('.embed').forEach(holder => { holder.innerHTML = ''; });
+  }
+
+  function activate(index){
+    slides.forEach((s, i) => i === index ? mountEmbeds(s) : unmountEmbeds(s));
+  }
+
+  // Find most-visible slide
+  function currentSlideIndex(){
+    const tr = track.getBoundingClientRect();
+    let best = 0, bestOverlap = -1;
+    slides.forEach((s, i) => {
+      const r = s.getBoundingClientRect();
+      const overlap = Math.min(tr.right, r.right) - Math.max(tr.left, r.left);
+      if (overlap > bestOverlap) { bestOverlap = overlap; best = i; }
+    });
+    return best;
+  }
+
+  let timer;
+  function onScrollEnd(){
+    activate(currentSlideIndex());
+  }
+
+  // Debounce scroll to detect snap end
+  track.addEventListener('scroll', () => {
+    clearTimeout(timer);
+    timer = setTimeout(onScrollEnd, 120);
+  }, { passive: true });
+
+  // buttons
+  document.querySelectorAll('.la-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dir = Number(btn.dataset.dir || 1);
+      const width = track.getBoundingClientRect().width;
+      track.scrollBy({ left: dir * width, behavior: 'smooth' });
+    });
+  });
+
+  // first visible slide only
+  window.addEventListener('load', () => {
+    activate(currentSlideIndex());
+  });
+})();
+</script>
 </body>
 </html>
