@@ -118,14 +118,12 @@
       old.removeAttribute('data-active');
       unmountEmbeds(old);
       old.setAttribute('aria-hidden', 'true');
-      old.inert = true; // okay if unsupported; harmless
     }
 
     // Activate new
     const s = slides[index];
     s.setAttribute('data-active','true');
     s.removeAttribute('aria-hidden');
-    s.inert = false;
     mountEmbeds(s);
 
     currentIndex = index;

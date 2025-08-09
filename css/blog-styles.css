@@ -206,11 +206,13 @@ body.light-mode nav a:hover {
 /* Slides stack on top of each other; we show one at a time */
 .la-slide {
   display: none;             /* hidden by default */
-  position: absolute; inset: 0;
   border:1px solid #eaeaea; border-radius:16px;
   padding:1rem; background:#fff; box-shadow:0 4px 16px rgba(0,0,0,.05);
 }
-.la-slide[data-active="true"] { display: block; }
+
+.la-slide[data-active="true"] {
+  display: block;            /* show only active slide */
+}
 
 /* Inner layout: same compact, centered embeds as before */
 .la-date { margin:0 0 .75rem 0; opacity:.8; text-transform: lowercase; }
