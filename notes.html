@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/icons/blazePowder16x16.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder32x32.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder512x512.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder192x192.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowderAppleTouchIcon.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notes - rhoclouds</title>
+    <link rel="stylesheet" href="/css/static-styles.css">
+    <link rel="stylesheet" href="/css/main-style.css">
+  
+<style>
+  .container {
+    width: 85%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card {
+    background: white;
+    color: #222;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow:
+      0 8px 30px rgba(0,0,0,0.08),
+      inset 0 0 15px rgba(255,255,255,0.4);
+  }
+
+  .card h2 {
+  font-size: 26px;
+  color: #222;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .tagline {
+    font-style: italic;
+    font-size: 19px;
+    padding: 16px 0;
+    margin: 0 auto 1rem;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  .second-blurb {
+    font-style: italic;
+    font-size: 19px;
+    padding: 16px 0;
+    margin: 0 auto 1rem;
+    text-align: center;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  .second-blurb a {
+    color: #1c2541;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .second-blurb a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .tagline,
+    .second-blurb {
+      white-space: normal;
+      word-wrap: break-word;
+    }
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .post-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .post-list a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .post-list a:hover {
+    text-decoration: underline;
+  }
+
+  .post-date {
+    font-size: 18px;
+    color: #888;
+    white-space: nowrap;
+    margin-left: 20px;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+
+    .card {
+      margin: 0 auto 1.5rem;
+      width: 100%;
+      max-width: 95%;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .post-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 12px 0;
+    }
+
+    .post-list a {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .post-date {
+      font-size: 16px;
+      margin: 0;
+      color: #888;
+      white-space: normal;
+    }
+  }
+
+  footer {
+    color: #555;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+
+    <body>
+      <div class="wrapper">
+    
+        <nav>
+          <a href="https://rhoclouds.github.io/">home</a>
+          <a href="/library.html">library</a>
+          <a href="/blog.html">blog</a>
+          <a href="/notes.html">notes</a>
+        </nav>
+    
+    <div class="content">
+      <div class="container">
+
+        <div class="card">
+          <p class="tagline">
+            welcome to my gallery of STEM writings and projects for you to explore
+          </p><!--
+          <p class="second-blurb">
+            if you are new, check out <a href="/blog/directory.html">directory</a>
+          </p>
+          -->
+        </div>
+
+        <div class="card">
+          <h2>Notes</h2>
+          <ul class="post-list">
+
+            <li>
+              <a href="/blog/multivariable-calculus.html" target="_blank" rel="noopener noreferrer">Multivariable Calculus</a>
+              <div class="post-date">07/25/25</div>
+            </li>
+
+            <li>
+              <a href="/blog/matlab-applications-part1.html">MATLAB Applications Part 1: Numerical Methods</a>
+              <div class="post-date">07/01/25</div>
+            </li>
+
+            <li>
+              <a href="/blog/matlab-introductory-guide.html">MATLAB Introductory Guide</a>
+              <div class="post-date">05/14/25</div>
+            </li>
+          
+          </ul>
+        </div>
+
+    
+    
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+    
