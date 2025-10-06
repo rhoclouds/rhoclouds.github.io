@@ -43,3 +43,8 @@
   .content {
     flex: 1;
   }
+
+  .about-text p {
+  margin-bottom: 0.9rem;
+  line-height: 1.7;
+}
