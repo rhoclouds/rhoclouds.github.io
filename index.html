@@ -188,78 +188,149 @@
   }
 
   /* Popup Modal */
-  .popup-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
+  .popup-modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  .popup-content {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    position: relative;
-  }
+/* the actual glass panel */
+.popup-content{
+  position: relative;
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 16px;
 
-  .popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    gap: 1rem;
-  }
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.22);
 
-  .popup-header input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
 
-  .popup-header .close-button {
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #333;
-  }
+  box-shadow:
+    0 18px 60px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.25),
+    inset 0 -18px 40px rgba(0,0,0,0.22);
 
-  .popup-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-  }
+  color: rgba(245,246,255,0.92);
+  overflow: hidden; /* needed for sheen layers */
+}
 
-  .popup-links li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    color: #333;
-  }
+/* inner rim */
+.popup-content::before{
+  content:"";
+  position:absolute;
+  inset: 1px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.10);
+  pointer-events:none;
+  opacity: 0.9;
+}
 
-  .popup-links i {
-    margin-right: 8px;
-    color: #555;
-    min-width: 20px;
-  }
+/* subtle sheen */
+.popup-content::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:16px;
+  pointer-events:none;
+  background:
+    radial-gradient(700px 220px at 22% 8%,
+      rgba(255,255,255,0.20),
+      rgba(255,255,255,0.06) 45%,
+      transparent 70%),
+    linear-gradient(135deg,
+      rgba(255,255,255,0.14) 0%,
+      rgba(255,255,255,0.06) 22%,
+      rgba(255,255,255,0.00) 45%,
+      rgba(255,255,255,0.06) 62%,
+      rgba(255,255,255,0.00) 80%);
+  opacity: 0.55;
+  mix-blend-mode: screen;
+}
 
-  .popup-links a {
-    color: #1a1a1a;
-    text-decoration: none;
-  }
+.popup-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 1rem;
+}
 
-  .popup-links a:hover {
-    text-decoration: underline;
-  }
+/* search input: dark glass field */
+.popup-header input{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.18);
+
+  color: rgba(255,255,255,0.92);
+  outline: none;
+}
+
+.popup-header input::placeholder{
+  color: rgba(255,255,255,0.55);
+}
+
+.popup-header input:focus{
+  border-color: rgba(255,79,216,0.55); /* uses your neon accent */
+  box-shadow: 0 0 0 3px rgba(255,79,216,0.18);
+}
+
+/* close button: bright + hover accent */
+.popup-header .close-button{
+  font-size: 1.5em;
+  cursor: pointer;
+  color: rgba(255,255,255,0.82);
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.popup-header .close-button:hover{
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.popup-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.popup-links li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: rgba(245,246,255,0.90);
+}
+
+.popup-links i{
+  margin-right: 8px;
+  color: rgba(255,255,255,0.75);
+  min-width: 20px;
+}
+
+/* links */
+.popup-links a{
+  color: rgba(255,255,255,0.90);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.22);
+}
+
+.popup-links a:hover{
+  color: var(--accent);
+  border-bottom-color: rgba(255,79,216,0.70);
+}
 
   /* Mobile adjustments */
 @media (max-width: 640px) {
