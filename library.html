@@ -24,14 +24,53 @@
   }
 
   .card {
-    background: white;
-    color: #222;
-    border-radius: 20px;
+    position: relative;
+    border-radius: 22px;
     padding: 1.5rem;
     width: 100%;
-    box-shadow:
-      0 8px 30px rgba(0,0,0,0.08),
-      inset 0 0 15px rgba(255,255,255,0.4);
+    box-sizing: border-box;
+
+    /* glass */
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
+
+    /* rims + depth */
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow), var(--glass-inset);
+    overflow: hidden;
+    color: rgba(245,246,255,0.92);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: 21px;
+    border: 1px solid var(--glass-inner);
+    pointer-events: none;
+    opacity: 0.9;
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    pointer-events: none;
+    background:
+      radial-gradient(900px 260px at 20% 8%,
+        rgba(255,255,255,0.22),
+        rgba(255,255,255,0.06) 45%,
+        transparent 70%),
+      linear-gradient(135deg,
+        rgba(255,255,255,0.18) 0%,
+        rgba(255,255,255,0.10) 18%,
+        rgba(255,255,255,0.00) 42%,
+        rgba(255,255,255,0.08) 62%,
+        rgba(255,255,255,0.00) 78%);
+    opacity: 0.55;
+    mix-blend-mode: screen;
   }
 
   .book-section-label {
@@ -39,6 +78,8 @@
     font-weight: bold;
     margin-bottom: 1rem;
     text-align: center;
+    color: rgba(255,255,255,0.92);
+    text-shadow: 0 6px 24px rgba(0,0,0,0.22);
   }
 
   .book-grid {
@@ -57,16 +98,17 @@
   }
 
   .book {
-    background: white;
-    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(0,0,0,0.14);
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
   }
 
   .book:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.26);
   }
 
   .book img {
@@ -96,6 +138,14 @@
       padding: 1.5rem;
       border-radius: 20px;
       box-sizing: border-box;
+    }
+
+    .card::before {
+      border-radius: 19px;
+    }
+
+    .card::after {
+      border-radius: 20px;
     }
 
     .book-grid.shelf-1,
