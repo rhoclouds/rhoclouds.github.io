@@ -47,7 +47,7 @@
   border:2px solid #d0d0d0;  
   box-shadow:0 2px 8px rgba(0,0,0,.15);
   transition:border-color .2s, box-shadow .2s, transform .05s;
-}}
+}
 
 .la-btn:disabled {
   opacity: .5;

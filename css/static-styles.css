@@ -11,7 +11,13 @@
   font-family: 'Georgia', serif;
   line-height: 1.6;
   color: #f0f0f0;
-  background: linear-gradient(to bottom, #7c95b4, #586d90, #3d4f71, #2d3f5a);
+  background: linear-gradient(
+  to bottom,
+  #c173c7 0%,
+  #9a6dbb 30%,
+  #6a558f 55%,
+  #3f355f 80%,
+  #18162b 100%);
   position: relative;
   overflow-x: hidden;
 }
