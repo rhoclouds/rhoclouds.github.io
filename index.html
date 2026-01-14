@@ -105,16 +105,18 @@
     align-items: center;
   }
 
+ .profile-pic{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: url('/rhoCloudIcon.png') center/cover no-repeat;
 
-  .profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background: url('/rhoCloudIcon.png') center/cover no-repeat;
-    border: 5px solid #c99abf;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    flex-shrink: 0;
-  }
+  border: 2px solid rgba(255,255,255,0.35);
+  box-shadow:
+    0 14px 40px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.28),
+    0 0 0 6px rgba(255,79,216,0.18); /* neon halo */
+}
 
   .info {
     flex-grow: 1;
