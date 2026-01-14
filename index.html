@@ -27,20 +27,46 @@
     gap: 1.5rem;
   }
 
-  .card {
-    background: white;
-    color: #222;
-    border-radius: 20px;
-    padding: 2rem 2rem 1.5rem;
-    width: 100%;
-    margin: 0 1rem;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-    box-shadow:
-      0 8px 30px rgba(0,0,0,0.08),
-      inset 0 0 15px rgba(255,255,255,0.4);
-  }
+ .card{
+  /* glass surface */
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+
+  /* blur what’s behind the card */
+  backdrop-filter: blur(var(--glass-blur)) saturate(125%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(125%);
+
+  border-radius: 20px;
+  padding: 2rem 2rem 1.5rem;
+  width: 100%;
+  margin: 0 1rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+
+  /* depth + highlight */
+  box-shadow:
+    var(--glass-shadow),
+    inset 0 1px 0 var(--glass-highlight);
+  
+  color: rgba(245,246,255,0.92);
+}
+
+/* give cards a subtle top sheen (feels like light on glass) */
+.card::before{
+  content:"";
+  position:absolute;
+  inset: 0;
+  border-radius: 20px;
+  pointer-events:none;
+  background: radial-gradient(
+    1200px 300px at 15% 0%,
+    rgba(255,255,255,0.18),
+    transparent 60%
+  );
+  mix-blend-mode: screen;
+  opacity: 0.75;
+}
 
   .contact-button {
     position: absolute;
@@ -63,7 +89,6 @@
     align-items: center;
   }
 
-  /* This could be optimized by converting to <img> */
   .profile-pic {
     width: 160px;
     height: 160px;
