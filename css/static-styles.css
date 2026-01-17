@@ -161,3 +161,15 @@
     position: absolute !important;
   }
 }
+
+.popup-modal{
+  background: rgba(0,0,0,0.80) !important;
+}
+
+.popup-content{
+  background: rgba(255,255,255,0.78) !important;
+}
+
+.popup-content::after{
+  opacity: 0 !important;
+}
