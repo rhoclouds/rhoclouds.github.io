@@ -299,3 +299,11 @@
     </ul>
   </details>
 </div>
+
+<script>
+  document.querySelectorAll('.year-group').forEach(group => {
+    const count = group.querySelectorAll('.post-list > li').length;
+    const summary = group.querySelector('summary');
+    summary.textContent = `${summary.textContent} (${count})`;
+  });
+</script>
