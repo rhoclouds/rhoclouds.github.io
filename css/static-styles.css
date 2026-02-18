@@ -109,7 +109,6 @@
 /* hover = neon light wakes up */
 .contact-button:hover{
   transform: translateY(-1px);
-  color: var(--accent);
   border-color: rgba(255,79,216,0.55);
   box-shadow:
     0 14px 34px rgba(0,0,0,0.34),
