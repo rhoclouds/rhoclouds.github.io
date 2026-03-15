@@ -67,89 +67,39 @@
                  inset 0 -18px 40px rgba(0,0,0,0.22); /* top highlight + thickness */
 }
 
-.contact-button{
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-
-  /* glass surface */
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.22);
-  border-radius: 10px;
-
-  backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
-
-  padding: 0.55rem 0.8rem;
-  display: flex;
-  gap: 0.55rem;
-  font-size: 1.2rem;
-
-  /* default: calm, not accent-colored */
-  color: rgba(255,255,255,0.82);
-  cursor: pointer;
-
-  box-shadow:
-    0 10px 26px rgba(0,0,0,0.28),
-    inset 0 1px 0 rgba(255,255,255,0.28);
-
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, color 180ms ease;
-}
-
-/* inner rim = “pane edge” */
-.contact-button::before{
-  content:"";
-  position:absolute;
-  inset: 1px;
-  border-radius: 9px;
-  border: 1px solid rgba(255,255,255,0.10);
-  pointer-events:none;
-}
-
-/* hover = neon light wakes up */
-.contact-button:hover{
-  transform: translateY(-1px);
-  border-color: rgba(255,79,216,0.55);
-  box-shadow:
-    0 14px 34px rgba(0,0,0,0.34),
-    0 0 18px rgba(255,79,216,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.30);
-}
-
-/* keyboard focus (important) */
-.contact-button:focus-visible{
-  outline: none;
-  border-color: rgba(255,79,216,0.65);
-  box-shadow:
-    0 14px 34px rgba(0,0,0,0.34),
-    0 0 0 3px rgba(255,79,216,0.22),
-    inset 0 1px 0 rgba(255,255,255,0.30);
-}
-
 .intro {
   font-size: 1.1rem;
   color: rgba(245,246,255,0.85);
   margin-bottom: 0.4rem;
 }
 
-.profile-links {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
-  justify-items: center;
-  font-size: 1.2rem;
+.profile-links{
+  margin-top:16px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  font-size:22px;
+  justify-items:center;
+  width:120px;
 }
 
-.profile-links a {
-  background: rgba(255,255,255,0.08);
-  border-radius: 6px;
-  padding: 6px 8px;
+.profile-left{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex-shrink:0;
 }
 
-.profile-links a:hover {
-  transform: translateY(-2px);
-  opacity: 1;
+.profile-links a{
+  color:white;
+  text-decoration:none;
+  opacity:0.9;
+  transition:transform .15s ease, opacity .15s ease;
+}
+
+.profile-links a:hover{
+  transform:translateY(-3px);
+  opacity:1;
 }
 
 /* --------------------------------------------------
@@ -160,26 +110,6 @@
   :root{
     --glass-blur: 0px;
     --glass-sat: 120%;
-  }
-
-  .card,
-  .popup-content,
-  .contact-button{
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  background: rgba(255,255,255,0.14);
-}
-
-.popup-content{
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  background: rgba(255,255,255,0.52);
-}
-
-  .card::after,
-  .popup-content::after{
-    mix-blend-mode: normal !important;
-    opacity: 0.35;
   }
 
   body::before{
