@@ -126,6 +126,32 @@
     inset 0 1px 0 rgba(255,255,255,0.30);
 }
 
+.intro {
+  font-size: 1.1rem;
+  color: rgba(245,246,255,0.85);
+  margin-bottom: 0.4rem;
+}
+
+.profile-links {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  justify-items: center;
+  font-size: 1.2rem;
+}
+
+.profile-links a {
+  background: rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 6px 8px;
+}
+
+.profile-links a:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
 /* --------------------------------------------------
    Firefox performance fallbacks (glass optimization)
 -------------------------------------------------- */
@@ -160,6 +186,10 @@
     position: absolute !important;
   }
 }
+
+/* --------------------------------------------------
+   Post ordering
+-------------------------------------------------- */
 
 .year-group {
   width: 100%;
@@ -201,8 +231,3 @@
   margin-top: 0.75rem;
 }
 
-.intro {
-  font-size: 1.1rem;
-  color: rgba(245,246,255,0.85);
-  margin-bottom: 0.4rem;
-}

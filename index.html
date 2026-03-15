@@ -100,10 +100,10 @@
   }
 
   .profile {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
 
  .profile-pic {
     width: 160px;
@@ -117,6 +117,32 @@
     inset 0 1px 0 rgba(255,255,255,0.28),
     0 0 0 6px rgba(255,79,216,0.18); /* neon halo */
 }
+
+<div class="profile-links">
+  <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="/cv.pdf" target="_blank" title="CV">
+    <i class="fas fa-file-alt"></i>
+  </a>
+
+  <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a href="https://goodreads.com/yourusername" target="_blank" title="Goodreads">
+    <i class="fab fa-goodreads"></i>
+  </a>
+</div>
 
   .info {
     flex-grow: 1;
@@ -431,7 +457,7 @@
       <p>
         I've been orbiting the sun for <span id="timer">calculating</span>. 
         In my free time, I enjoy soccer, F1, tennis, Soulslike games, European history, and hiking. 
-        Lately, I've been listening to a lot of Kanye, M83, Drake, and Kaytranada.
+        Lately, I've been listening to a lot of Kanye, M83, Drake, Kaytranada, and James Blake.
       </p>
 
     </div>
