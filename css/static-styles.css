@@ -200,3 +200,9 @@
 .year-group .post-list {
   margin-top: 0.75rem;
 }
+
+.intro {
+  font-size: 1.1rem;
+  color: rgba(245,246,255,0.85);
+  margin-bottom: 0.4rem;
+}
