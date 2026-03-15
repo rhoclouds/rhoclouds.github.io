@@ -84,21 +84,6 @@
   mix-blend-mode: screen;
 }
 
-  .contact-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: var(--glass-bg);
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem 0.75rem;
-    display: flex;
-    gap: 0.5rem;
-    font-size: 1.2rem;
-    color: #ffffff;
-    cursor: pointer;
-  }
-
   .profile {
   display: flex;
   gap: 2rem;
@@ -117,32 +102,6 @@
     inset 0 1px 0 rgba(255,255,255,0.28),
     0 0 0 6px rgba(255,79,216,0.18); /* neon halo */
 }
-
-<div class="profile-links">
-  <a href="https://github.com/yourusername" target="_blank" title="GitHub">
-    <i class="fab fa-github"></i>
-  </a>
-
-  <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-
-  <a href="/cv.pdf" target="_blank" title="CV">
-    <i class="fas fa-file-alt"></i>
-  </a>
-
-  <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-
-  <a href="https://goodreads.com/yourusername" target="_blank" title="Goodreads">
-    <i class="fab fa-goodreads"></i>
-  </a>
-</div>
 
   .info {
     flex-grow: 1;
@@ -191,173 +150,6 @@
     padding: 0 2rem 0 0;
   }
 
-  /* 4) Keep the ul’s own indent for bullets */
-  .fun-facts {
-    padding-left: 1.2rem;
-    list-style: disc;
-    margin-top: 1rem;
-  }
-
-  .fun-facts a {
-    color: #c99abf;
-    text-decoration: none;
-  }
-
-  .fun-facts a:hover {
-  color: #b791aa;
-  text-decoration: underline;
-}
-
-  .fun-facts li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-  }
-
-  /* Popup Modal */
-  .popup-modal{
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.55);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-/* the actual glass panel */
-.popup-content{
-  position: relative;
-  width: 90%;
-  max-width: 420px;
-  padding: 20px;
-  border-radius: 16px;
-
-  background: rgba(255,255,255,0.10);
-  border: 1px solid rgba(255,255,255,0.22);
-
-  backdrop-filter: blur(18px) saturate(160%);
-  -webkit-backdrop-filter: blur(18px) saturate(160%);
-
-  box-shadow:
-    0 18px 60px rgba(0,0,0,0.45),
-    inset 0 1px 0 rgba(255,255,255,0.25),
-    inset 0 -18px 40px rgba(0,0,0,0.22);
-
-  color: rgba(245,246,255,0.92);
-  overflow: hidden; /* needed for sheen layers */
-}
-
-/* inner rim */
-.popup-content::before{
-  content:"";
-  position:absolute;
-  inset: 1px;
-  border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.10);
-  pointer-events:none;
-  opacity: 0.9;
-}
-
-/* subtle sheen */
-.popup-content::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius:16px;
-  pointer-events:none;
-  background:
-    radial-gradient(700px 220px at 22% 8%,
-      rgba(255,255,255,0.20),
-      rgba(255,255,255,0.06) 45%,
-      transparent 70%),
-    linear-gradient(135deg,
-      rgba(255,255,255,0.14) 0%,
-      rgba(255,255,255,0.06) 22%,
-      rgba(255,255,255,0.00) 45%,
-      rgba(255,255,255,0.06) 62%,
-      rgba(255,255,255,0.00) 80%);
-  opacity: 0.55;
-  mix-blend-mode: screen;
-}
-
-.popup-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-  gap: 1rem;
-}
-
-/* search input: dark glass field */
-.popup-header input{
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 10px;
-
-  background: rgba(0,0,0,0.25);
-  border: 1px solid rgba(255,255,255,0.18);
-
-  color: rgba(255,255,255,0.92);
-  outline: none;
-}
-
-.popup-header input::placeholder{
-  color: rgba(255,255,255,0.55);
-}
-
-.popup-header input:focus{
-  border-color: rgba(255,79,216,0.55); /* uses your neon accent */
-  box-shadow: 0 0 0 3px rgba(255,79,216,0.18);
-}
-
-/* close button: bright + hover accent */
-.popup-header .close-button{
-  font-size: 1.5em;
-  cursor: pointer;
-  color: rgba(255,255,255,0.82);
-  transition: color 180ms ease, transform 180ms ease;
-}
-
-.popup-header .close-button:hover{
-  color: var(--accent);
-  transform: translateY(-1px);
-}
-
-.popup-links{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-}
-
-.popup-links li{
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  color: rgba(245,246,255,0.90);
-}
-
-.popup-links i{
-  margin-right: 8px;
-  color: rgba(255,255,255,0.75);
-  min-width: 20px;
-}
-
-/* links */
-.popup-links a{
-  color: rgba(255,255,255,0.90);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.22);
-}
-
-.popup-links a:hover{
-  color: rgba(255,255,255,0.90);
-  border-bottom-color: rgba(255,255,255,0.90);
-}
-
   /* Mobile adjustments */
 @media (max-width: 640px) {
   /* Stack profile vertically on mobile */
@@ -366,29 +158,9 @@
     text-align: center;
   }
 
-  /* Reset the inner padding on both cards */
-  .section-inner {
-    padding: 0 !important;
-  }
-
   /* Center the location icon/text */
   .location {
     justify-content: center;
-  }
-
-  /* Make lists full-width with inside discs */
-  .about-list,
-  .fun-facts {
-    list-style: disc inside;
-    padding-left: 0;
-    text-align: left;
-  }
-
-  /* Contact button flows into the layout */
-  .contact-button {
-    position: static;
-    align-self: flex-end;
-    margin-bottom: 1rem;
   }
 
   /* Container takes up full width with padding */
@@ -396,12 +168,6 @@
     width: 100%;
     padding: 0 1rem;
     box-sizing: border-box;
-  }
-
-  /* Reset the fun-facts card’s left padding so it matches */
-  .card.section {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem;
   }
 
   /* All cards share this base mobile styling */
@@ -440,6 +206,32 @@
 
   <div class="profile-pic"></div>
 
+  <div class="profile-links">
+  <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <a href="/cv.pdf" target="_blank" title="CV">
+    <i class="fas fa-file-alt"></i>
+  </a>
+
+  <a href="https://instagram.com/yourusername" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <a href="https://goodreads.com/yourusername" target="_blank" title="Goodreads">
+    <i class="fab fa-goodreads"></i>
+  </a>
+</div>
+
   <div class="info">
     <div class="name">rhoclouds</div>
     <div class="intro">Hi, I'm Austin.</div>
@@ -463,28 +255,6 @@
     </div>
   </div>
 </div>
-
-    <!-- Contact Modal -->
-    <div id="popupModal" class="popup-modal" aria-hidden="true">
-      <div class="popup-content">
-        <div class="popup-header">
-          <span class="close-button">&times;</span>
-        </div>
-        <ul class="popup-links">
-          <li><i class="fa-brands fa-instagram"></i><a href="#">Instagram (placeholder)</a></li>
-          <li><i class="fab fa-github"></i> <a href="#">GitHub (placeholder)</a></li>
-          <li><i class="fas fa-envelope"></i><span>rhoclouds [at] gmail [dot] com</span></li>
-          <li><i class="fas fa-file-alt"></i> <a href="#">CV (placeholder)</a></li>
-          <li><i class="fab fa-discord"></i> rhoclouds</li>
-          <!-- <li><i class="fab fa-github"></i> <a href="https://github.com/rhoclouds" target="_blank">Personal GitHub</a></li> -->
-          <li><i class="fab fa-linkedin"></i> <a href="#">LinkedIn (placeholder)</a></li>
-          <li><i class="fab fa-twitter"></i> <a href="#">Twitter (placeholder)</a></li>
-          <li><i class="fab fa-brands fa-goodreads"></i> <a href="https://www.goodreads.com/rhoclouds" target="_blank">Goodreads</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
 
   <script>
   /* ---------- Live age timer ---------- */
