@@ -266,6 +266,10 @@ body::before {
     margin: 0 auto;
   }
 
+  .info {
+  text-align: left;
+}
+
   .profile-links {
     justify-items: center;
     margin-left: auto;
