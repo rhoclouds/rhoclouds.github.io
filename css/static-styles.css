@@ -208,11 +208,12 @@ body::before {
 }
 
 .about-text p {
-  margin-bottom: 0.9rem;
   line-height: 1.7;
 }
 
-
+.about-text p + p {
+  margin-top: 1.6rem;
+}
 
 /* --------------------------------------------------
    Firefox performance fallback
@@ -254,4 +255,40 @@ body::before {
     padding: 1.5rem;
     box-sizing: border-box;
   }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-left {
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .profile-links {
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .location {
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto 1.5rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+
+}
 }
