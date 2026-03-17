@@ -1,0 +1,59 @@
+/* --------------------------------------------------
+   Modal + Search Utility
+   call with <script src="/js/modal-search.js"></script>
+-------------------------------------------------- */
+
+(function () {
+
+  const btn       = document.getElementById("contactButton");
+  const modal     = document.getElementById("popupModal");
+  const closeBtn  = modal ? modal.querySelector(".close-button") : null;
+  const searchBox = document.getElementById("popupSearch");
+  const linkItems = document.querySelectorAll(".popup-links li");
+
+  /* ---------- Open modal ---------- */
+  if (btn && modal) {
+    btn.addEventListener("click", () => {
+      modal.style.display = "flex";
+      if (searchBox) searchBox.focus();
+    });
+  }
+
+  /* ---------- Close modal ---------- */
+  if (closeBtn && modal) {
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  }
+
+  /* ---------- Extra search keywords ---------- */
+  function extraKeywords(iconClass) {
+    if (iconClass.includes("fa-envelope")) return " email mail ";
+    if (iconClass.includes("fa-discord"))  return " discord ";
+    return "";
+  }
+
+  /* ---------- Search filter ---------- */
+  if (searchBox) {
+
+    searchBox.addEventListener("input", function () {
+
+      const filter = this.value.toLowerCase().trim();
+
+      linkItems.forEach(item => {
+
+        const iconCls  = item.querySelector("i")?.className.toLowerCase() || "";
+        const visible  = item.innerText.toLowerCase();
+        const keywords = extraKeywords(iconCls);
+
+        const haystack = `${iconCls} ${visible} ${keywords}`;
+
+        item.style.display = haystack.includes(filter) ? "flex" : "none";
+
+      });
+
+    });
+
+  }
+
+})();

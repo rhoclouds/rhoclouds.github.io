@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog - rhoclouds</title>
     <link rel="stylesheet" href="/css/static-styles.css">
+    <link rel="stylesheet" href="/css/blog-styles.css">
     <link rel="stylesheet" href="/css/main-style.css">
   
 <style>
@@ -218,19 +219,9 @@
           <a href="/blog.html">blog</a>
           <a href="/notes.html">notes</a>
         </nav>
-    
-    <div class="content">
-      <div class="container">
 
-        <div class="card">
-          <p class="tagline">
-            random musings on our world and the universe
-          </p><!--
-          <p class="second-blurb">
-            if you are new, check out <a href="/blog/directory.html">directory</a>
-          </p>
-          -->
-        </div>
+<div class="content">
+  <div class="container">
 
 <div class="card">
   <h2>Posts</h2>
@@ -296,6 +287,9 @@
   </details>
 </div>
 
+  </div>
+</div>
+
 <script>
   document.querySelectorAll('.year-group').forEach(group => {
     const count = group.querySelectorAll('.post-list > li').length;
@@ -303,3 +297,6 @@
     summary.textContent = `${summary.textContent} (${count})`;
   });
 </script>
+
+</body>
+</html>
