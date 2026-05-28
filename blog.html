@@ -226,8 +226,8 @@
 <div class="card">
   <h2>Posts</h2>
 
-  <details class="year-group" open>
-    <summary>2026</summary>
+  <div class="year-group current-year">
+    <h3>2026</h3>
     <ul class="post-list">
       <li>
         <a href="/blog/takeaways-2025.html">2025 Wrapped</a>
@@ -289,6 +289,14 @@
 
   </div>
 </div>
+
+<script>
+document.querySelectorAll('.current-year').forEach(group => {
+  const count = group.querySelectorAll('.post-list > li').length;
+  const heading = group.querySelector('h3');
+  heading.textContent = `${heading.textContent} (${count})`;
+});
+</script>
 
 <script>
   document.querySelectorAll('.year-group').forEach(group => {
