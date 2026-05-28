@@ -234,7 +234,7 @@
         <div class="post-date">02/14/26</div>
       </li>
     </ul>
-  </details>
+  </div>
 
   <details class="year-group">
     <summary>2025</summary>
@@ -291,19 +291,20 @@
 </div>
 
 <script>
-document.querySelectorAll('.current-year').forEach(group => {
+document.querySelectorAll('.year-group').forEach(group => {
   const count = group.querySelectorAll('.post-list > li').length;
-  const heading = group.querySelector('h3');
-  heading.textContent = `${heading.textContent} (${count})`;
-});
-</script>
 
-<script>
-  document.querySelectorAll('.year-group').forEach(group => {
-    const count = group.querySelectorAll('.post-list > li').length;
-    const summary = group.querySelector('summary');
+  const summary = group.querySelector('summary');
+  const heading = group.querySelector('h3');
+
+  if (summary) {
     summary.textContent = `${summary.textContent} (${count})`;
-  });
+  }
+
+  if (heading) {
+    heading.textContent = `${heading.textContent} (${count})`;
+  }
+});
 </script>
 
 </body>
