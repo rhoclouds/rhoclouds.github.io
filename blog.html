@@ -233,7 +233,8 @@
     <h3>2026</h3>
     <ul class="post-list">
       {% for post in site.posts %}
-        {% if post.date contains "2026" %}
+        {% assign post_year = post.date | date: "%Y" %}
+        {% if post_year == "2026" %}
           <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
             <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
