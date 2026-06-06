@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const backLink = document.createElement("a");
     backLink.href = citations[0] ? `#${citations[0].id}` : "#";
-    backLink.textContent = `[${number}] `;
+    backLink.textContent = `[${number}]`;
     backLink.className = "ref-backlink";
 
     ref.prepend(backLink);
