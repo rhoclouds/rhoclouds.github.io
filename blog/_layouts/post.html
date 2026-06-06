@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/icons/blazePowder16x16.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder32x32.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder512x512.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder192x192.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowderAppleTouchIcon.png" type="image/png">
+    <link rel="icon" href="/icons/blazePowder.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - rhoclouds</title>
+    <link rel="stylesheet" href="/css/main-style.css">
+    <link rel="stylesheet" href="/css/blog-styles.css">
+</head>
+
+<body class="light-mode">
+<div class="wrapper">
+    <nav>
+        <a href="https://rhoclouds.github.io/">home</a>
+        <a href="/library.html">library</a>
+        <a href="/blog.html">blog</a>
+        <a href="/notes.html">notes</a>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="post-date">{{ page.date }}</div>
+
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
