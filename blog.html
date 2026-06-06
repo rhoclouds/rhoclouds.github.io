@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,10 +232,14 @@
   <div class="year-group current-year">
     <h3>2026</h3>
     <ul class="post-list">
-      <li>
-        <a href="/blog/takeaways-2025.html">2025 Wrapped</a>
-        <div class="post-date">02/14/26</div>
-      </li>
+      {% for post in site.posts %}
+        {% if post.date contains "2026" %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
+          </li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </div>
 
