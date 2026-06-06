@@ -291,3 +291,16 @@ body.light-mode nav a:hover {
   text-align: left;
   display: block;
 }
+
+/* --------------------------------------------------
+   References
+-------------------------------------------------- */
+
+.references {
+    list-style: none;
+    padding-left: 0;
+}
+
+.reference {
+    margin-bottom: 10px;
+}
