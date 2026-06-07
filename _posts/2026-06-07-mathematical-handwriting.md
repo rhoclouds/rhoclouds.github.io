@@ -52,11 +52,14 @@ The simplest solution to this is to simply stay consistent with the way people w
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/english-alphabet-handwritten.png" alt="English alphabet handwritten">
+        <img src="/blog/media/english-alphabet-handwritten.png" alt="English alphabet handwritten"
+        style="width: 100%;">
     </div>
 </div>
 
 ## Greek Alphabet
+
+I've left out some uppercase Greek letters which are the same as the English letters and not used.
 
 <div class="image-block">
     <div class="image-wrapper">
@@ -66,7 +69,8 @@ The simplest solution to this is to simply stay consistent with the way people w
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/greek-alphabet-handwritten.png" alt="Greek alphabet handwritten">
+        <img src="/blog/media/greek-alphabet-handwritten.png" alt="Greek alphabet handwritten"
+        style="width: 100%;">
     </div>
 </div>
 
