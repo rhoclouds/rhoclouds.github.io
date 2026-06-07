@@ -12,30 +12,27 @@ Do you ever find yourself getting confused with handwritten notes from professor
 
 Why spend valuable time deciphering whether a symbol is meant to be $p$ or $\rho$? Why get mixed up looking back at your notes trying to figure out what is $X$ and what is $x$?
 
-Subjects like fluid mechanics, thermodynamics, electromagnetism, statistics, and pure math are among the worst in this regard because there are a lot of instances where similar-looking letters are repeated. In fluid mechanics, $V$, $v$, $\nu$, $p$, $\rho$, $U$, $u$, and $\mu$ frequently appear in the same workflows. Consider $y$-momentum of the incompressible Navier-Stokes equation with constant viscosity:
+Subjects like fluid mechanics, thermodynamics, electromagnetism, statistics, and pure math are among the worst in this regard because there are a lot of instances where similar-looking letters are repeated. In fluid mechanics, $V$, $v$, $\nu$, $p$, $\rho$, $U$, $u$, and $\mu$ frequently appear in the same workflows. Consider the $y$-momentum equation for the unsteady Navier-Stokes equations in conservative form, assuming constant viscosity:
 
 $$
-\rho\left(
-\frac{\partial v}{\partial t}
+\frac{\partial (\rho v)}{\partial t}
 +
-u\frac{\partial v}{\partial x}
+\frac{\partial (\rho u v)}{\partial x}
 +
-v\frac{\partial v}{\partial y}
+\frac{\partial (\rho v^2)}{\partial y}
 +
-w\frac{\partial v}{\partial z}
-\right)
+\frac{\partial (\rho v w)}{\partial z}
 =
 -\frac{\partial p}{\partial y}
 +
-\mu\left(
-\frac{\partial^2 v}{\partial x^2}
+\frac{1}{Re_r}
+\left(
+\frac{\partial \tau_{xy}}{\partial x}
 +
-\frac{\partial^2 v}{\partial y^2}
+\frac{\partial \tau_{yy}}{\partial y}
 +
-\frac{\partial^2 v}{\partial z^2}
+\frac{\partial \tau_{yz}}{\partial z}
 \right)
-+
-\rho g_y
 $$
 
 Now, if you haven't had the pleasure already, imagine someone with handwriting that is anything worse than exceptional writing this out.
@@ -53,7 +50,7 @@ The simplest solution to this is to simply stay consistent with the way people w
 <div class="image-block">
     <div class="image-wrapper">
         <img src="/blog/media/english-alphabet-handwritten.png" alt="English alphabet handwritten"
-        style="width: 100%;">
+        style="width: 130%;">
     </div>
 </div>
 
@@ -70,7 +67,7 @@ I've left out some uppercase Greek letters which are the same as the English let
 <div class="image-block">
     <div class="image-wrapper">
         <img src="/blog/media/greek-alphabet-handwritten.png" alt="Greek alphabet handwritten"
-        style="width: 100%;">
+        style="width: 130%;">
     </div>
 </div>
 
