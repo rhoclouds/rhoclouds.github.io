@@ -98,7 +98,7 @@ The simplest solution to this is to simply stay consistent with the way people w
     </div>
 </div>
 
-I have genuinely spent several years working on this, and I think this is the best and clearest I've seen. The most confusing part remains distinguishing between $O$, $o$, and $0$. In case you didn't catch it, we have to unfortunately rely on size to distinguish between $O$ and $o$, while $0$ is very elongated. Additionally, it is actually challenging to distinguish between $s$ and $5$ sometimes, but that's probably a handwriting thing on my end.
+I have genuinely spent several years stressing out over this, and I think this is the best and clearest I've seen. The most confusing part remains distinguishing between $O$, $o$, and $0$. In case you didn't catch it, we have to unfortunately rely on size to distinguish between $O$ and $o$, while $0$ is very elongated. Additionally, it is actually challenging to distinguish between $s$ and $5$ sometimes, but that's probably a handwriting thing on my end.
 
 ## Some Notes on Notation and Syntax
 
