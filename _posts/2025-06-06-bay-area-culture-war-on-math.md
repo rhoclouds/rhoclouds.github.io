@@ -8,13 +8,9 @@ date: 2025-06-06
 Tracking, equity, and opportunity
 </div>
 
-## Subheading 1
-
-This is my first Jekyll test paragraph. This is a claim that needs a citation.<sup><a class="cite" href="#ref-test"></a></sup>
-
 <div class="image-block">
     <div>
-        <img src="/blog-media/SFUSD-ENROLLMENT-FAIR.jpg.jpg" alt="A Hallway in Lowell High School">
+        <img src="/blog-media/SFUSD-ENROLLMENT-FAIR.jpg" alt="A Hallway in Lowell High School">
     <div class="image-caption">Lowell High School. Image credit: Andra Cernavskis, Mission Local </div>
     </div>
 </div>
