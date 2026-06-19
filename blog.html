@@ -226,94 +226,46 @@
 <div class="content">
   <div class="container">
 
-<div class="card">
-  <h2>Posts</h2>
+    <div class="card">
+      <h2>Posts</h2>
 
-  <div class="year-group current-year">
-    <h3>2026</h3>
-    <ul class="post-list">
-      {% for post in site.posts %}
-        {% assign post_year = post.date | date: "%Y" %}
-        {% if post_year == "2026" %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
-          </li>
+      {% assign current_year = "now" | date: "%Y" %}
+      {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+      {% for year in posts_by_year %}
+        {% assign count = year.items | size %}
+
+        {% if year.name == current_year %}
+          <div class="year-group current-year">
+            <h3>{{ year.name }} ({{ count }})</h3>
+            <ul class="post-list">
+              {% for post in year.items %}
+                <li>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                  <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% else %}
+          <details class="year-group">
+            <summary>{{ year.name }} ({{ count }})</summary>
+            <ul class="post-list">
+              {% for post in year.items %}
+                <li>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                  <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
         {% endif %}
       {% endfor %}
-    </ul>
-  </div>
 
-  <details class="year-group">
-    <summary>2025</summary>
-    <ul class="post-list">
-      <li>
-        <a href="/blog/goodbye-coffee.html">Goodbye, Coffee</a>
-        <div class="post-date">11/24/25</div>
-      </li>
-      <li>
-        <a href="/blog/fall-2025-poetry-challenge.html">Fall 2025 Poetry Challenge</a>
-        <div class="post-date">10/05/25</div>
-      </li>
-      <li>
-        <a href="/blog/naivete-of-elite-colleges.html">The Naïveté of Elite Colleges</a>
-        <div class="post-date">08/03/25</div>
-      </li>
-      <li>
-        <a href="/blog/bay-area-culture-war-on-math.html">
-          The Bay Area's Culture War on Math Betrays the Middle Class
-        </a>
-        <div class="post-date">06/06/25</div>
-      </li>
-      <li>
-        <a href="/blog/frieren.html">How <em>Frieren</em> Tells a Story Worthy of Defining Our Generation</a>
-        <div class="post-date">05/05/25</div>
-      </li>
-      <li>
-        <a href="/blog/the-annual-admissions-rat-race.html">
-          The Annual Admissions Rat Race is Over
-        </a>
-        <div class="post-date">04/15/25</div>
-      </li>
-    </ul>
-  </details>
-
-  <details class="year-group">
-    <summary>2024</summary>
-    <ul class="post-list">
-      <li>
-        <a href="/blog/takeaways-2024.html">Some Takeaways From 2024</a>
-        <div class="post-date">12/31/24</div>
-      </li>
-      <li>
-        <a href="/blog/the-absence-of-purpose-led-us-here.html">
-          The Absence of Purpose Led Us Here
-        </a>
-        <div class="post-date">12/01/24</div>
-      </li>
-    </ul>
-  </details>
-</div>
+    </div>
 
   </div>
 </div>
-
-<script>
-document.querySelectorAll('.year-group').forEach(group => {
-  const count = group.querySelectorAll('.post-list > li').length;
-
-  const summary = group.querySelector('summary');
-  const heading = group.querySelector('h3');
-
-  if (summary) {
-    summary.textContent = `${summary.textContent} (${count})`;
-  }
-
-  if (heading) {
-    heading.textContent = `${heading.textContent} (${count})`;
-  }
-});
-</script>
 
 </body>
 </html>
