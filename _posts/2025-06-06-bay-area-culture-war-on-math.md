@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Test Post
+title: The Bay Area's Culture War on Math Betrays the Middle Class
 date: 2025-06-06
-published: false
 ---
 
 <div class="post-subheader">
