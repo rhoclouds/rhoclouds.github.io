@@ -5,14 +5,14 @@ date: 2025-08-03
 ---
 
 <div class="post-subheader">
-Prestige can and does open doors, but being the best of the best requires a lot more
+Prestige can and does open doors, but becoming the best of the best will always require more
 </div>
 
 <div class="image-block">
     <div class="image-wrapper">
         <img src="/blog-media/harvardGate.jpg" alt="A Protest at Harvard Square">
         <div class="image-caption">
-            Protests in Harvard Square for the “Global Day of Action for Gaza” protest on 4/26/25. Image credit: The Harvard Crimson
+            Protests in Harvard Square for the “Global Day of Action for Gaza” protest. Image credit: The Harvard Crimson
         </div>
     </div>
 </div>
@@ -27,11 +27,11 @@ While these protests took place in nearly every state in the country, the bigges
 
 Were Stefanik’s questions designed in bad faith because of their exaggeratory nature? Almost certainly. But I don’t see why these academic leaders were unable to articulate a rational stance. As a supporter of Palestinian rights myself, I even believe that the left has done an absolutely horrendous job with their advocacy.
 
-Nowadays, the biggest ongoing fight is at Harvard. Yes, funding and departments around the country are at risk. Even Terry Tao and the Institute for Pure and Applied Mathematics (IPAM) at UCLA are under serious fire.<sup><a class="cite" href="#ref-tao-ipam"></a></sup> And Harvard is no exception; President Trump has specifically targeted the pro-Palestine activists for their “anti-Semitism” by not only cutting their funds in the millions but also by capping the amount of international students able to enroll. What’s even more troubling is the idea that a $500 million dollar agreement between Harvard and the Trump administration was up in the air. Unlike Columbia, who bent the knee entirely by paying $200 million to the Trump administration to restore their funding, Harvard President Garber still intends to thankfully settle the matter in court.<sup><a class="cite" href="#ref-crimson-garber-trump"></a></sup>
+Nowadays, the biggest ongoing fight is at Harvard. Yes, funding and departments around the country are at risk. Even Terry Tao and the Institute for Pure and Applied Mathematics (IPAM) at UCLA are under serious fire.<sup><a class="cite" href="#ref-tao-ipam"></a></sup> And Harvard is no exception; President Trump has specifically targeted the pro-Palestine activists for their “anti-Semitism” by not only cutting their funds in the millions but also by capping the amount of international students able to enroll. What’s even more troubling is the idea that a \$500 million dollar agreement between Harvard and the Trump administration was up in the air. Unlike Columbia, who bent the knee entirely by paying \$200 million to the Trump administration to restore their funding, Harvard President Garber still intends to thankfully settle the matter in court.<sup><a class="cite" href="#ref-crimson-garber-trump"></a></sup>
 
 And this absolute clownshow is happening while ICE has run rampant around the country and at campuses.<sup><a class="cite" href="#ref-cnn-campus-activists"></a></sup> The point here is part of a larger one. America’s universities are under fire. And while the cultural and political issues are complex, there are a ton of underlying problems that extend beyond that which are far more simple. Before I discuss those, I want to preface that I have a lot of respect for what these universities have contributed to our country. Economically, culturally, and nearly every field of STEM is influenced massively by these schools and we owe a lot to them. I still encourage everyone to go to college. But this tradeoff that we will unfortunately have to accept for the foreseeable future is becoming overwhelming.
 
-<p>The takeaway here is that many of the people leading these universities have jeopardized the future of the country through their incompetency to deal with political tension.</p>
+The takeaway here is that many of the people leading these universities have jeopardized the future of the country through their incompetency to deal with political tension.
 
 ## Money and Elitism
 
@@ -47,19 +47,25 @@ The problem is of course, that admissions departments are broken. There are too 
 
 The three best STEM schools in the country—MIT, Stanford, and Caltech—have around 13,000 undergraduates. For variety, if we add on, say, Harvard, Princeton, Yale, UChicago, and Duke, we get a new total of around 50,000 undergraduates. This isn’t a complete representation because there are more “elite universities” than these, but this is a pretty fair number for the absolute most elite academic institutions in the United States. To be fair, I’ll add on another 20,000 for a total of 70,000 undergraduates. And assuming there are around 20 million undergraduates in the United States, that means these people represent the “top” 0.35% of all students in the country. And the funny thing is that a lot of Ivies are getting outpaced by the top public schools in the subjects that really matter, so the number might even be lower when it really matters.
 
-These cream of the crop universities usually accept somewhere from 1000 to 3000 students a year, accounting for somewhere from a 3 to 8% acceptance rate. Now, we all know that universities are under the guise that they are all about meritocracy when this is far from true. Not only are there tens of thousands of seniors in high school “qualified” for these cream of the crop schools who get rejected, but the trend is green; money is the most common correlation to acceptance. Here are the data on the types of students who attend some of the Ivy Plus schools, with others just for your interest.<sup><a class="cite" href="#ref-nyt-top-one-percent"></a></sup><sup><a class="cite" href="#ref-opportunity-insights"></a></sup>
+These cream of the crop universities usually accept somewhere from 1000 to 3000 students a year, accounting for somewhere from a 3 to 8% acceptance rate. Now, we all know that universities are under the guise that they are all about meritocracy when this is far from true. Not only are there tens of thousands of seniors in high school “qualified” for these cream of the crop schools who get rejected, but the trend is green; money is the most common correlation to acceptance. Here are the data on the types of students who attend the Ivy Plus schools and various others in the top 20:
 
 <div class="image-block">
   <div>
     <img src="/blog-media/incomeBySchool.png" alt="Family Income By School">
+    <div class="image-caption">
+            <sup><a class="cite" href="#ref-nyt-top-one-percent"></a></sup><sup><a class="cite" href="#ref-opportunity-insights"></a></sup>
+        </div>
   </div>
 </div>
 
-<p> In other words, the working rich and higher are extremely overrepresented in elite universities. These numbers are extremely alarming. Keep in mind that somewhere around 45% of high schoolers do not even get the opportunity to attend a four-year college.<sup><a class="cite" href="#ref-nces-college-transition"></a></sup>
+<p> In other words, the working rich and higher are extremely overrepresented in elite universities. These numbers are extremely alarming. Keep in mind that somewhere around 45% of high schoolers do not even get the opportunity to attend a four-year college.
 
 <div class="image-block">
   <div>
     <img src="/blog-media/enrollmentRate.png" alt="Family Income By School">
+        <div class="image-caption">
+            <sup><a class="cite" href="#ref-nces-college-transition"></a></sup>
+        </div>
   </div>
 </div>
 
