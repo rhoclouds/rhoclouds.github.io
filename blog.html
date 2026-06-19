@@ -241,7 +241,7 @@
             <ul class="post-list">
               {% for post in year.items %}
                 <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
+                  <a href="{{ post.url }}">{{ post.display_title | default: post.title }}</a>
                   <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
                 </li>
               {% endfor %}
@@ -253,7 +253,7 @@
             <ul class="post-list">
               {% for post in year.items %}
                 <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
+                  <a href="{{ post.url }}">{{ post.display_title | default: post.title }}</a>
                   <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
                 </li>
               {% endfor %}
@@ -265,6 +265,8 @@
     </div>
 
   </div>
+</div>
+
 </div>
 
 </body>
