@@ -43,13 +43,13 @@ The simplest solution to this is to simply stay consistent with the way people w
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/english-alphabet-text.png" alt="English alphabet text">
+        <img src="/blog-media/english-alphabet-text.png" alt="English alphabet text">
     </div>
 </div>
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/english-alphabet-handwritten.png" alt="English alphabet handwritten"
+        <img src="/blog-media/english-alphabet-handwritten.png" alt="English alphabet handwritten"
         style="width: 130%;">
     </div>
 </div>
@@ -60,13 +60,13 @@ I've left out some uppercase Greek letters which are the same as the English let
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/greek-alphabet-text.png" alt="Greek alphabet text">
+        <img src="/blog-media/greek-alphabet-text.png" alt="Greek alphabet text">
     </div>
 </div>
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/greek-alphabet-handwritten.png" alt="Greek alphabet handwritten"
+        <img src="/blog-media/greek-alphabet-handwritten.png" alt="Greek alphabet handwritten"
         style="width: 130%;">
     </div>
 </div>
@@ -75,13 +75,13 @@ I've left out some uppercase Greek letters which are the same as the English let
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/numbers-text.png" alt="Numbers text">
+        <img src="/blog-media/numbers-text.png" alt="Numbers text">
     </div>
 </div>
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/numbers-handwritten.png" alt="Numbers handwritten">
+        <img src="/blog-media/numbers-handwritten.png" alt="Numbers handwritten">
     </div>
 </div>
 
@@ -89,13 +89,13 @@ I've left out some uppercase Greek letters which are the same as the English let
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/various-symbols-text.png" alt="Various symbols text">
+        <img src="/blog-media/various-symbols-text.png" alt="Various symbols text">
     </div>
 </div>
 
 <div class="image-block">
     <div class="image-wrapper">
-        <img src="/blog/media/various-symbols-handwritten.png" alt="Various symbols handwritten">
+        <img src="/blog-media/various-symbols-handwritten.png" alt="Various symbols handwritten">
     </div>
 </div>
 

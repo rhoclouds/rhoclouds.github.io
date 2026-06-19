@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="icon" href="/icons/blazePowder16x16.png" type="image/png">
-    <link rel="icon" href="/icons/blazePowder32x32.png" type="image/png">
-    <link rel="icon" href="/icons/blazePowder512x512.png" type="image/png">
-    <link rel="icon" href="/icons/blazePowder192x192.png" type="image/png">
-    <link rel="icon" href="/icons/blazePowderAppleTouchIcon.png" type="image/png">
-    <link rel="icon" href="/icons/blazePowder.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fall 2025 poetry challenge - rhoclouds</title>
-    <link rel="stylesheet" href="/css/main-style.css">
-    <link rel="stylesheet" href="/css/blog-styles.css">
-</head>
+---
+layout: post
+title: Fall 2025 Poetry Challenge
+date: 2025-10-05
+---
 
-<body class="light-mode">
-<div class="wrapper">
-    <nav>
-        <a href="https://rhoclouds.github.io/">home</a>
-        <a href="/library.html">library</a>
-        <a href="/blog.html">blog</a>
-        <a href="/notes.html">notes</a>
-    </nav>
-    <div class="content">
-        <div class="container">
-            <h1 class="post-title">Fall 2025 Poetry Challenge</h1>
-            <div class="post-date">October 5, 2025</div>
-            <div class="post-content">
-                <div class="post-subheader">I thought it would be interesting to try to write a poem every day for three weeks, to see if I could improve as a writer and also to have something relaxing to do. I wrote most of these very late at night, in 10 minutes or less. I missed some days and therefore had to write two the next day.</div>
+<div class="post-subheader">
+I thought it would be interesting to try to write a poem every day for three weeks, to see if I could improve as a writer and also to have something relaxing to do. I wrote most of these very late at night, in 10 minutes or less. I missed some days and therefore had to write two the next day.
+</div>
 
   <section class="poem">
   <h2>1) 9/15 — Upon the Blight</h2>
@@ -160,7 +139,7 @@ only the dogs will hear us.
 
 
   <section class="poem">
-  <h2>10) 9/25 — Squash and Hyacinths</h2>
+  <h2>11) 9/25 — Squash and Hyacinths</h2>
   <pre>
 Two years ago,
 a man wept, as he mourned
@@ -409,35 +388,3 @@ call my name
 or I say yours
   </pre>
 </section>
-                
-	<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        function highlightElement(id) {
-            var element = document.getElementById(id);
-            if (element) {
-                element.classList.add("highlight");
-                setTimeout(() => element.classList.remove("highlight"), 1500); // Removes highlight after 1.5s
-            }
-        }
-
-        document.querySelectorAll('a[href^="#ref"]').forEach(link => {
-            link.addEventListener("click", function () {
-                var targetId = this.getAttribute("href").substring(1);
-                highlightElement(targetId);
-            });
-        });
-
-        document.querySelectorAll('a[href^="#cite"]').forEach(link => {
-            link.addEventListener("click", function () {
-                var targetId = this.getAttribute("href").substring(1);
-                highlightElement(targetId);
-            });
-        });
-    });
-	</script>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-</html>
