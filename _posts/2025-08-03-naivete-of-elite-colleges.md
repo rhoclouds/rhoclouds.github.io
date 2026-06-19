@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Naïveté of Elite Colleges - rhoclouds
+title: The Naïveté of Elite Colleges
 date: 2025-08-03
 ---
 
