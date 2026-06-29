@@ -21,8 +21,6 @@ There is no denying the importance of mathematics. It is the language in which s
 
 Furthermore, the United States is not in a great place when it comes to technology: we all recognize the problems in manufacturing and there are significant shortages of skilled STEM workers across the board. In other words, there are jobs out there that pay a lot, are fulfilling, and will help develop the country.  The six highest undergraduate majors for mid-career earnings are literally just multiple branches of engineering and computer science. After that, you get math, finance, and physics. Yet there are people out there who are not even willing to give that route a chance. Of course hard technical STEM knowledge isn’t the end-all-be-all. But at the end of the day, the learning you do in STEM will help you with everything else you learn. After all, applying logic and rigorous problem-solving are not unique to STEM.
 
-*And no, this isn't elitist. In fact, elitism from some of the people promoting advanced math is probably a big reason why more people aren't completely on their side. I was really infuriated to see the amount of people saying that kids in advanced math are just straight-up better at math than those who aren't. I was also frustrated but not surprised to see parents trying to use it as a way to brag that their kids are smarter. These are absolutely not the attitudes that are going to be winning anyone over.*
-
 To put it simply, in a time where the middle class cannot afford homes or groceries, Americans are scared and ignorant when it comes to math, which is a tool that gives people the means to flourish.
 
 ## Middle School Algebra in San Francisco
@@ -41,7 +39,7 @@ After that, students are able to pursue whatever their school offers. For some, 
 
 There are a lot of obvious problems with this, but one that seems to be underrated is how these students are going to look in the eyes of college admissions officers. Students who want to get accepted to elite private universities generally want to have taken AP calculus in high school, regardless of their major. Students who want to get accepted to elite private universities for anything dealing with STEM pretty much *need* it in order to be even considered. Indeed, having AP calculus completed by the time you submit your college application shows that you can handle the rigor of college-level mathematics; this means that completing it as a junior is the latest you should take it, which is why it’s so problematic that many kids weren’t even allowed to take it in high school whatsoever.
 
-And while getting rejected from a school like Stanford for computer science isn’t the end of the world, it’s worrisome that some children aren’t getting the same opportunities in high school as others, and thus have worse chances of getting into their dream schools.
+It’s simply worrisome that some children aren’t getting the same opportunities in high school as others, and thus have worse chances of getting into their dream schools.
 
 Well what about public universities? There are a handful of very selective public schools that are high ranking when it comes to some of the most selective majors. And public schools tend to prioritize the state they are located in. The University of California, for instance, seems to have some sort of standard when it comes to the number of kids they let in per high school. They control it through either the number of students or percentage accepted, and the actual values are likely dependent on things like income and test scores.
 
@@ -57,8 +55,6 @@ Thus, if an entire school isn’t given access to AP Calculus, it might be okay,
 - Multivariable Calculus as a 12th grader
 
 And that’s great.
-
-*For the record, I think we do need to re-evaluate the ways in which kids are accepted into things like advanced math, GATE, and other programs.*
 
 But, there was an issue in SFUSD. A significant portion of kids had to retake Algebra I or did not demonstrate proficiency in it. Black and Latino students were struggling disproportionately and were then underrepresented in advanced math classes. They believed certain kids felt dumb for not being in higher level classes and did not want the pressure from parents. Thus, they believed that “heterogeneous classrooms” would be the solution: mix all the students together to let them build off each other. Different experiences and levels of skill would combine, and everyone would move together.
 
@@ -113,11 +109,9 @@ Another great takedown can be found in professor Brian Conrad’s analysis of CM
 
 ## De-tracking Does Not Hurt the Wealthy
 
-The funny thing about this is that Jo Boaler is at Stanford, a school where 39% of the students are from the top 5%.<sup><a class="cite" href="#ref-stanford-economic-diversity"></a></sup> That is absolutely ridiculous to think about. I was familiar with the idea of Stanford being a university for the working rich, but wow.
+Now, if kids in public schools are not allowed to take accelerated math as means of reducing the achievement gap between the underprivileged and wealthy, what is preventing the wealthy from just going elsewhere? And this has been the case. Kids with wealthy, educated parents will be guided from a young age on what to take and where. The likes of dual enrollment and various programs at elite high schools which tend to also be very expensive offer wealthy kids the opportunity to take advanced technical courses.
 
-Now, if kids in public schools are not allowed to take accelerated math as means of reducing the achievement gap between the underprivileged and wealthy, what is preventing the wealthy from just going elsewhere? And this has been the case. Kids with wealthy, educated parents will be guided from a young age on what to take and where. Dual-enrollment, expensive pre-college programs that offer credit, and something like Stanford Online High School which is also very expensive offer wealthy kids the opportunity to take advanced technical courses.
-
-So yes, the people that Jo Boaler is surrounded by, likely had the opportunities and resources to flourish in math on the basis of income, yet she does not want the middle class to get the opportunity to do so.
+The funny thing about this is that Jo Boaler is at Stanford, a school where 39% of the students are from the top 5%.<sup><a class="cite" href="#ref-stanford-economic-diversity"></a></sup> So yes, the people that Jo Boaler is surrounded by, likely had the opportunities and resources to flourish in math, yet she does not want the middle class to get the opportunity to do so.
 
 ## What’s Going On Now
 
@@ -149,8 +143,6 @@ Private high schools are notoriously popular in the Bay Area. Santa Clara, San M
 In other words, parents who do not want to or cannot afford to send their kids to private high schools, are worried that their kids are not going to be able to compete with those who can. Families move to the Bay Area with the hopes of giving their children the best chance to shine. After all, there is a reason why it costs so much to live here. And now, they’re being told by bureaucrats that their kids do not deserve high standards of excellence. If you are silent on this and not taking a side, then you are sabotaging the economic, cultural, and scientific future of this nation.
 
 ## Final Thoughts
-
-I went to a public high school in the Bay Area which didn't have as many STEM opportunities as some of the more competitive schools in the Bay. As a matter of fact, I got on the “advanced math train” late, which really hurt me and slowed the development of my identity. When you’re surrounded by others who have high standards of excellence, it motivates you to do better. By the end of junior year, I had a change of heart and spent much of my senior year trying my best to make up for the time I had wasted. The reality now is that I just have to work harder, which is something that I am content with.
                     
 Not giving students the ability to take advanced math classes is sabotaging their dreams. Not giving them an outlet for ambition is intentionally holding them back. And while math classes are the foundation of it all, it's far from just being about math classes. At the end of the day, this is what is really hurting the middle class.
 
