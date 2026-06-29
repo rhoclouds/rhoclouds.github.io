@@ -1,12 +1,14 @@
 ---
 layout: post
-title: Mathematical Handwriting Reference
+title: My Attempt at a Mathematical Handwriting Reference
 date: 2026-06-07
 ---
 
 <div class="post-subheader">
 I've spent way too much time thinking about this
 </div>
+
+Note: This was mostly for fun. I know a lot of people can understand their own handwriting very well and have no issues with others interpreting it, and if that works for you then there is no reason to try anything new. This reference isn't very aesthetic at all and I honestly kind of dislike it for that reason (the Greek is okay, but the English is honestly ugly). At the end of the day, serious work is typed up for a reason.
 
 Do you ever find yourself getting confused with handwritten notes from professors or peers? Have you ever made a mistake in the interpretation of your own notes because of the way you wrote out a letter or symbol? If your answer to either of these is yes, then you're spending time deciphering notation in lectures, homework, exams, projects, and labs that could have been used for understanding the actual content.
 
@@ -37,7 +39,7 @@ $$
 
 Now, if you haven't had the pleasure already, imagine someone with handwriting that is anything worse than exceptional writing this out.
 
-The simplest solution to this is to simply stay consistent with the way people write their letters and symbols. Obviously, typing up work when things get bad is far and away the best choice. That often isn't available, so let's go over some important ideals for this reference. The two primary goals are to distinguish between uppercase and lowercase versions of letters and to distinguish between English and Greek letters. This should not be done using differences in size. When we are handwriting in Roman text, there are letters surrounding others, so it's easier to tell what is capitalized and what is not. In STEM, we often don't have that privilege. Thus, we should use serifs to do this whenever we need to. Another important guideline is that the strokes necessary to handwrite these should not be difficult.
+The simplest solution to this is to stay consistent with the way you write your letters and symbols within the document you are working on. Obviously, typing up work when things get bad is far and away the best choice. That often isn't available, so as a challenge, I've tried to come up with clear versions of both the English and Greek alphabet that are easily readable and distinguishable for everyone. Let's go over some important ideals for this reference. The two primary goals are to distinguish between uppercase and lowercase versions of letters and to distinguish between English and Greek letters. This should not be done using differences in size. When we are handwriting in Roman text, there are letters surrounding others, so it's easier to tell what is capitalized and what is not. In STEM, we often don't have that privilege. Thus, we should use serifs to do this whenever we need to. Another important guideline is that the strokes necessary to handwrite these should not be difficult.
 
 ## English Alphabet
 
@@ -99,7 +101,7 @@ I've left out some uppercase Greek letters which are the same as the English let
     </div>
 </div>
 
-I have genuinely spent several years stressing out over this, and I think this is the best and clearest I've seen. The most confusing part remains distinguishing between $O$, $o$, and $0$. In case you didn't catch it, we have to unfortunately rely on size to distinguish between $O$ and $o$, while $0$ is very elongated. Additionally, it is actually challenging to distinguish between $s$ and $5$ sometimes, but that's probably a handwriting thing on my end.
+I have genuinely spent several years stressing out over this. The most confusing part remains distinguishing between $O$, $o$, and $0$. In case you didn't catch it, we have to unfortunately rely on size to distinguish between $O$ and $o$, while $0$ is very elongated. Additionally, it is actually challenging to distinguish between $s$ and $5$ sometimes, but that's probably a handwriting thing on my end.
 
 ## Some Notes on Notation and Syntax
 
@@ -112,12 +114,13 @@ There is still unfortunately room for confusion here, because when we are tired 
 We are fortunate enough that context can usually resolve any ambiguities. But I still can't help but find myself wishing we had another alphabet to make these ambiguities less common in general. Here are some general tips:
 
 - Use $*$ or parenthesis or simply place things next to each other for multiplication, $dot$ for dot product, and $x$ for cross product if possible.
+- Try to not add on unnecessary loops or curls. For instance, if you add on a loop to the bottom of an $s$, it might look like $\delta$.
+- Try to always finish your strokes. Don't leave space between strokes. For instance, an incomplete $e$ might look like a $c$.
 - Don't be afraid to use brackets rather than having too many parenthesis.
-- Keep your English text left-aligned, but center equations.
-- Try to keep each idea moving and terminating horizontally.
+- Keep your English text left-aligned.
 - Start a new line if you are transitioning to a new idea rather than continuing across the page in columns.
-- Make equations or expressions part of a coherent sentence rather than just dumping them on the page; be grammatically correct.
-- Use self-descriptive variables whenever you can.
+- Make equations or expressions part of a coherent sentence rather than just dumping them on the page. You can introduce them using a clause with a colon and then put the equation or expression below. If you don't think it deserves a full line, embed it into a sentence like you would with a quote.
+- Use the standard notation (or what your professor prefers) or self-descriptive variables whenever you can.
 - If anything gets too complicated, just define it nearby.
 
 I hope this helps, and I'm open to any suggestions.
