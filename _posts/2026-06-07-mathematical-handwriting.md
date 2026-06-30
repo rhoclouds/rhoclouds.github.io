@@ -118,9 +118,10 @@ We are fortunate enough that context can usually resolve any ambiguities. But I 
 - Try to always finish your strokes. Don't leave space between strokes. For instance, an incomplete $e$ might look like a $c$.
 - Don't be afraid to use brackets rather than having too many parenthesis.
 - Keep your English text left-aligned.
-- Start a new line if you are transitioning to a new idea rather than continuing across the page in columns.
+- Start a new line if you are transitioning to a new idea rather than continuing across the page in columns (maybe three columns is okay, but any more might be too cluttered).
 - Make equations or expressions part of a coherent sentence rather than just dumping them on the page. You can introduce them using a clause with a colon and then put the equation or expression below. If you don't think it deserves a full line, embed it into a sentence like you would with a quote.
 - Use the standard notation (or what your professor prefers) or self-descriptive variables whenever you can.
 - If anything gets too complicated, just define it nearby.
+- And once more, the number one thing is you being able to understand your work, so do what is the best for you (but give your future self or colleagues or whoever some leeway too)
 
 I hope this helps, and I'm open to any suggestions.
