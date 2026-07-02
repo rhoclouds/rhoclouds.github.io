@@ -233,6 +233,22 @@ body::before {
   line-height: 1.7;
 }
 
+.about-text a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(235, 240, 255, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition:
+    text-decoration-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.about-text a:hover {
+  text-decoration-color: rgba(235, 240, 255, 0.75);
+  opacity: 1;
+}
+
 .about-text p + p {
   margin-top: 1rem;
 }
