@@ -113,7 +113,7 @@ There is still unfortunately room for confusion here, because when we are tired 
 
 We are fortunate enough that context can usually resolve any ambiguities. But I still can't help but find myself wishing we had another alphabet to make these ambiguities less common in general. Here are some general tips:
 
-- Use $*$ or parenthesis or simply place things next to each other for multiplication, $dot$ for dot product, and $x$ for cross product if possible.
+- If you are using all of the following, use $*$ or simply place things next to each other for multiplication, $\cdot$ for dot product, and $\times$ for cross product if possible.
 - Try to not add on unnecessary loops or curls. For instance, if you add on a loop to the bottom of an $s$, it might look like $\delta$.
 - Try to always finish your strokes. Don't leave space between strokes. For instance, an incomplete $e$ might look like a $c$.
 - Don't be afraid to use brackets rather than having too many parenthesis.
