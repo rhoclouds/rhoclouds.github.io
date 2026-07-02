@@ -23,97 +23,36 @@
   .container {
     width: 80%;
     max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1.5rem;
   }
 
-.card {
-  position: relative;
-  border-radius: 22px;
-  padding: 2rem 2rem 1.5rem;
-  width: 100%;
-  box-sizing: border-box;
-
-  /* glass */
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat));
-
-  /* rims + depth */
-  border: 1px solid var(--glass-border);
-  box-shadow: var(--glass-shadow), var(--glass-inset);
-  overflow: hidden; /* important for the sheen layers */
-}
-
-/* inner rim (creates the “pane edge” look) */
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: 21px;
-  border: 1px solid var(--glass-inner);
-  pointer-events: none;
-  opacity: 0.9;
-}
-
-/* specular sheen + diagonal sweep */
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  pointer-events: none;
-
-  /* two highlights:
-     1) top-left soft bloom
-     2) diagonal sheen sweep
-  */
-  background:
-    radial-gradient(900px 260px at 20% 8%,
-      rgba(255,255,255,0.22),
-      rgba(255,255,255,0.06) 45%,
-      transparent 70%),
-    linear-gradient(135deg,
-      rgba(255,255,255,0.18) 0%,
-      rgba(255,255,255,0.10) 18%,
-      rgba(255,255,255,0.00) 42%,
-      rgba(255,255,255,0.08) 62%,
-      rgba(255,255,255,0.00) 78%);
-
-  opacity: 0.55;
-  mix-blend-mode: screen;
-}
+  .card {
+    padding: 2rem 2rem 1.5rem;
+  }
 
   .profile {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-}
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
 
- .profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  background: url('/rhoCloudIcon.png') center/cover no-repeat;
-  flex-shrink: 0;
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: url('/rhoCloudIcon.png') center/cover no-repeat;
+    flex-shrink: 0;
 
-  border: 5px solid rgba(198, 218, 255, 0.90);
+    border: 5px solid rgba(198, 218, 255, 0.90);
 
-  box-shadow:
-    0 14px 40px rgba(0, 0, 0, 0.42),
-    inset 0 1px 0 rgba(255,255,255,0.24),
-
-    /* visible blue aura */
-    0 0 0 7px rgba(85, 150, 255, 0.38),
-    0 0 28px rgba(95, 165, 255, 0.55),
-    0 0 70px rgba(95, 165, 255, 0.35),
-
-    /* violet outer atmosphere */
-    0 0 110px rgba(125, 100, 205, 0.28);
-}
+    box-shadow:
+      0 14px 40px rgba(0, 0, 0, 0.42),
+      inset 0 1px 0 rgba(255,255,255,0.24),
+      0 0 0 7px rgba(85, 150, 255, 0.38),
+      0 0 28px rgba(95, 165, 255, 0.55),
+      0 0 70px rgba(95, 165, 255, 0.35),
+      0 0 110px rgba(125, 100, 205, 0.28);
+  }
 
   .info {
     flex-grow: 1;
@@ -151,63 +90,25 @@
     line-height: 1.6;
   }
 
-  /* 2) Shift the fun-facts card horizontally to match the profile */
   .card.section {
     padding-left: var(--profile-indent);
     padding: 1.5rem 2rem 1.5rem var(--profile-indent) !important;
   }
 
-  /* 3) Reset inner-padding: remove extra bottom-padding so it matches the top card */
   .section-inner {
     padding: 0 2rem 0 0;
   }
 
-  /* Mobile adjustments */
-@media (max-width: 640px) {
-  html,
-  body {
-    background:
-      radial-gradient(ellipse at 50% 18%, rgba(200, 210, 255, 0.05) 0%, transparent 62%),
-      radial-gradient(circle at 82% 12%, rgba(170, 200, 255, 0.07) 0%, transparent 34%),
-      radial-gradient(circle at 18% 12%, rgba(90, 140, 210, 0.09) 0%, transparent 54%),
-      radial-gradient(circle at 55% 55%, rgba(80, 75, 160, 0.12) 0%, transparent 55%),
-      radial-gradient(circle at 22% 82%, rgba(125, 100, 205, 0.14) 0%, transparent 42%),
-      linear-gradient(140deg, #050a14 0%, #0c1c3a 26%, #1f2a54 48%, #362b54 74%, #120d1e 100%) !important;
+  @media (max-width: 640px) {
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
 
-    background-size: cover !important;
-    background-attachment: scroll !important;
+    .location {
+      justify-content: center;
+    }
   }
-}
-
-{
-  /* Stack profile vertically on mobile */
-  .profile {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  /* Center the location icon/text */
-  .location {
-    justify-content: center;
-  }
-
-  /* Container takes up full width with padding */
-  .container {
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-  }
-
-  /* All cards share this base mobile styling */
-  .card {
-    margin: 0 auto 1.5rem;
-    width: 100%;
-    max-width: 95%;
-    padding: 1.5rem;
-    box-sizing: border-box;
-  }
-}
-
 </style>
 
 </head>
