@@ -44,24 +44,7 @@ body {
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(
-      circle at 80% 18%,
-      rgba(150,180,255,.04),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 22% 74%,
-      rgba(135,110,255,.03),
-      transparent 42%
-    );
-  filter: blur(70px);
-  opacity: 0.9;
+  display: none
 }
 
 .wrapper {
@@ -381,9 +364,4 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-html,
-body {
-  background: red !important;
 }
