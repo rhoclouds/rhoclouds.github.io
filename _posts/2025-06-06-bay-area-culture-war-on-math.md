@@ -31,10 +31,10 @@ In 2014, the San Francisco Unified School District (SFUSD), took away the opport
 
 If you’re unfamiliar, the general math sequence looks something like this:
 
-                <div style="text-align: center; margin: 20px 0;">
-                    Algebra I → Geometry → Algebra II → Pre-calculus
-                </div>
-                
+<div style="text-align: center; margin: 20px 0;">
+Algebra I → Geometry → Algebra II → Pre-calculus
+</div>
+
 After that, students are able to pursue whatever their school offers. For some, it’s AP Statistics. For some, it’s linear algebra. For some, it’s no more math at all. That being said, that’s a list of four courses. If they have to start in Algebra I as a 9th grader, they won’t get the chance to take AP Calculus.
 
 There are a lot of obvious problems with this, but one that seems to be underrated is how these students are going to look in the eyes of college admissions officers. Students who want to get accepted to elite private universities generally want to have taken AP calculus in high school, regardless of their major. Students who want to get accepted to elite private universities for anything dealing with STEM pretty much *need* it in order to be even considered. Indeed, having AP calculus completed by the time you submit your college application shows that you can handle the rigor of college-level mathematics; this means that completing it as a junior is the latest you should take it, which is why it’s so problematic that many kids weren’t even allowed to take it in high school whatsoever.
