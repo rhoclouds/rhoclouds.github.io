@@ -382,3 +382,8 @@ body {
     margin-right: auto;
   }
 }
+
+html,
+body {
+  background: red !important;
+}
