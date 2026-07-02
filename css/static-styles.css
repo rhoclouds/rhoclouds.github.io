@@ -240,6 +240,25 @@ footer {
 }
 
 /* --------------------------------------------------
+   Safari
+-------------------------------------------------- */
+
+@media (max-width: 640px) {
+  @supports (-webkit-touch-callout: none) {
+    .card {
+      background: rgba(70, 90, 155, 0.32);
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+    }
+
+    .card::after {
+      mix-blend-mode: normal;
+      opacity: 0.35;
+    }
+  }
+}
+
+/* --------------------------------------------------
    Mobile
 -------------------------------------------------- */
 
