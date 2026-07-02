@@ -4,7 +4,7 @@ html {
 }
 
 .container {
-  width: min(88%, 760px);
+  width: min(88%, 1000px);
   margin: auto;
 }
 
