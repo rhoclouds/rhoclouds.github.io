@@ -258,7 +258,7 @@ footer {
   }
 
   .card {
-    background: rgba(70, 90, 155, 0.34) !important;
+    background: red !important;
   }
 }
 
