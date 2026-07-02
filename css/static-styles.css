@@ -240,29 +240,6 @@ footer {
 }
 
 /* --------------------------------------------------
-   Safari
--------------------------------------------------- */
-
-@media (max-width: 640px) {
-  .card,
-  .card::before,
-  .card::after {
-    -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
-    filter: none !important;
-    mix-blend-mode: normal !important;
-  }
-
-  .card::after {
-    display: none !important;
-  }
-
-  .card {
-    background: red !important;
-  }
-}
-
-/* --------------------------------------------------
    Mobile
 -------------------------------------------------- */
 
@@ -320,5 +297,28 @@ footer {
   .profile-links {
     margin-left:auto;
     margin-right:auto;
+  }
+}
+
+/* --------------------------------------------------
+   Safari
+-------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .card,
+  .card::before,
+  .card::after {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+
+  .card::after {
+    display: none !important;
+  }
+
+  .card {
+    background: red !important;
   }
 }
