@@ -20,51 +20,27 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   font-family: "IBM Plex Sans", system-ui, sans-serif;
   line-height: 1.6;
   color: #d0d0d0;
   position: relative;
   overflow-x: hidden;
+
+  background:
+    radial-gradient(ellipse at 50% 18%, rgba(200, 210, 255, 0.05) 0%, transparent 62%),
+    radial-gradient(circle at 82% 12%, rgba(170, 200, 255, 0.07) 0%, transparent 34%),
+    radial-gradient(circle at 18% 12%, rgba(90, 140, 210, 0.09) 0%, transparent 54%),
+    radial-gradient(circle at 55% 55%, rgba(80, 75, 160, 0.12) 0%, transparent 55%),
+    radial-gradient(circle at 22% 82%, rgba(125, 100, 205, 0.14) 0%, transparent 42%),
+    linear-gradient(140deg, #050a14 0%, #0c1c3a 26%, #1f2a54 48%, #362b54 74%, #120d1e 100%);
+
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
-  background:
-    radial-gradient(
-      ellipse at 50% 18%,
-      rgba(200, 210, 255, 0.05) 0%,
-      transparent 62%
-    ),
-    radial-gradient(
-      circle at 82% 12%,
-      rgba(170, 200, 255, 0.07) 0%,
-      transparent 34%
-    ),
-    radial-gradient(
-      circle at 18% 12%,
-      rgba(90, 140, 210, 0.09) 0%,
-      transparent 54%
-    ),
-    radial-gradient(
-      circle at 55% 55%,
-      rgba(80, 75, 160, 0.12) 0%,
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at 22% 82%,
-      rgba(125, 100, 205, 0.14) 0%,
-      transparent 42%
-    ),
-    linear-gradient(
-      140deg,
-      #050a14 0%,
-      #0c1c3a 26%,
-      #1f2a54 48%,
-      #362b54 74%,
-      #120d1e 100%
-    );
-  background-attachment: fixed;
-  background-size: cover;
+  min-height: 100vh;
 }
 
 body::before {
@@ -270,7 +246,18 @@ body::before {
 /* --------------------------------------------------
    Mobile
 -------------------------------------------------- */
-@media (max-width: 640px) {
+  @media (max-width: 640px) {
+  :root {
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --glass-inner: rgba(255, 255, 255, 0.08);
+  }
+
+html,
+body {
+  background-attachment: scroll;
+}
+  
   .profile {
     flex-direction: column;
     align-items: center;
