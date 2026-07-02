@@ -244,17 +244,21 @@ footer {
 -------------------------------------------------- */
 
 @media (max-width: 640px) {
-  @supports (-webkit-touch-callout: none) {
-    .card {
-      background: rgba(70, 90, 155, 0.32);
-      -webkit-backdrop-filter: none !important;
-      backdrop-filter: none !important;
-    }
+  .card,
+  .card::before,
+  .card::after {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
 
-    .card::after {
-      mix-blend-mode: normal;
-      opacity: 0.35;
-    }
+  .card::after {
+    display: none !important;
+  }
+
+  .card {
+    background: rgba(70, 90, 155, 0.34) !important;
   }
 }
 
