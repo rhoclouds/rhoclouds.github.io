@@ -300,21 +300,6 @@ body::before {
   mix-blend-mode: screen;
 }
 
-.card h2 {
-  font-size: 26px;
-  font-weight: bold;
-  color: rgba(245,246,255,0.92);
-
-  width: 100%;
-  max-width: 600px;
-
-  margin: 0 auto 16px;
-  padding-bottom: 6px;
-
-  text-align: left;
-  border-bottom: 1px solid rgba(255,255,255,0.20);
-}
-
 footer {
   color: #555;
   text-align: center;
