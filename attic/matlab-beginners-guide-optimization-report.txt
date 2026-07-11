@@ -1,0 +1,12 @@
+Source: C:\Users\xzeno\Documents\rhoclouds.github.io\projects\matlab-beginners-guide.html
+Original HTML size: 3,333,911 bytes
+Optimized HTML size: 938,273 bytes
+External CSS size: 17,087 bytes
+Extracted assets size: 1,743,812 bytes
+Optimized total size: 2,699,172 bytes
+HTML data images found: 206
+CSS data images found: 4
+Unique image files written: 185
+Duplicate images reused: 25
+Style blocks externalized: 2
+Exact duplicate CSS rules removed: 17
