@@ -159,6 +159,7 @@
         {% if year.name == current_year %}
           <div class="year-group current-year">
             <h3>{{ year.name }} ({{ count }})</h3>
+            <span class="year-icon">🪶</span>
             <ul class="post-list">
               {% for post in year.items %}
                 <li>
@@ -171,6 +172,7 @@
         {% else %}
           <details class="year-group">
             <summary>{{ year.name }} ({{ count }})</summary>
+            <span class="year-icon">🪶</span>
             <ul class="post-list">
               {% for post in year.items %}
                 <li>
