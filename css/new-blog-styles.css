@@ -214,6 +214,17 @@ body.light-mode nav a:hover {
   border-radius: 6px;
 }
 
+.blog-container {
+    width: min(88%, 1000px);
+    margin: auto;
+}
+
+@media (max-width: 640px) {
+    .blog-container {
+        width: 100%;
+    }
+}
+
 /* --------------------------------------------------
    Blog post ordering (year groups)
 -------------------------------------------------- */
