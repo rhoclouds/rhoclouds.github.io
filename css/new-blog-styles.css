@@ -1,4 +1,4 @@
-/* blog-style.css: shared stylesheet for new blog posts */
+/* blog-style.css: shared stylesheet for blog landing and new blog posts */
 html {
   font-size: 16px;
 }
@@ -230,7 +230,7 @@ body.light-mode nav a:hover {
   color: rgba(245, 246, 255, 0.9);
 
   padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
 
   display: flex;
   align-items: center;
@@ -253,7 +253,7 @@ body.light-mode nav a:hover {
   color: rgba(245, 246, 255, 0.9);
 
   padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
 
   display: flex;
   align-items: center;
