@@ -260,9 +260,6 @@ footer {
     max-width:95%;
     margin:0 auto 1.5rem;
     padding:1.5rem;
-
-    backdrop-filter:none;
-    -webkit-backdrop-filter:none;
   }
 
   .profile {
