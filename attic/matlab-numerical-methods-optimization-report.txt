@@ -1,0 +1,12 @@
+Source: C:\Users\xzeno\Documents\rhoclouds.github.io\projects\matlab-numerical-methods.html
+Original HTML size: 27,445,088 bytes
+Optimized HTML size: 2,865,863 bytes
+External CSS size: 17,384 bytes
+Extracted assets size: 17,781,763 bytes
+Optimized total size: 20,665,010 bytes
+HTML data images found: 2330
+CSS data images found: 4
+Unique image files written: 1964
+Duplicate images reused: 370
+Style blocks externalized: 2
+Exact duplicate CSS rules removed: 17
