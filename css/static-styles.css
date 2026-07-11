@@ -191,7 +191,7 @@ footer {
 .intro {
   font-size:1.1rem;
   color:rgba(225,230,245,.82);
-  margin-bottom:.4rem;
+  margin-bottom:12px;
 }
 
 .location {
@@ -200,7 +200,7 @@ footer {
   gap:.4rem;
   font-size:1rem;
   color:rgba(225,230,245,.88);
-  margin-bottom:.6rem;
+  margin-bottom:12px;
 }
 
 .about-text p {
