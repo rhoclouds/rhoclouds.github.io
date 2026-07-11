@@ -157,7 +157,7 @@ footer {
 }
 
 .profile-links {
-  margin-top:16px;
+  margin-top:24px;
   width:120px;
   display:grid;
   grid-template-columns:repeat(3,1fr);
