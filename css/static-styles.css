@@ -244,12 +244,6 @@ footer {
 
 @media (max-width:640px) {
 
-  :root {
-    --glass-bg:rgba(255,255,255,.14);
-    --glass-border:rgba(255,255,255,.18);
-    --glass-inner:rgba(255,255,255,.08);
-  }
-
   html,
   body {
     background-attachment:scroll;
