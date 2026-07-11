@@ -159,8 +159,10 @@
         {% if year.name == current_year %}
           <div class="year-group current-year">
             <h3>
-              {{ year.name }} ({{ count }})
+              <span class="year-label">
+                {{ year.name }} ({{ count }})
               <span class="year-icon">🪶</span>
+              </span>
             </h3>
             <ul class="post-list">
               {% for post in year.items %}
