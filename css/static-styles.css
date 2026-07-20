@@ -205,6 +205,17 @@ footer {
   margin-left: -6px;
 }
 
+.contact {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: 1rem;
+  color: rgba(225,230,245,.88);
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: -6px;
+}
+
 .about-text p {
   line-height:1.7;
   margin-top: 0;
