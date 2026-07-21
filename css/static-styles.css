@@ -216,10 +216,6 @@ footer {
   margin-left: -6px;
 }
 
-.profile-links {
-  margin-top: 12px;
-}
-
 .profile-email {
   width: 100%;
   margin-top: 10px;
@@ -229,7 +225,7 @@ footer {
 
 .profile-email p {
   margin: 0;
-  font-size: 13px;
+  font-size: 11px;
   white-space: nowrap;
 }
 
