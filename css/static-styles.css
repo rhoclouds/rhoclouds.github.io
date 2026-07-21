@@ -216,6 +216,23 @@ footer {
   margin-left: -6px;
 }
 
+.profile-links {
+  margin-top: 12px;
+}
+
+.profile-email {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(230, 235, 255, 0.9);
+}
+
+.profile-email p {
+  margin: 0;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
 .about-text p {
   line-height:1.7;
   margin-top: 0;
