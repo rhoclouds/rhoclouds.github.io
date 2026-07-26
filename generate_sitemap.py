@@ -3,7 +3,7 @@ from datetime import datetime
 
 BASE_URL = "https://rhoclouds.github.io"
 BLOG_DIR = "blog"
-STATIC_PAGES = ["index.html", "blog.html", "library.html"]
+STATIC_PAGES = ["index.html", "blog.html", "projects.html"]
 
 def find_blog_html_files():
     html_files = []
@@ -16,7 +16,7 @@ def find_blog_html_files():
 
 def generate_sitemap(blog_files):
     header = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    header += '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    header += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     body = ""
     today = datetime.now().strftime("%Y-%m-%d")
 
