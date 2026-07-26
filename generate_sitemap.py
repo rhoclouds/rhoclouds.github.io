@@ -3,7 +3,11 @@ from datetime import datetime
 
 BASE_URL = "https://rhoclouds.github.io"
 BLOG_DIR = "blog"
-STATIC_PAGES = ["index.html", "blog.html", "projects.html"]
+STATIC_PAGES = {
+    "index.html": "",
+    "blog.html": "blog.html",
+    "library.html": "library.html",
+}
 
 def find_blog_html_files():
     html_files = []
@@ -21,8 +25,8 @@ def generate_sitemap(blog_files):
     today = datetime.now().strftime("%Y-%m-%d")
 
     # Static top-level pages
-    for static_page in STATIC_PAGES:
-        url = f"{BASE_URL}/{static_page}"
+    for static_page, url_path in STATIC_PAGES.items():
+        url = f"{BASE_URL}/{url_path}"
         body += f"  <url>\n"
         body += f"    <loc>{url}</loc>\n"
         body += f"    <lastmod>{today}</lastmod>\n"
