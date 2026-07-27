@@ -110,10 +110,16 @@ plt.rcParams.update({
 figure, axes = plt.subplots(
     1,
     len(ranks) + 1,
-    figsize=(4.1 * (len(ranks) + 1), 5),
-    constrained_layout=True
+    figsize=(20, 3.9)
 )
 
+figure.subplots_adjust(
+    left=0.005,
+    right=0.995,
+    bottom=0.01,
+    top=0.78,
+    wspace=0.035
+)
 for axis, k in zip(axes[:-1], ranks):
     A_k = truncated_svd_image(k)
     error = relative_frobenius_error(k)
