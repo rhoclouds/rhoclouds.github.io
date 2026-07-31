@@ -16,6 +16,6 @@ Maybe it’s unfair on my part. But one morning, that Wednesday, I got up and we
 
 When it came, I didn’t even know if I wanted the drink. But as I walked down my usual route, I sipped on it as the rain began to sprinkle ever so lightly. It didn’t feel like I was walking or could walk. My head spun and my legs felt heavy. I couldn’t finish the drink and dumped half of it into a bin.
 
-I haven't had coffee since. I've tried to replace it with chai or black tea. At night, I often settle for chamomile with honey and milk.
+I haven't had coffee since. I've tried to replace it with chai or oolong. At night, I often settle for chamomile with honey and milk.
 
 To this day, things haven't gotten better.
