@@ -39,13 +39,13 @@
 
 
 
-.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(192, 76, 11); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: center;  }
-.S1 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
+.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(192, 76, 11); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: center;  }
+.S1 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
 .S2 { margin-bottom: 20px; padding-bottom: 4px;  }
-.S3 { margin: 0px; padding: 10px 0px 10px 5px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 700; text-align: start;  }
-.S4 { margin: -1px 0px 0px; padding: 10px 0px 10px 7px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: start;  }
-.S5 { margin: 20px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
-.S6 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
+.S3 { margin: 0px; padding: 10px 0px 10px 5px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 700; text-align: start;  }
+.S4 { margin: -1px 0px 0px; padding: 10px 0px 10px 7px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: start;  }
+.S5 { margin: 20px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S6 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
 .CodeBlock { background-color: #F5F5F5; margin: 10px 15px 10px 0; display: inline-block }
 .eoOutputWrapper { width: calc(90vw - 10px) !important; }
 .S7 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
@@ -81,8 +81,8 @@
 .inlineElement .textElement {}
 .embeddedOutputsTextElement.rightPaneElement,.embeddedOutputsVariableStringElement.rightPaneElement {    min-height: 16px;}
 .rightPaneElement .textElement {    padding-top: 2px;    padding-left: 9px;}
-.S9 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
-.S10 { margin: 10px 0px 20px; padding-left: 0px; font-family: Georgia, Helvetica, Arial, sans-serif; font-size: 16px;  }
+.S9 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
+.S10 { margin: 10px 0px 20px; padding-left: 0px; font-family: "IBM Plex Sans", Helvetica, sans-serif; font-size: 16px;  }
 .S11 { margin-left: 64px; line-height: 24px; min-height: 0px; text-align: left; white-space: pre-wrap;  }
 .S12 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 0px none rgb(33, 33, 33); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
 .S13 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
@@ -112,11 +112,11 @@
 .variableNameElement {    margin-bottom: 3px;    display: inline-block;}
 /* * Ellipses as base64 for HTML export. */.matrixElement .horizontalEllipsis,.rtcDataTipElement .matrixElement .horizontalEllipsis {    display: inline-block;    margin-top: 3px;    /* base64 encoded version of images-liveeditor/HEllipsis.png */    width: 30px;    height: 12px;    background-repeat: no-repeat;    background-image: url("/project-assets/matlab-beginners-guide-assets/image-1c82defc84f2.png");}
 .matrixElement .verticalEllipsis,.textElement .verticalEllipsis,.rtcDataTipElement .matrixElement .verticalEllipsis,.rtcDataTipElement .textElement .verticalEllipsis {    margin-left: 35px;    /* base64 encoded version of images-liveeditor/VEllipsis.png */    width: 12px;    height: 30px;    background-repeat: no-repeat;    background-image: url("/project-assets/matlab-beginners-guide-assets/image-25247389a625.png");}
-.S15 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S15 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
 .S16 { margin: 3px; border: 1px solid rgb(191, 191, 191); border-collapse: collapse;  }
 .S17 { background-color: rgb(245, 245, 245);  }
 .S18 { border: 1px solid rgb(191, 191, 191); vertical-align: top;  }
-.S19 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
+.S19 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
 .S20 { background-color: rgba(0, 0, 0, 0);  }
 .S21 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 0px none rgb(33, 33, 33); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
 .S22 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px 0px 4px 4px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
@@ -140,6 +140,6 @@
 
 /* * Ellipses as base64 for HTML export. */
 
-.S26 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
-.S27 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: Georgia, Helvetica, Arial, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
+.S26 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
+.S27 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
 .S28 { border-left: 0px none rgb(33, 33, 33); border-right: 0px none rgb(33, 33, 33); border-top: 0px none rgb(33, 33, 33); border-bottom: 0px none rgb(33, 33, 33); border-radius: 0px; padding: 0px; line-height: 15.6px; min-height: 16px; white-space: pre; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;  }
