@@ -14,27 +14,12 @@
 
     /* Guide-specific navigation colors */
     body.light-mode nav a {
-    color: #555 !important;
+      color: #555 !important;
     }
 
     body.light-mode nav a:hover {
-    color: #1c2541 !important;
+      color: #1c2541 !important;
     }
-    
-    body.light-mode nav a {
-      color: #555          !important;
-      margin: 0 1rem         !important;
-      font-size: 1.1rem        !important;
-      font-family: inherit   !important;
-      text-decoration: none  !important;
-      /* Added link line height */
-      line-height: 28.16px !important;
-    }
-    body.light-mode nav a:hover {
-      color: #1c2541         !important;
-      text-decoration: underline !important;
-    }
-  
 
 /* ---- MATLAB export style block ---- */
 
