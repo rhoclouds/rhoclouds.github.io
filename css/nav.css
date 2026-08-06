@@ -2,6 +2,7 @@ nav {
   text-align: center;
   padding: 3rem 0;
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
 nav a {
