@@ -5,12 +5,20 @@
     }
 
     /* Added wrapper styles for centering and width */
-    .wrapper {
-        max-width: 747px;
-        margin: 0 auto;
-        padding: 0 0 50px;
-        width: 90%;
-    }
+.wrapper {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 50px;
+}
+
+.rtcContent {
+  width: 90%;
+  max-width: 747px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
 
 
 /* ---- MATLAB export style block ---- */
