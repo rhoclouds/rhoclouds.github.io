@@ -1,5 +1,5 @@
 
-    /* Added body margin reset */
+/* Added body margin reset */
     body {
         margin: 0;
     }
@@ -12,14 +12,15 @@
         width: 90%;
     }
 
-    nav {
-      background-color: transparent;
-      text-align: center;
-      font-family: "Georgia", serif;
-      padding: 3rem 0;
-      /* Added nav line height */
-      line-height: 27.2px;
+    /* Guide-specific navigation colors */
+    body.light-mode nav a {
+    color: #555 !important;
     }
+
+    body.light-mode nav a:hover {
+    color: #1c2541 !important;
+    }
+    
     body.light-mode nav a {
       color: #555          !important;
       margin: 0 1rem         !important;
