@@ -12,14 +12,6 @@
         width: 90%;
     }
 
-    /* Guide-specific navigation colors */
-    body.light-mode nav a {
-      color: #555 !important;
-    }
-
-    body.light-mode nav a:hover {
-      color: #1c2541 !important;
-    }
 
 /* ---- MATLAB export style block ---- */
 

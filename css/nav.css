@@ -16,3 +16,11 @@ nav a:hover {
   color: #f0f0f0;
   text-decoration: underline;
 }
+
+body.light-mode nav a {
+  color: #555;
+}
+
+body.light-mode nav a:hover {
+  color: #1c2541;
+}
