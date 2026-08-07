@@ -176,14 +176,6 @@ blockquote {
   }
 }
 
-body.light-mode nav a {
-  color: #555 !important;
-}
-
-body.light-mode nav a:hover {
-  color: #1c2541 !important;
-}
-
 .poem-collection {
     max-width: 720px;
     margin: 0 auto;
