@@ -54,8 +54,6 @@ Thus, if an entire school isn’t given access to AP Calculus, it might be okay,
 - AP Calculus as an 11th grader
 - Multivariable Calculus as a 12th grader
 
-And that’s great.
-
 But, there was an issue in SFUSD. A significant portion of kids had to retake Algebra I or did not demonstrate proficiency in it. Black and Latino students were struggling disproportionately and were then underrepresented in advanced math classes. They believed certain kids felt dumb for not being in higher level classes and did not want the pressure from parents. Thus, they believed that “heterogeneous classrooms” would be the solution: mix all the students together to let them build off each other. Different experiences and levels of skill would combine, and everyone would move together.
 
 And according to *them* in the following years, it worked.<sup><a class="cite" href="#ref-nctm-detracking"></a></sup>
@@ -81,7 +79,7 @@ What is also problematic is that they have said things like taking AP calculus i
 
 Additionally, SFUSD has relied heavily on grades and enrollment numbers (which have been established as misleading much of the time) rather than actual test scores or achievement. Grades are a harmful way of measuring one’s understanding and can often be heavily skewed based on the instructor’s practices. It’s pretty unethical that SFUSD is publishing claims with misleading data and spreading misinformation about college admissions.
 
->So, many of the pros that SFUSD claims are questionable at best. What about the cons?
+So, many of the pros that SFUSD claims are questionable at best. What about the cons?
 
 ## A System Antithetical to Success
 
@@ -107,11 +105,11 @@ In 2023, California revealed its new California Math Framework (CMF). CMF is sup
 
 Another great takedown can be found in professor Brian Conrad’s analysis of CMF. One crucial line of reasoning he has is that data science is definitely important but requires mathematical understanding that is not being established.<sup><a class="cite" href="#ref-conrad-cmf"></a></sup>
 
-## De-tracking Does Not Hurt the Wealthy
+## De-tracking Will Not Reduce Any Gaps
 
 Now, if kids in public schools are not allowed to take accelerated math as means of reducing the achievement gap between the underprivileged and wealthy, what is preventing the wealthy from just going elsewhere? And this has been the case. Kids with wealthy, educated parents will be guided from a young age on what to take and where. The likes of dual enrollment and various programs at elite high schools which tend to also be very expensive offer wealthy kids the opportunity to take advanced technical courses.
 
-The funny thing about this is that Jo Boaler is at Stanford, a school where 39% of the students are from the top 5%.<sup><a class="cite" href="#ref-stanford-economic-diversity"></a></sup> So yes, the people that Jo Boaler is surrounded by, likely had the opportunities and resources to flourish in math, yet she does not want the middle class to get the opportunity to do so.
+The ironic thing about this is that Jo Boaler is at Stanford, a school where 39% of the students are from the top 5%.<sup><a class="cite" href="#ref-stanford-economic-diversity"></a></sup> So yes, the people that Jo Boaler is surrounded by, likely had the opportunities and resources to flourish in math, yet she wants to limit everyone else's opportunity to do so.
 
 ## What’s Going On Now
 
@@ -146,7 +144,7 @@ In other words, parents who do not want to or cannot afford to send their kids t
                     
 Not giving students the ability to take advanced math classes is sabotaging their dreams. Not giving them an outlet for ambition is intentionally holding them back. And while math classes are the foundation of it all, it's far from just being about math classes. At the end of the day, this is what is really hurting the middle class.
 
-If you don't believe me, here is a signed list from AI industry leaders and another from STEM professionals who agree that math is essential for the success of the country.<sup><a class="cite" href="#ref-kqed-private-school"></a></sup><sup><a class="cite" href="#ref-math-matters-ai"></a></sup><sup><a class="cite" href="#ref-k12-math-matters"></a></sup> Instead of holding back the middle class, let’s encourage students to flourish in math, and to use it to build a world where people are excited for the future.
+Here is a signed list from AI industry leaders and another from STEM professionals who agree that math is essential for the success of the country.<sup><a class="cite" href="#ref-kqed-private-school"></a></sup><sup><a class="cite" href="#ref-math-matters-ai"></a></sup><sup><a class="cite" href="#ref-k12-math-matters"></a></sup> Instead of holding back the middle class, let’s encourage students to flourish in math, and to use it to build a world where people are excited for the future.
 
 ## References
 
