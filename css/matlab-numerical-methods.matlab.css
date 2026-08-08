@@ -124,6 +124,9 @@ h2.S7 {
   width: calc(100% - 4px);
   max-width: none;
   margin-left: 4px;
-  margin-right: 10px;;
+  margin-right: 10px;
   box-sizing: border-box;
+
+  overflow-x: auto;
+  overflow-y: hidden;
 }
