@@ -14,20 +14,20 @@
 
 /* ---- MATLAB export style block ---- */
 
-.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(192, 76, 11); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 24px; font-weight: 400; text-align: center;  }
-.S1 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
+.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(192, 76, 11); font-family: "IBM Plex Sans", Helvetica, sans-serif;; font-style: normal; font-size: 24px; font-weight: 400; text-align: center;  }
+.S1 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
 .S2 { margin-bottom: 20px; padding-bottom: 4px;  }
-.S3 { margin: 0px; padding: 10px 0px 10px 5px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 700; text-align: start;  }
-.S4 { margin: -1px 0px 0px; padding: 10px 0px 10px 7px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 400; text-align: start;  }
-.S5 { margin: 20px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
-.S6 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
-.S7 { margin: 10px 0px 20px; padding-left: 0px; font-family: "IBM Plex Sans", Helvetica, sans-serif font-size: 16px;  }
+.S3 { margin: 0px; padding: 10px 0px 10px 5px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 700; text-align: start;  }
+.S4 { margin: -1px 0px 0px; padding: 10px 0px 10px 7px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: start;  }
+.S5 { margin: 20px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S6 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
+.S7 { margin: 10px 0px 20px; padding-left: 0px; font-family: "IBM Plex Sans", Helvetica, sans-serif; font-size: 16px;  }
 h2.S7 {
   margin-top: 20px;
 }
 .S8 { margin-left: 64px; line-height: 24px; min-height: 0px; text-align: left; white-space: pre-wrap;  }
-.S9 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
-.S10 { margin: 15px 10px 5px 4px; padding: 0px; line-height: 18px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 17px; font-weight: 700; text-align: left;  }
+.S9 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 25px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S10 { margin: 15px 10px 5px 4px; padding: 0px; line-height: 18px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 17px; font-weight: 700; text-align: left;  }
 .CodeBlock { background-color: #F5F5F5; margin: 10px 15px 10px 0; display: inline-block }
 .S11 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 0px none rgb(33, 33, 33); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
 .eoOutputWrapper { width: calc(90vw - 10px) !important; }
@@ -64,11 +64,11 @@ h2.S7 {
 .inlineElement .textElement {}
 .embeddedOutputsTextElement.rightPaneElement,.embeddedOutputsVariableStringElement.rightPaneElement {    min-height: 16px;}
 .rightPaneElement .textElement {    padding-top: 2px;    padding-left: 9px;}
-.S14 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
+.S14 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
 .S15 { margin: 3px; border: 1px solid rgb(191, 191, 191); border-collapse: collapse;  }
 .S16 { background-color: rgb(245, 245, 245);  }
 .S17 { border: 1px solid rgb(191, 191, 191); vertical-align: top;  }
-.S18 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
+.S18 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif; font-style: normal; font-size: 16px; font-weight: 400; text-align: left;  }
 .S19 { background-color: rgba(0, 0, 0, 0);  }
 .variableValue { width: 100% !important; }
 .embeddedOutputsMatrixElement,.eoOutputWrapper .matrixElement {    min-height: 18px;    box-sizing: border-box;}
@@ -101,7 +101,29 @@ h2.S7 {
 .S23 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
 .S24 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px 0px 4px 4px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
 .S25 { border-left: 0px none rgb(33, 33, 33); border-right: 0px none rgb(33, 33, 33); border-top: 0px none rgb(33, 33, 33); border-bottom: 0px none rgb(33, 33, 33); border-radius: 0px; padding: 0px; line-height: 15.6px; min-height: 16px; white-space: pre; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 12px;  }
-.S26 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
-.S27 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
+.S26 { margin: 2px 10px 2px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: break-spaces; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif;; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
+.S27 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 24px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: "IBM Plex Sans", Helvetica, sans-serif;; font-style: normal; font-size: 16px; font-weight: 400; text-align: center;  }
 .S28 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
 .S29 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+
+.rtcContent {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
+
+.rtcContent .S6,
+.rtcContent .CodeBlock {
+  margin-left: 0;
+}
+
+/* Trim code containers */
+.rtcContent .CodeBlock {
+  max-width: 1086px;
+  width: calc(100% - 4px);
+  max-width: none;
+  margin-left: 4px;
+  margin-right: 10px;;
+  box-sizing: border-box;
+}
