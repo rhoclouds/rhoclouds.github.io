@@ -119,3 +119,12 @@
 .rtcContent .CodeBlock {
   margin-left: 0;
 }
+
+/* Trim code containers */
+.rtcContent .CodeBlock {
+  width: max-content;
+  max-width: 850px;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: auto;
+}
