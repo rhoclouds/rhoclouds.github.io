@@ -43,7 +43,7 @@
   .post-list li {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 12px 0;
     border-bottom: 1px solid rgba(255,255,255,0.05);
   }
