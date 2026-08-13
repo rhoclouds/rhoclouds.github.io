@@ -2,6 +2,7 @@
 layout: post
 title: My Attempt at a Mathematical Handwriting Reference
 date: 2026-06-07
+category: post
 ---
 
 <div class="post-subheader">

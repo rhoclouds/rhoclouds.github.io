@@ -135,11 +135,16 @@
 <div class="content">
   <div class="container">
 
+    {% assign current_year = "now" | date: "%Y" %}
+
+    {% assign regular_posts = site.posts | where_exp: "post", "post.category != 'creative'" %}
+    {% assign creative_posts = site.posts | where: "category", "creative" %}
+
+    {% assign posts_by_year = regular_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    {% assign creative_by_year = creative_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
     <div class="card">
       <h2>Posts</h2>
-
-      {% assign current_year = "now" | date: "%Y" %}
-      {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
       {% for year in posts_by_year %}
         {% assign count = year.items | size %}
@@ -151,15 +156,21 @@
                 {{ year.name }} ({{ count }})
               </span>
             </h3>
+
             <ul class="post-list">
               {% for post in year.items %}
                 <li>
-                  <a href="{{ post.url }}">{{ post.display_title | default: post.title }}</a>
-                  <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
+                  <a href="{{ post.url }}">
+                    {{ post.display_title | default: post.title }}
+                  </a>
+                  <div class="post-date">
+                    {{ post.date | date: "%m/%d/%y" }}
+                  </div>
                 </li>
               {% endfor %}
             </ul>
           </div>
+
         {% else %}
           <details class="year-group">
             <summary>
@@ -167,11 +178,71 @@
                 {{ year.name }} ({{ count }})
               </span>
             </summary>
+
             <ul class="post-list">
               {% for post in year.items %}
                 <li>
-                  <a href="{{ post.url }}">{{ post.display_title | default: post.title }}</a>
-                  <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
+                  <a href="{{ post.url }}">
+                    {{ post.display_title | default: post.title }}
+                  </a>
+                  <div class="post-date">
+                    {{ post.date | date: "%m/%d/%y" }}
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+
+    <div class="card">
+      <h2>Creative Writing</h2>
+
+      {% for year in creative_by_year %}
+        {% assign count = year.items | size %}
+
+        {% if year.name == current_year %}
+          <div class="year-group current-year">
+            <h3>
+              <span class="year-label">
+                {{ year.name }} ({{ count }})
+              </span>
+            </h3>
+
+            <ul class="post-list">
+              {% for post in year.items %}
+                <li>
+                  <a href="{{ post.url }}">
+                    {{ post.display_title | default: post.title }}
+                  </a>
+                  <div class="post-date">
+                    {{ post.date | date: "%m/%d/%y" }}
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+        {% else %}
+          <details class="year-group">
+            <summary>
+              <span class="year-label">
+                {{ year.name }} ({{ count }})
+              </span>
+            </summary>
+
+            <ul class="post-list">
+              {% for post in year.items %}
+                <li>
+                  <a href="{{ post.url }}">
+                    {{ post.display_title | default: post.title }}
+                  </a>
+                  <div class="post-date">
+                    {{ post.date | date: "%m/%d/%y" }}
+                  </div>
                 </li>
               {% endfor %}
             </ul>

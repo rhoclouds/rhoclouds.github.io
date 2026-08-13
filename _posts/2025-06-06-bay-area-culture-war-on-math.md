@@ -2,6 +2,7 @@
 layout: post
 title: The Bay Area's Culture War on Math Betrays the Middle Class
 date: 2025-06-06
+category: post
 ---
 
 <div class="post-subheader">

@@ -2,6 +2,7 @@
 layout: post
 title: The Absence of Purpose Led Us Here
 date: 2024-12-01
+category: creative
 ---
 
 <div class="post-subheader">
