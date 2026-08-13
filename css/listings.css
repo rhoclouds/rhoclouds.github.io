@@ -70,7 +70,7 @@ Creative writing
 -------------------------------------------------- */
 
 .year-group.locked summary {
-  cursor: not-allowed;
+  cursor: not-allowed !important;
 }
 
 /* --------------------------------------------------
