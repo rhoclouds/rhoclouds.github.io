@@ -197,11 +197,37 @@
 
     </div>
 
-
 <div class="card">
-  <details class="creative-group locked">
-    <summary onclick="event.preventDefault()">
-      <span>Creative Writing</span>
-    </summary>
-  </details>
+  <h2>Creative Writing</h2>
+
+  {% for year in creative_by_year %}
+    {% assign count = year.items | size %}
+
+    <details class="year-group locked">
+      <summary onclick="event.preventDefault()">
+        <span class="year-label">
+          {{ year.name }} ({{ count }})
+        </span>
+      </summary>
+
+      <ul class="post-list">
+        {% for post in year.items %}
+          <li>
+            <a href="{{ post.url }}">
+              {{ post.display_title | default: post.title }}
+            </a>
+            <div class="post-date">{{ post.date | date: "%m/%d/%y" }}</div>
+          </li>
+        {% endfor %}
+      </ul>
+    </details>
+  {% endfor %}
 </div>
+
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
