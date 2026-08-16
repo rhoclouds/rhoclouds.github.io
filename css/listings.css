@@ -73,6 +73,10 @@ Creative writing
   cursor: not-allowed !important;
 }
 
+.locked-post:hover {
+  text-decoration: none;
+}
+
 /* --------------------------------------------------
 Mobile
 -------------------------------------------------- */
