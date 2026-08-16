@@ -70,8 +70,6 @@ Creative writing
 -------------------------------------------------- */
 
 .locked-post {
-  display: block;
-  text-align: left;
   cursor: not-allowed !important;
 }
 
