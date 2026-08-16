@@ -69,7 +69,9 @@
 Creative writing
 -------------------------------------------------- */
 
-.year-group.locked summary {
+.locked-post {
+  display: block;
+  text-align: left;
   cursor: not-allowed !important;
 }
 
