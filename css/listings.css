@@ -69,12 +69,17 @@
 Creative writing
 -------------------------------------------------- */
 
-.locked-post {
-  cursor: not-allowed !important;
+.post-list a.locked-post {
+  cursor: not-allowed;
 }
 
-.locked-post:hover {
-  text-decoration: none !important;
+.post-list a.locked-post {
+  cursor: not-allowed;
+}
+
+.post-list a.locked-post:hover {
+  cursor: not-allowed;
+  text-decoration: none;
 }
 
 /* --------------------------------------------------
