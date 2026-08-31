@@ -1,16 +1,30 @@
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
   padding: 3rem 0;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
 nav a {
   color: #f0f0f0;
-  margin: 0 1rem;
+  margin: 0;
+  font-family: inherit;
   font-size: 1.1rem;
+  line-height: inherit;
   text-decoration: none;
 }
 
 nav a:hover {
   color: #f0f0f0;
   text-decoration: underline;
+}
+body.light-mode nav a {
+  color: #555;
+}
+
+body.light-mode nav a:hover {
+  color: #555;
 }

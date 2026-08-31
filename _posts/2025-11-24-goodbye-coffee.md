@@ -2,6 +2,7 @@
 layout: post
 title: Goodbye, Coffee
 date: 2025-11-24
+category: creative
 ---
 
 <div class="post-subheader">

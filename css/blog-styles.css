@@ -1,7 +1,10 @@
-/* blog-style.css: shared stylesheet for legacy blog posts or projects in html */
-/* this is also used for projects in html. it's bad practice, but nothing is broken even with some of the changes, so i'm leaving it as is. */
 html {
   font-size: 16px;
+}
+
+.container {
+  width: min(88%, 1000px);
+  margin: auto;
 }
 
 body {
@@ -9,8 +12,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Georgia", serif;
-    line-height: 1.6;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.8;
     background-color: transparent;
     font-size: 17px;
 }
@@ -24,11 +27,6 @@ body {
 .content {
     padding-top: 20px;
     text-align: center;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
 }
 
 .post-title {
@@ -177,14 +175,6 @@ blockquote {
   }
 }
 
-body.light-mode nav a {
-  color: #555 !important;
-}
-
-body.light-mode nav a:hover {
-  color: #1c2541 !important;
-}
-
 .poem-collection {
     max-width: 720px;
     margin: 0 auto;
@@ -204,14 +194,14 @@ body.light-mode nav a:hover {
 }
 
 .poem pre {
-    font-family: 'Georgia', serif;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    line-height: 1.7;
-    font-size: 1.02rem;
-    background: transparent;
-    padding: 0.5rem 0;
-    border-radius: 6px;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.75;
+  font-size: 1.02rem;
+  background: transparent;
+  padding: 0.5rem 0;
+  border-radius: 6px;
 }
 
 /* --------------------------------------------------

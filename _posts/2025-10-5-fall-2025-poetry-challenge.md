@@ -2,6 +2,7 @@
 layout: post
 title: Fall 2025 Poetry Challenge
 date: 2025-10-05
+category: creative
 ---
 
 <div class="post-subheader">
