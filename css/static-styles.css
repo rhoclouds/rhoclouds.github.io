@@ -39,7 +39,6 @@
 
 html,
 body {
-
   margin: 0;
   padding: 0;
 
@@ -61,7 +60,6 @@ body {
 }
 
 .wrapper {
-
   display:flex;
 
   flex-direction:column;
@@ -70,7 +68,6 @@ body {
 }
 
 .content {
-
   position: relative;
 
   z-index: 1;
@@ -85,7 +82,6 @@ body {
 -------------------------------------------------- */
 
 .container {
-
   width: 85%;
   max-width: 960px;
 
@@ -100,7 +96,6 @@ body {
 }
 
 .card {
-
   position: relative;
 
   width: 100%;
@@ -134,7 +129,6 @@ body {
 }
 
 .card::before {
-
   content: "";
 
   position: absolute;
@@ -151,7 +145,6 @@ body {
 }
 
 .card::after {
-
   content: "";
 
   position: absolute;
@@ -184,7 +177,6 @@ body {
 }
 
 footer {
-
   color: #555;
 
   text-align: center;
@@ -193,11 +185,10 @@ footer {
 }
 
 /* --------------------------------------------------
-   Index page styles
+   Index
 -------------------------------------------------- */
 
 .card.profile {
-
   max-width: none;
 
   padding: 0;
@@ -222,14 +213,13 @@ footer {
 }
 
 .profile {
-
   display: grid;
 
   grid-template-columns:
-    330px
-    minmax(0, 1fr);
+    minmax(0, 1fr)
+    360px;
 
-  gap: 70px;
+  gap: 40px;
 
   align-items: center;
 }
@@ -240,7 +230,6 @@ footer {
 -------------------------------------------------- */
 
 .arch-wrap {
-
   grid-column: 2;
 
   display: flex;
@@ -250,7 +239,6 @@ footer {
 }
 
 .arch {
-
   position: relative;
 
   width: 360px;
@@ -276,7 +264,6 @@ footer {
 }
 
 .arch::before {
-
   content: "";
 
   position: absolute;
@@ -320,7 +307,6 @@ footer {
 -------------------------------------------------- */
 
 .contact-row {
-
   display: flex;
 
   align-items: center;
@@ -331,7 +317,6 @@ footer {
 }
 
 .profile-links {
-
   display: flex;
 
   align-items: center;
@@ -346,7 +331,6 @@ footer {
 }
 
 .profile-links a {
-
   color: #4c4654;
 
   text-decoration: none;
@@ -359,14 +343,12 @@ footer {
 }
 
 .profile-links a:hover {
-
   transform: translateY(-2px);
 
   opacity: 1;
 }
 
 .profile-email {
-
   width: auto;
 
   margin: 0;
@@ -377,7 +359,6 @@ footer {
 }
 
 .profile-email p {
-
   margin: 0;
 
   font-size: 12px;
@@ -482,6 +463,22 @@ body.home-page .wrapper::after {
   margin-bottom: .3rem;
 
   color: #2f2a39;
+}
+
+.site-brand {
+
+  position: absolute;
+
+  top: 24px;
+  left: 48px;
+
+  z-index: 2;
+
+  color: #312d3d;
+
+  font-size: 1.25rem;
+
+  text-decoration: none;
 }
 
 .intro {
