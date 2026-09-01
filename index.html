@@ -19,93 +19,88 @@
   <link rel="stylesheet" href="/css/static-styles.css">
   <link rel="stylesheet" href="/css/nav.css">
 
-<style>
-  .container {
-    width: 80%;
-    max-width: 900px;
-    gap: 1.5rem;
-  }
-
-  .card {
-    max-width: none;
-    padding: 2rem 2rem 1.5rem;
-  }
-
-  .profile {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-  }
-
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: url('/rhoCloudIcon.png') center/cover no-repeat;
-    flex-shrink: 0;
-
-    border: 5px solid rgba(198, 218, 255, 0.90);
-
-    box-shadow:
-      0 14px 40px rgba(0, 0, 0, 0.42),
-      inset 0 1px 0 rgba(255,255,255,0.24),
-      0 0 0 7px rgba(85, 150, 255, 0.38),
-      0 0 28px rgba(95, 165, 255, 0.55),
-      0 0 70px rgba(95, 165, 255, 0.35),
-      0 0 110px rgba(125, 100, 205, 0.28);
-  }
-
-  .info {
-    flex-grow: 1;
-  }
-
-  .name {
-    font-size: 2rem;
-    margin-bottom: 0.3rem;
-  }
-
-  .blurb {
-    font-style: italic;
-    color: #f0f0f0;
-    margin-bottom: 0.6rem;
-  }
-
-  .about-list {
-    padding-left: 1.2rem;
-    margin-top: 1rem;
-    list-style: disc;
-  }
-
-  .about-list li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-  }
-
-  .card.section {
-    padding-left: var(--profile-indent);
-    padding: 1.5rem 2rem 1.5rem var(--profile-indent);
-  }
-
-  .section-inner {
-    padding: 0 2rem 0 0;
-  }
-
-  @media (max-width: 640px) {
-    .profile {
-      flex-direction: column;
-      text-align: center;
+  <style>
+    .container {
+      width: 80%;
+      max-width: 1080px;
+      gap: 1.5rem;
     }
 
-    .location {
-      justify-content: center;
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+
+      border-radius: 50%;
+
+      background:
+        url('/rhoCloudIcon.png')
+        center / cover
+        no-repeat;
+
+      flex-shrink: 0;
+
+      border: 5px solid rgba(198, 218, 255, 0.90);
+
+      box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.42),
+        inset 0 1px 0 rgba(255,255,255,0.24),
+        0 0 0 7px rgba(85, 150, 255, 0.38),
+        0 0 28px rgba(95, 165, 255, 0.55),
+        0 0 70px rgba(95, 165, 255, 0.35),
+        0 0 110px rgba(125, 100, 205, 0.28);
     }
-  }
-</style>
+
+    .info {
+      flex-grow: 1;
+    }
+
+    .name {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .blurb {
+      font-style: italic;
+      color: #514b57;
+      margin-bottom: 0.6rem;
+    }
+
+    .about-list {
+      padding-left: 1.2rem;
+      margin-top: 1rem;
+      list-style: disc;
+    }
+
+    .about-list li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .card.section {
+      padding-left: var(--profile-indent);
+      padding: 1.5rem 2rem 1.5rem var(--profile-indent);
+    }
+
+    .section-inner {
+      padding: 0 2rem 0 0;
+    }
+
+    @media (max-width: 640px) {
+      .location {
+        justify-content: center;
+      }
+    }
+  </style>
 
 </head>
 
 <body>
+
+  <!-- top nocturnal stripe -->
+  <div class="night-stripe"></div>
+
   <div class="wrapper">
+
     <nav>
       <a href="https://rhoclouds.github.io/">home</a>
       <a href="/library.html">library</a>
@@ -114,76 +109,135 @@
     </nav>
 
     <div class="content">
+
       <div class="container">
 
-<div class="card profile">
+        <div class="card profile">
 
-  <div class="profile-left">
-    <div class="profile-pic"></div>
+          <!-- nocturnal arch -->
+          <div class="arch-wrap">
 
-    <div class="profile-links">
-      <a href="/files/cv.pdf" target="_blank" rel="noopener">
-        <i class="fas fa-file-alt"></i>
-      </a>
+            <div class="arch">
 
-      <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin"></i>
-      </a>
+              <div class="profile-left">
 
-      <a href="https://github.com/-" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+                <div class="profile-pic"></div>
 
-      <div class="profile-email">
-        <p>austinquan [at] berkeley.edu</p>
+                <div class="profile-links">
+
+                  <a
+                    href="/files/cv.pdf"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="CV"
+                  >
+                    <i class="fas fa-file-alt"></i>
+                  </a>
+
+                  <a
+                    href="https://linkedin.com/in/your-linkedin"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+
+                  <a
+                    href="https://github.com/-"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+
+                </div>
+
+                <div class="profile-email">
+                  <p>austinquan [at] berkeley.edu</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- ivory information -->
+          <div class="info">
+
+            <div class="name">
+              rhoclouds
+            </div>
+
+            <div class="intro">
+              Hi, I'm Austin
+            </div>
+
+            <div class="location">
+              📍San Francisco Bay Area
+            </div>
+
+            <div class="about-text">
+
+              <p>
+                I'm a mechanical engineering undergraduate at
+                <a
+                  href="https://engineering.berkeley.edu/"
+                  target="_blank"
+                  rel="noopener"
+                >UC Berkeley</a>
+                interested in heat transfer, phase change phenomena, and
+                thermal management. In the future, I'd like to potentially
+                work on projects such as hybrid solar photovoltaic–thermal
+                systems, thermal energy storage for energy-intensive
+                infrastructure, and cryogenic propellant storage.
+              </p>
+
+              <p>
+                In my free time, I enjoy soccer, tennis, hiking, European
+                political history, and reading. My current top artists are
+                The 1975, Cigarettes After Sex, M83, and Conan Gray.
+                I've been orbiting the sun for
+                <span id="timer">calculating</span>.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-  </div>
-
-  <div class="info">
-    <div class="name">rhoclouds</div>
-    <div class="intro">Hi, I'm Austin</div>
-    <!-- <div class="contact">✉️ austinquan [at] berkeley.edu</div> -->
-    <div class="location">📍San Francisco Bay Area</div>
-
-    <div class="about-text">
-      <p>
-        I'm a mechanical engineering undergraduate at <a href="https://engineering.berkeley.edu/" target="_blank">UC Berkeley</a> interested in heat transfer, phase change phenomena, and thermal management. In the future, I'd like to potentially work on projects such as hybrid solar photovoltaic–thermal systems, thermal energy storage for energy-intensive infrastructure, and cryogenic propellant storage.
-      </p>
-
-      <p>
-        In my free time, I enjoy soccer, tennis, hiking, European political history, and reading.
-        My current top artists are The 1975, Cigarettes After Sex, , M83, and Conan Gray.
-        I've been orbiting the sun for <span id="timer">calculating</span>.
-      </p>
     </div>
-</div>
 
-      </div>
-    </div>
-  </div>
   </div>
 
-<script>
-const birthDate = new Date("2005-01-04T00:58:00");
+  <!-- bottom nocturnal stripe -->
+  <div class="night-stripe bottom"></div>
 
-function updateTimer() {
-  const now = Date.now(), diff = now - birthDate;
+  <script>
+    const birthDate = new Date("2005-01-04T00:58:00");
 
-  const yrs = Math.floor(diff / 31557600000),
-        days = Math.floor((diff % 31557600000) / 86400000),
-        hrs = Math.floor((diff % 86400000) / 3600000),
-        mins = Math.floor((diff % 3600000) / 60000),
-        secs = Math.floor((diff % 60000) / 1000);
+    function updateTimer() {
+      const now = Date.now();
+      const diff = now - birthDate;
 
-  document.getElementById("timer").textContent =
-    `${yrs} years, ${days} days, ${hrs} hours, ${mins} minutes, and ${secs} seconds`;
-}
+      const yrs = Math.floor(diff / 31557600000);
+      const days = Math.floor((diff % 31557600000) / 86400000);
+      const hrs = Math.floor((diff % 86400000) / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
 
-setInterval(updateTimer, 1000);
-updateTimer();
-</script>
+      document.getElementById("timer").textContent =
+        `${yrs} years, ${days} days, ${hrs} hours, ${mins} minutes, and ${secs} seconds`;
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer();
+  </script>
 
 </body>
 </html>
