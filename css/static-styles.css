@@ -38,9 +38,10 @@
 -------------------------------------------------- */
 
 html,
-body {
+body.home-page.container {
 
   margin: 0;
+  margin-top: 35px;
   padding: 0;
 
   min-height: 100%;
@@ -66,17 +67,12 @@ body {
 
   flex-direction:column;
 
-  min-height:calc(100vh - 18px);
+  min-height: 100vh;
 }
 
 .content {
 
   flex:1;
-
-  display:flex;
-
-  align-items:center;
-
 }
 
 /* --------------------------------------------------
@@ -273,7 +269,7 @@ footer {
 
   border-radius:
     150px 150px
-    24px 24px;
+    0px 0px;
 
   background: var(--night-sky);
 
@@ -532,24 +528,6 @@ footer {
     margin-top: 60px;
   }
 
-  .wrapper > nav {
-
-    margin:
-      18px
-      auto
-      0;
-
-    padding:
-      12px
-      17px;
-
-    gap: 22px;
-  }
-
-  .wrapper > nav a {
-    font-size: 14px;
-  }
-
   .container {
 
     width: 100%;
@@ -595,7 +573,7 @@ footer {
 
     border-radius:
       140px 140px
-      22px 22px;
+      0 0;
   }
 
   .profile-left {
