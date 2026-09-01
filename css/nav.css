@@ -41,6 +41,8 @@ body.light-mode nav a:hover {
 -------------------------------------------------- */
 
 body.home-page nav {
+  position: relative;
+  z-index: 1; 
   width: fit-content;
 
   margin: 24px auto 0;
