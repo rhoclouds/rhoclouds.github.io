@@ -95,22 +95,16 @@ body {
 -------------------------------------------------- */
 
 .wrapper > nav {
-
   width: fit-content;
+  margin: 24px auto 0;
 
-  margin:
-    24px
-    max(5%, calc((100% - 1080px) / 2))
-    0
-    auto;
-
-  padding: 13px 20px;
+  padding: 13px 24px;
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
-  gap: 34px;
+  gap: 38px;
 
   border-radius: 999px;
 
