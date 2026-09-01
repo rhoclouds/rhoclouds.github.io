@@ -24,6 +24,43 @@
   .card {
     max-width: none;
     padding: 1.5rem;
+
+    background: var(--ivory);
+
+    border: none;
+
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+
+    box-shadow: 0 10px 24px rgba(45,36,68,.08);
+
+    color: var(--ink);
+  }
+
+  .card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: auto;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 5px;
+
+    border: none;
+
+    border-radius: 22px 0 0 22px;
+
+    background: var(--night-sky);
+
+    opacity: 1;
+  }
+
+  .card::after {
+    display: none;
   }
 
   .book-section-label {
@@ -31,18 +68,18 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: rgba(255,255,255,0.92);
-    text-shadow: 0 6px 24px rgba(0,0,0,0.22);
+    color: var(--ink);
+    text-shadow: none;
   }
 
   .card h2.book-section-label {
-  font-weight: normal;
-  text-align: center;
-  border-bottom: none;
-  max-width: none;
-  padding-bottom: 0;
-  margin: 0 0 1rem;
-}
+    font-weight: normal;
+    text-align: center;
+    border-bottom: none;
+    max-width: none;
+    padding-bottom: 0;
+    margin: 0 0 1rem;
+  }
 
   .book-grid {
     display: grid;
@@ -90,11 +127,7 @@
     }
 
     .card::before {
-      border-radius: 19px;
-    }
-
-    .card::after {
-      border-radius: 20px;
+      border-radius: 20px 0 0 20px;
     }
 
     .book-grid.shelf-1,
@@ -108,13 +141,13 @@
 </head>
 <body>
   <div class="wrapper">
-      <nav>
-        <a href="https://rhoclouds.github.io/">home</a>
-        <a href="/library.html">library</a>
-        <a href="/blog.html">blog</a>
-        <a href="/projects.html">projects</a>
-      </nav>
-    </header>
+
+    <nav>
+      <a href="https://rhoclouds.github.io/">home</a>
+      <a href="/library.html">library</a>
+      <a href="/blog.html">blog</a>
+      <a href="/projects.html">projects</a>
+    </nav>
 
     <div class="content">
       <div class="container">
@@ -138,10 +171,12 @@
             <div class="book"><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Placeholder"></div>
             <div class="book"><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Placeholder"></div>
             <div class="book"><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg" alt="Placeholder"></div>
+          </div>
         </div>
 
       </div>
     </div>
+
   </div>
 </body>
 </html>
