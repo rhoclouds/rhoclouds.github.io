@@ -40,7 +40,7 @@ body.light-mode nav a:hover {
    Homepage liquid glass navbar
 -------------------------------------------------- */
 
-body.home-page nav {
+.site-nav {
   position: relative;
   z-index: 1; 
   width: fit-content;
@@ -76,11 +76,11 @@ body.home-page nav {
     inset 0 -10px 24px rgba(110,95,135,.05);
 }
 
-body.home-page nav a {
+.site-nav a {
   color: #555;
 }
 
-body.home-page nav a:hover {
+.site-nav a:hover {
   color: #555;
   text-decoration: underline;
 }
