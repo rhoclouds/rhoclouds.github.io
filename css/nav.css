@@ -47,6 +47,8 @@ body.light-mode nav a:hover {
 
   margin: 0;
 
+  margin: 24px auto 0;
+
   padding: 13px 24px;
 
   gap: 2.25rem;
@@ -83,4 +85,9 @@ body.light-mode nav a:hover {
 .site-nav a:hover {
   color: #555;
   text-decoration: underline;
+}
+
+.topbar .site-nav {
+  margin: 0;
+  justify-self: center;
 }
