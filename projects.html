@@ -17,64 +17,112 @@
     <link rel="stylesheet" href="/css/static-styles.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/listings.css">
+
+<style>
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.content {
+  flex: 1;
+  padding-top: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin-bottom: 4rem;
+  gap: 3rem;
+}
+
+.projects-section {
+  width: 100%;
+}
+
+.projects-title {
+  margin: 0 0 20px;
+
+  padding-bottom: 10px;
+
+  font-size: 1.65rem;
+  font-weight: 400;
+
+  color: #312d3d;
+
+  border-bottom: 1px solid rgba(49,45,61,.16);
+}
+
+  @media (max-width: 640px) {
+  .container {
+    width: 92%;
+  }
+}
+</style>
+
 </head>
 
-    <body>
-      <div class="wrapper">
-    
-      <div data-nosnippet>
-        <nav class="site-nav">
-          <a href="https://rhoclouds.github.io/">home</a>
-          <a href="/library.html">library</a>
-          <a href="/blog.html">blog</a>
-          <a href="/projects.html">projects</a>
-        </nav>
-      </div>
-    
-<div class="content">
-  <div class="container">
+<body>
+  <div class="wrapper">
 
-    <div class="card">
-      <h2>STEM Notes</h2>
-      <ul class="post-list">
-
-         <li>
-          <a href="/projects/linear-algebra.pdf" target="_blank" rel="noopener noreferrer">Introduction to Linear Algebra</a>
-          <div class="post-date">07/26/26</div>
-        </li>
-
-        <li>
-          <a href="/projects/multivariable-calculus.pdf" target="_blank" rel="noopener noreferrer">Multivariable Calculus</a>
-          <div class="post-date">07/25/25</div>
-        </li>
-
-        <li>
-          <a href="/projects/matlab-numerical-methods.html">Applied Numerical Methods in MATLAB Part 1: Introduction to Numerical Methods</a>
-          <div class="post-date">07/01/25</div>
-        </li>
-
-        <li>
-          <a href="/projects/matlab-beginners-guide.html">A Beginner's Guide to MATLAB</a>
-          <div class="post-date">05/14/25</div>
-        </li>
-
-      </ul>
+    <div data-nosnippet>
+      <nav class="site-nav">
+        <a href="https://rhoclouds.github.io/">home</a>
+        <a href="/library.html">library</a>
+        <a href="/blog.html">blog</a>
+        <a href="/projects.html">projects</a>
+      </nav>
     </div>
 
-    <div class="card">
-      <h2>Engineering Projects</h2>
-      <ul class="post-list">
+    <div class="content">
+      <div class="container">
 
-        <li>
-          <a href="/projects/me193e-final-project.pdf" target="_blank" rel="noopener noreferrer">Data Center Coupled with Thermal Energy Storage</a>
-          <div class="post-date">05/08/26</div>
-        </li>
+        <div class="projects-section">
+          <h2 class="projects-title">STEM Notes</h2>
 
-      </ul>
+          <ul class="post-list">
+
+            <li>
+              <a href="/projects/linear-algebra.pdf" target="_blank" rel="noopener noreferrer">Introduction to Linear Algebra</a>
+              <div class="post-date">07/26/26</div>
+            </li>
+
+            <li>
+              <a href="/projects/multivariable-calculus.pdf" target="_blank" rel="noopener noreferrer">Multivariable Calculus</a>
+              <div class="post-date">07/25/25</div>
+            </li>
+
+            <li>
+              <a href="/projects/matlab-numerical-methods.html">Applied Numerical Methods in MATLAB Part 1: Introduction to Numerical Methods</a>
+              <div class="post-date">07/01/25</div>
+            </li>
+
+            <li>
+              <a href="/projects/matlab-beginners-guide.html">A Beginner's Guide to MATLAB</a>
+              <div class="post-date">05/14/25</div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="projects-section">
+          <h2 class="projects-title">Engineering Projects</h2>
+
+          <ul class="post-list">
+
+            <li>
+              <a href="/projects/me193e-final-project.pdf" target="_blank" rel="noopener noreferrer">Data Center Coupled with Thermal Energy Storage</a>
+              <div class="post-date">05/08/26</div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
     </div>
 
   </div>
-</div>
-
 </body>
 </html>
