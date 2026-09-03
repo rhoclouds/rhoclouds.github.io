@@ -44,7 +44,7 @@
 
 .book-section-header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
 }
 
@@ -55,11 +55,16 @@
   align-items: center;
   gap: 16px;
 
+  flex-grow: 0;
   flex-shrink: 0;
+
+  width: auto;
+  height: 38px;
 
   margin: 0;
 
-  padding: 6px 16px;
+  padding-left: 20px;
+  padding-right: 40px;
 
   font-weight: 400;
   font-size: 1.5rem;
@@ -68,16 +73,16 @@
 
   background:
     linear-gradient(
-    90deg,
-    #24346c 0%,
-    #4f4a83 34%,
-    #9178a7 58%,
-    #b392a5 78%,
-    #e3c7cf 94%,
-    #5e567a 100%
-  );
+      90deg,
+      #24346c 0%,
+      #566094 22%,
+      #9b84ac 40%,
+      #d2b7c3 65%,
+      #eddcdf 86%,
+      #f6eceb 100%
+    );
 
-  border-radius: 6px 6px 0 6px;
+  border-radius: 4px 0 0 4px;
 }
 
 .book-section-label::before {
@@ -91,11 +96,31 @@
 .book-section-header::after {
   content: "";
 
-  flex: 1;
+  display: block;
 
-  height: 1px;
+  flex: 0 0 40px;
 
-  background: #5e567a;
+  height: 38px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #b295ae 0%,
+      #d2b7c3 100%
+    );
+
+  clip-path:
+    polygon(
+      0 0,
+      100% 0,
+      75% 50%,
+      100% 100%,
+      0 100%
+    );
+
+  margin-left: -5px;
+
+  z-index: -1;
 }
 
   .book-grid {
