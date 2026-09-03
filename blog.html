@@ -40,9 +40,190 @@
   gap: 3rem;
 }
 
+/* --------------------------------------------------
+   Recent posts
+-------------------------------------------------- */
+
+.recent-posts {
+  width: calc(100% - 1.5rem);
+  margin-left: 1.5rem;
+}
+
+.recent-posts-title {
+  margin: 0 0 18px;
+
+  font-size: .8rem;
+  font-weight: 400;
+
+  letter-spacing: .12em;
+  text-transform: uppercase;
+
+  color: #7b7482;
+}
+
+.recent-post-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.recent-post-card {
+  position: relative;
+
+  min-height: 265px;
+
+  box-sizing: border-box;
+
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 10px 28px rgba(50,43,69,.08);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.recent-post-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 22px 40px rgba(50,43,69,.15);
+}
+
+.recent-post-card-1 {
+  background:
+    linear-gradient(
+      140deg,
+      #a99ecb 0%,
+      #8177aa 48%,
+      #514a7e 100%
+    );
+
+  color: #f7f2e8;
+}
+
+.recent-post-card-2 {
+  background:
+    linear-gradient(
+      145deg,
+      #f3e5db 0%,
+      #f3e5db 48%,
+      #c9bdd5 48%,
+      #aaa0c4 100%
+    );
+
+  color: #312d3d;
+}
+
+.recent-post-card-3 {
+  background:
+    radial-gradient(
+      circle at 80% 12%,
+      #fff 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle at 24% 39%,
+      #fff 0 1px,
+      transparent 2px
+    ),
+    linear-gradient(
+      135deg,
+      #24346c 0%,
+      #4f4a83 58%,
+      #6f628e 100%
+    );
+
+  color: #f7f2e8;
+}
+
+.recent-post-card-4 {
+  background:
+    linear-gradient(
+      135deg,
+      #eee1dc 0%,
+      #d8c9d1 100%
+    );
+
+  color: #312d3d;
+}
+
+.recent-post-number {
+  font-size: .72rem;
+
+  opacity: .72;
+}
+
+.recent-post-bottom {
+  position: relative;
+
+  z-index: 1;
+}
+
+.recent-post-category {
+  margin-bottom: 8px;
+
+  font-size: .7rem;
+
+  letter-spacing: .12em;
+  text-transform: uppercase;
+
+  opacity: .7;
+}
+
+.recent-post-card h2 {
+  margin: 0;
+
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.35;
+
+  color: inherit;
+}
+
+.recent-post-date {
+  margin-top: 12px;
+
+  font-size: .72rem;
+
+  opacity: .62;
+}
+
+  @media (max-width: 900px) {
+  .recent-post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
   @media (max-width: 640px) {
   .container {
     width: 92%;
+  }
+
+  .recent-posts {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .recent-post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recent-post-card {
+    min-height: 220px;
   }
 }
 </style>
@@ -68,32 +249,55 @@
         {% assign regular_posts = site.posts | where_exp: "post", "post.category != 'creative'" %}
         {% assign creative_posts = site.posts | where: "category", "creative" %}
 
-        {% assign featured_post = regular_posts | first %}
-
         {% assign posts_by_year = regular_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
         {% assign creative_by_year = creative_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-        {% if featured_post %}
-          <div class="featured-item">
-            <div class="featured-kicker">featured post</div>
+        <div class="recent-posts">
+          <h2 class="recent-posts-title">recent posts</h2>
 
-            <h1>
-              <a href="{{ featured_post.url }}">
-                {{ featured_post.display_title | default: featured_post.title }}
+          <div class="recent-post-grid">
+
+            {% for post in regular_posts limit: 4 %}
+
+              {% case forloop.index %}
+                {% when 1 %}
+                  {% assign card_class = "recent-post-card-1" %}
+                {% when 2 %}
+                  {% assign card_class = "recent-post-card-2" %}
+                {% when 3 %}
+                  {% assign card_class = "recent-post-card-3" %}
+                {% when 4 %}
+                  {% assign card_class = "recent-post-card-4" %}
+              {% endcase %}
+
+              <a class="recent-post-card {{ card_class }}" href="{{ post.url }}">
+
+                <div class="recent-post-number">
+                  0{{ forloop.index }} / {{ post.category | default: "post" }}
+                </div>
+
+                <div class="recent-post-bottom">
+
+                  <div class="recent-post-category">
+                    {{ post.category | default: "writing" }}
+                  </div>
+
+                  <h2>
+                    {{ post.display_title | default: post.title }}
+                  </h2>
+
+                  <div class="recent-post-date">
+                    {{ post.date | date: "%m/%d/%y" }}
+                  </div>
+
+                </div>
+
               </a>
-            </h1>
 
-            {% if featured_post.description %}
-              <p class="featured-description">
-                {{ featured_post.description }}
-              </p>
-            {% endif %}
+            {% endfor %}
 
-            <div class="featured-meta">
-              {{ featured_post.date | date: "%B %d, %Y" }}
-            </div>
           </div>
-        {% endif %}
+        </div>
 
         <div class="listing-archive">
           <h2 class="listing-title">Posts</h2>
