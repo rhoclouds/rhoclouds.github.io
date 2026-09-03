@@ -22,11 +22,6 @@
   
 <style>
 
-.year-group h3, 
-.year-group summary {
-    font-weight: normal;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -38,85 +33,16 @@
   padding-top: 0;
 }
 
-/* --------------------------------------------------
-   Blog post ordering (year groups)
--------------------------------------------------- */
-
-.current-year {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 1.25rem;
-}
-
-.current-year h3 {
-  font-size: 22px;
-  font-weight: bold;
-  color: rgba(245, 246, 255, 0.9);
-
-  padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  margin: 0;
-}
-
-.year-group {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 1.25rem;
-}
-
-.year-group summary {
-  list-style: none;
-  cursor: pointer;
-  font-size: 22px;
-  font-weight: bold;
-  color: rgba(245, 246, 255, 0.9);
-
-  padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* remove default triangle */
-.year-group summary::-webkit-details-marker {
-  display: none;
-}
-
-/* chevron icon */
-.year-group summary::after {
-  content: "▾";
-  font-size: 18px;
-  opacity: 0.7;
-
-  transition: transform 200ms ease, opacity 200ms ease;
-}
-
-/* rotate chevron when expanded */
-.year-group[open] summary::after {
-  transform: rotate(180deg);
-  opacity: 1;
-}
-
-/* post list spacing */
-.year-group .post-list {
-  margin-top: 0.75rem;
-}
-
-.post-list a {
-  text-align: left;
-  display: block;
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin-bottom: 4rem;
+  gap: 3rem;
 }
 
   @media (max-width: 640px) {
   .container {
-    width: 100%;
+    width: 92%;
   }
 }
 </style>
@@ -142,39 +68,109 @@
         {% assign regular_posts = site.posts | where_exp: "post", "post.category != 'creative'" %}
         {% assign creative_posts = site.posts | where: "category", "creative" %}
 
+        {% assign featured_post = regular_posts | first %}
+
         {% assign posts_by_year = regular_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
         {% assign creative_by_year = creative_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-        <div class="card">
-          <h2>Posts</h2>
+        {% if featured_post %}
+          <div class="featured-item">
+            <div class="featured-kicker">featured post</div>
+
+            <h1>
+              <a href="{{ featured_post.url }}">
+                {{ featured_post.display_title | default: featured_post.title }}
+              </a>
+            </h1>
+
+            {% if featured_post.description %}
+              <p class="featured-description">
+                {{ featured_post.description }}
+              </p>
+            {% endif %}
+
+            <div class="featured-meta">
+              {{ featured_post.date | date: "%B %d, %Y" }}
+            </div>
+          </div>
+        {% endif %}
+
+        <div class="listing-archive">
+          <h2 class="listing-title">Posts</h2>
 
           {% for year in posts_by_year %}
             {% assign count = year.items | size %}
 
-            {% if year.name == current_year %}
-              <div class="year-group current-year">
-                <h3>
-                  <span class="year-label">
-                    {{ year.name }} ({{ count }})
-                  </span>
-                </h3>
+            {% if featured_post %}
+              {% assign featured_year = featured_post.date | date: "%Y" %}
 
-                <ul class="post-list">
-                  {% for post in year.items %}
-                    <li>
-                      <a href="{{ post.url }}">
-                        {{ post.display_title | default: post.title }}
-                      </a>
+              {% if year.name == featured_year %}
+                {% assign count = count | minus: 1 %}
+              {% endif %}
+            {% endif %}
 
-                      <div class="post-date">
-                        {{ post.date | date: "%m/%d/%y" }}
-                      </div>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
+            {% if count > 0 %}
+              {% if year.name == current_year %}
+                <div class="year-group current-year">
+                  <h3>
+                    <span class="year-label">
+                      {{ year.name }} ({{ count }})
+                    </span>
+                  </h3>
 
-            {% else %}
+                  <ul class="post-list">
+                    {% for post in year.items %}
+                      {% unless featured_post and post.url == featured_post.url %}
+                        <li>
+                          <a href="{{ post.url }}">
+                            {{ post.display_title | default: post.title }}
+                          </a>
+
+                          <div class="post-date">
+                            {{ post.date | date: "%m/%d/%y" }}
+                          </div>
+                        </li>
+                      {% endunless %}
+                    {% endfor %}
+                  </ul>
+                </div>
+
+              {% else %}
+                <details class="year-group">
+                  <summary>
+                    <span class="year-label">
+                      {{ year.name }} ({{ count }})
+                    </span>
+                  </summary>
+
+                  <ul class="post-list">
+                    {% for post in year.items %}
+                      {% unless featured_post and post.url == featured_post.url %}
+                        <li>
+                          <a href="{{ post.url }}">
+                            {{ post.display_title | default: post.title }}
+                          </a>
+
+                          <div class="post-date">
+                            {{ post.date | date: "%m/%d/%y" }}
+                          </div>
+                        </li>
+                      {% endunless %}
+                    {% endfor %}
+                  </ul>
+                </details>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        {% if creative_posts.size > 0 %}
+          <div class="secondary-listing">
+            <h2 class="secondary-listing-title">Creative Writing</h2>
+
+            {% for year in creative_by_year %}
+              {% assign count = year.items | size %}
+
               <details class="year-group">
                 <summary>
                   <span class="year-label">
@@ -185,9 +181,15 @@
                 <ul class="post-list">
                   {% for post in year.items %}
                     <li>
-                      <a href="{{ post.url }}">
-                        {{ post.display_title | default: post.title }}
-                      </a>
+                      {% if creative_writing_locked %}
+                        <a class="locked-post" aria-disabled="true">
+                          {{ post.display_title | default: post.title }}
+                        </a>
+                      {% else %}
+                        <a href="{{ post.url }}">
+                          {{ post.display_title | default: post.title }}
+                        </a>
+                      {% endif %}
 
                       <div class="post-date">
                         {{ post.date | date: "%m/%d/%y" }}
@@ -196,45 +198,9 @@
                   {% endfor %}
                 </ul>
               </details>
-            {% endif %}
-          {% endfor %}
-        </div>
-
-        <div class="card">
-          <h2>Creative Writing</h2>
-
-          {% for year in creative_by_year %}
-            {% assign count = year.items | size %}
-
-            <details class="year-group">
-              <summary>
-                <span class="year-label">
-                  {{ year.name }} ({{ count }})
-                </span>
-              </summary>
-
-              <ul class="post-list">
-                {% for post in year.items %}
-                  <li>
-                    {% if creative_writing_locked %}
-                      <a class="locked-post" aria-disabled="true">
-                        {{ post.display_title | default: post.title }}
-                      </a>
-                    {% else %}
-                      <a href="{{ post.url }}">
-                        {{ post.display_title | default: post.title }}
-                      </a>
-                    {% endif %}
-
-                    <div class="post-date">
-                      {{ post.date | date: "%m/%d/%y" }}
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-            </details>
-          {% endfor %}
-        </div>
+            {% endfor %}
+          </div>
+        {% endif %}
 
       </div>
     </div>
