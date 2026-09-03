@@ -101,65 +101,51 @@
           {% for year in posts_by_year %}
             {% assign count = year.items | size %}
 
-            {% if featured_post %}
-              {% assign featured_year = featured_post.date | date: "%Y" %}
+            {% if year.name == current_year %}
+              <div class="year-group current-year">
+                <h3>
+                  <span class="year-label">
+                    {{ year.name }} ({{ count }})
+                  </span>
+                </h3>
 
-              {% if year.name == featured_year %}
-                {% assign count = count | minus: 1 %}
-              {% endif %}
-            {% endif %}
+                <ul class="post-list">
+                  {% for post in year.items %}
+                    <li>
+                      <a href="{{ post.url }}">
+                        {{ post.display_title | default: post.title }}
+                      </a>
 
-            {% if count > 0 %}
-              {% if year.name == current_year %}
-                <div class="year-group current-year">
-                  <h3>
-                    <span class="year-label">
-                      {{ year.name }} ({{ count }})
-                    </span>
-                  </h3>
+                      <div class="post-date">
+                        {{ post.date | date: "%m/%d/%y" }}
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
 
-                  <ul class="post-list">
-                    {% for post in year.items %}
-                      {% unless featured_post and post.url == featured_post.url %}
-                        <li>
-                          <a href="{{ post.url }}">
-                            {{ post.display_title | default: post.title }}
-                          </a>
+            {% else %}
+              <details class="year-group">
+                <summary>
+                  <span class="year-label">
+                    {{ year.name }} ({{ count }})
+                  </span>
+                </summary>
 
-                          <div class="post-date">
-                            {{ post.date | date: "%m/%d/%y" }}
-                          </div>
-                        </li>
-                      {% endunless %}
-                    {% endfor %}
-                  </ul>
-                </div>
+                <ul class="post-list">
+                  {% for post in year.items %}
+                    <li>
+                      <a href="{{ post.url }}">
+                        {{ post.display_title | default: post.title }}
+                      </a>
 
-              {% else %}
-                <details class="year-group">
-                  <summary>
-                    <span class="year-label">
-                      {{ year.name }} ({{ count }})
-                    </span>
-                  </summary>
-
-                  <ul class="post-list">
-                    {% for post in year.items %}
-                      {% unless featured_post and post.url == featured_post.url %}
-                        <li>
-                          <a href="{{ post.url }}">
-                            {{ post.display_title | default: post.title }}
-                          </a>
-
-                          <div class="post-date">
-                            {{ post.date | date: "%m/%d/%y" }}
-                          </div>
-                        </li>
-                      {% endunless %}
-                    {% endfor %}
-                  </ul>
-                </details>
-              {% endif %}
+                      <div class="post-date">
+                        {{ post.date | date: "%m/%d/%y" }}
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
             {% endif %}
           {% endfor %}
         </div>

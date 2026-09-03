@@ -24,7 +24,10 @@
 .featured-item {
   position: relative;
 
-  width: 100%;
+  width: calc(100% - 3rem);
+
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 
   box-sizing: border-box;
 
@@ -188,16 +191,6 @@
 .year-label {
   display: inline-flex;
   align-items: center;
-
-  gap: 10px;
-}
-
-.year-label::before {
-  content: "✦";
-
-  font-size: .65rem;
-
-  color: #9178a7;
 }
 
 /* --------------------------------------------------
@@ -307,6 +300,11 @@
   }
 
   .featured-item {
+    width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+
     padding: 32px 26px;
   }
 
