@@ -18,101 +18,193 @@
 }
 
 /* --------------------------------------------------
-   Featured item
+   Listing cards
 -------------------------------------------------- */
 
-.featured-item {
-  position: relative;
+.listing-card-grid {
+  display: grid;
 
-  width: calc(100% - 3rem);
+  grid-template-columns: repeat(4, 1fr);
 
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  gap: 14px;
+}
+
+.listing-card {
+  min-height: 155px;
 
   box-sizing: border-box;
 
-  padding: 42px 46px;
-
-  border-radius: 12px;
-
-  background:
-    linear-gradient(
-      120deg,
-      #24346c 0%,
-      #566094 22%,
-      #9b84ac 40%,
-      #d2b7c3 65%,
-      #eddcdf 86%,
-      #f6eceb 100%
-    );
-
-  box-shadow:
-    0 18px 42px rgba(45,36,68,.10);
+  border-radius: 8px;
 
   overflow: hidden;
+
+  box-shadow:
+    0 8px 20px rgba(45,36,68,.07);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
 }
 
-.featured-item::before {
-  content: "✦";
+.listing-card:hover {
+  transform: translateY(-4px);
 
-  position: absolute;
-
-  top: 24px;
-  right: 30px;
-
-  font-size: 1.2rem;
-
-  color: rgba(255,255,255,.75);
+  box-shadow:
+    0 14px 28px rgba(45,36,68,.12);
 }
 
-.featured-kicker {
-  margin-bottom: 12px;
+.listing-card-content {
+  box-sizing: border-box;
 
-  font-size: .75rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
+  padding: 16px;
 
-  color: rgba(255,255,255,.82);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.featured-item h1 {
-  max-width: 720px;
+.listing-card-title {
+  margin: 0;
 
-  margin: 0 0 14px;
-
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.4;
+
+  color: inherit;
+}
+
+.listing-card-date {
+  margin-top: 8px;
+
+  font-size: .68rem;
+
+  opacity: .68;
+}
+
+/* --------------------------------------------------
+   Creative writing cards
+-------------------------------------------------- */
+
+.creative-card {
+  display: flex;
+
+  text-decoration: none;
+}
+
+.creative-card .listing-card-content {
+  width: 100%;
+}
+
+.creative-card-1 {
+  background:
+    linear-gradient(
+      140deg,
+      #a99ecb 0%,
+      #8177aa 48%,
+      #514a7e 100%
+    );
 
   color: #f7f2e8;
 }
 
-.featured-item h1 a {
-  color: inherit;
+.creative-card-2 {
+  background:
+    linear-gradient(
+      145deg,
+      #f3e5db 0%,
+      #f3e5db 48%,
+      #c9bdd5 48%,
+      #aaa0c4 100%
+    );
+
+  color: #312d3d;
+}
+
+.creative-card-3 {
+  background:
+    linear-gradient(
+      135deg,
+      #24346c 0%,
+      #4f4a83 58%,
+      #6f628e 100%
+    );
+
+  color: #f7f2e8;
+}
+
+.creative-card-4 {
+  background:
+    linear-gradient(
+      135deg,
+      #eee1dc 0%,
+      #d8c9d1 100%
+    );
+
+  color: #312d3d;
+}
+
+.creative-card-5 {
+  background:
+    linear-gradient(
+      140deg,
+      #c9d0e8 0%,
+      #aeb6d5 48%,
+      #8589b3 100%
+    );
+
+  color: #312d3d;
+}
+
+.creative-card-6 {
+  background:
+    linear-gradient(
+      140deg,
+      #d4b8ca 0%,
+      #ad8fa8 50%,
+      #765f7f 100%
+    );
+
+  color: #f7f2e8;
+}
+
+.creative-card.locked {
+  cursor: not-allowed;
+}
+
+.creative-card.locked:hover {
+  transform: none;
+
+  box-shadow:
+    0 8px 20px rgba(45,36,68,.07);
+}
+
+/* --------------------------------------------------
+   Project cards
+-------------------------------------------------- */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  background: #f7f2e8;
+
+  color: #312d3d;
+
   text-decoration: none;
 }
 
-.featured-item h1 a:hover {
-  text-decoration: underline;
+.project-card-image {
+  display: block;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
 }
 
-.featured-description {
-  max-width: 660px;
-
-  margin: 0;
-
-  font-size: 1rem;
-  line-height: 1.7;
-
-  color: rgba(247,242,232,.82);
-}
-
-.featured-meta {
-  margin-top: 24px;
-
-  font-size: .8rem;
-
-  color: rgba(247,242,232,.72);
+.project-card .listing-card-content {
+  flex: 1;
 }
 
 /* --------------------------------------------------
@@ -292,24 +384,17 @@
    Mobile
 -------------------------------------------------- */
 
+@media (max-width: 800px) {
+  .listing-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 600px) {
   .tagline,
   .second-blurb {
     white-space: normal;
     word-wrap: break-word;
-  }
-
-  .featured-item {
-    width: 100%;
-
-    margin-left: 0;
-    margin-right: 0;
-
-    padding: 32px 26px;
-  }
-
-  .featured-item h1 {
-    font-size: 1.65rem;
   }
 
   .post-list li {
@@ -329,5 +414,11 @@
     margin: 0;
 
     white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .listing-card-grid {
+    grid-template-columns: 1fr;
   }
 }

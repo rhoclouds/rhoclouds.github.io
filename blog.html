@@ -69,7 +69,6 @@
         {% assign creative_posts = site.posts | where: "category", "creative" %}
 
         {% assign posts_by_year = regular_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
-        {% assign creative_by_year = creative_posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
         <div class="listing-archive">
           <h2 class="listing-title">Posts</h2>
@@ -130,37 +129,49 @@
           <div class="secondary-listing">
             <h2 class="secondary-listing-title">Creative Writing</h2>
 
-            {% for year in creative_by_year %}
-              {% assign count = year.items | size %}
+            <div class="listing-card-grid">
 
-              <details class="year-group">
-                <summary>
-                  <span class="year-label">
-                    {{ year.name }} ({{ count }})
-                  </span>
-                </summary>
+              {% for post in creative_posts %}
 
-                <ul class="post-list">
-                  {% for post in year.items %}
-                    <li>
-                      {% if creative_writing_locked %}
-                        <a class="locked-post" aria-disabled="true">
-                          {{ post.display_title | default: post.title }}
-                        </a>
-                      {% else %}
-                        <a href="{{ post.url }}">
-                          {{ post.display_title | default: post.title }}
-                        </a>
-                      {% endif %}
+                {% assign card_number = forloop.index0 | modulo: 6 | plus: 1 %}
 
-                      <div class="post-date">
+                {% if creative_writing_locked %}
+                  <div class="listing-card creative-card creative-card-{{ card_number }} locked">
+
+                    <div class="listing-card-content">
+
+                      <h3 class="listing-card-title">
+                        {{ post.display_title | default: post.title }}
+                      </h3>
+
+                      <div class="listing-card-date">
                         {{ post.date | date: "%m/%d/%y" }}
                       </div>
-                    </li>
-                  {% endfor %}
-                </ul>
-              </details>
-            {% endfor %}
+
+                    </div>
+
+                  </div>
+                {% else %}
+                  <a class="listing-card creative-card creative-card-{{ card_number }}" href="{{ post.url }}">
+
+                    <div class="listing-card-content">
+
+                      <h3 class="listing-card-title">
+                        {{ post.display_title | default: post.title }}
+                      </h3>
+
+                      <div class="listing-card-date">
+                        {{ post.date | date: "%m/%d/%y" }}
+                      </div>
+
+                    </div>
+
+                  </a>
+                {% endif %}
+
+              {% endfor %}
+
+            </div>
           </div>
         {% endif %}
 
