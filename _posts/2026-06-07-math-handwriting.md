@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Attempt at a Mathematical Handwriting Reference
+title: My Attempt at a Math Handwriting Reference
 date: 2026-06-07
 category: post
 ---
@@ -8,8 +8,6 @@ category: post
 <div class="post-subheader">
 I've spent way too much time thinking about this
 </div>
-
-Note: This was mostly for fun. I know a lot of people can understand their own handwriting very well and have no issues with others interpreting it, and if that works for you then there is no reason to try anything new. This reference isn't very aesthetic at all and I honestly kind of dislike it for that reason (the Greek is okay, but the English is honestly ugly). Furthermore, if you know that you aren't going to be using letters that are easy to mix up, you can just write the ones you might have gotten mixed up otherwise out normally in that specific document. At the end of the day, serious work is typed up for a reason.
 
 Do you ever find yourself getting confused with handwritten notes from professors or peers? Have you ever made a mistake in the interpretation of your own notes because of the way you wrote out a letter or symbol? If your answer to either of these is yes, then you're spending time deciphering notation in lectures, homework, exams, projects, and labs that could have been used for understanding the actual content.
 
@@ -102,27 +100,30 @@ I've left out some uppercase Greek letters which are the same as the English let
     </div>
 </div>
 
-I have genuinely spent several years stressing out over this. The most confusing part remains distinguishing between $O$, $o$, and $0$. In case you didn't catch it, we have to unfortunately rely on size to distinguish between $O$ and $o$, while $0$ is very elongated. Additionally, it is actually challenging to distinguish between $s$ and $5$ sometimes, but that's probably a handwriting thing on my end.
+I have genuinely spent several years stressing out over this. The most confusing thing remains distinguishing between $O$, $o$, and $0$. In case you didn't catch it, we have to unfortunately rely on size to distinguish between $O$ and $o$, while $0$ is very elongated. Additionally, it is often challenging to distinguish between $s$ and $5$, and you have to make sure the first stroke of the $5$ isn't curved at all.
 
 ## Some Notes on Notation and Syntax
 
-Now that we know how to write out what is supposed to be italicized math text, we face the issue of Roman text. When we type up things like the $\sin$ function or Al for aluminum, they aren't in italicized math text. We of course cannot reliably handwrite italicized letters to distinguish from Roman text, so our best course of action is to write out everything using the italicized math text above.
+Now that we know how to write out what is supposed to be italicized, we face the issue of Roman (upright) text. When we typeset functions, descriptive subscripts, units, and elements (e.g., $\sin$ for the sine function or Al for aluminum), they are upright. We of course cannot reliably distinguish italicized letters from upright letters in handwriting, so deciding whether to keep these cases upright is your choice. I personally prefer to write them upright because there's usually enough context to tell.
 
-There is still unfortunately room for confusion here, because when we are tired and more prone to mistakes, we might look at operators (which are in Roman text) next to italicized math text and think we are multiplying everything together. Richard Feynman encountered this issue as a child. He writes in Surely You're Joking, Mr. Feynman!:
+There is still unfortunately room for confusion here, especially when we are tired and more prone to mistakes. Richard Feynman encountered this issue as a child. He writes the following in *Surely You're Joking, Mr. Feynman!*:
 
-"While I was doing all this trigonometry, I didn’t like the symbols for sine, cosine, tangent, and so on. To me, 'sin f' looked like s times i times n times f! So I invented another symbol, like a square root sign, that was a sigma with a long arm sticking out of it, and I put the f underneath. For the tangent it was a tau with the top of the tau extended, and for the cosine I made a kind of gamma, but it looked a little bit like the square root sign."
+"While I was doing all this trigonometry, I didn’t like the symbols for sine, cosine, tangent, and so on. To me, \(\sin f\) looked like \(s \times i \times n \times f\)! So I invented another symbol, like a square root sign, that was a \(\sigma\) with a long arm sticking out of it, and I put the \(f\) underneath. For the tangent it was a \(\tau\) with the top of the \(\tau\) extended, and for the cosine I made a kind of \(\gamma\), but it looked a little bit like the square root sign."
 
-We are fortunate enough that context can usually resolve any ambiguities. But I still can't help but find myself wishing we had another alphabet to make these ambiguities less common in general. Here are some general tips:
+We are fortunate enough that context can usually resolve any ambiguities. But I still can't help but find myself wishing we had another alphabet to make these ambiguities less common in general.
 
-- If you are using all of the following, use $*$ or simply place things next to each other for multiplication, $\cdot$ for dot product, and $\times$ for cross product if possible.
-- Try to not add on unnecessary loops or curls. For instance, if you add on a loop to the bottom of an $s$, it might look like $\delta$.
-- Try to always finish your strokes. Don't leave space between strokes. For instance, an incomplete $e$ might look like a $c$.
-- Don't be afraid to use brackets rather than having too many parenthesis.
+Here are some general tips:
+
+- If you are using all of the following, use $*$ or parentheses or simply place things next to each other for multiplication, $\cdot$ for dot product, and $\times$ for cross product if possible. Write operators that go between letters smaller and centered vertically.
+- Try not to add unnecessary loops or curls. For instance, if you add on a loop to the bottom of an $s$, it might look like $\delta$.
+- Keep straight parts of letters straight and curved parts curved.
+- Finish your strokes completely. Don't leave space between strokes. For instance, an incomplete $e$ might look like a $c$.
+- Use brackets if there are too many parentheses.
 - Keep your English text left-aligned.
-- Start a new line if you are transitioning to a new idea rather than continuing across the page in columns (maybe three columns is okay, but any more might be too cluttered).
+- Start a new line if you are transitioning to a new idea rather than continuing across the page in columns.
 - Make equations or expressions part of a coherent sentence rather than just dumping them on the page. You can introduce them using a clause with a colon and then put the equation or expression below. If you don't think it deserves a full line, embed it into a sentence like you would with a quote.
-- Use the standard notation (or what your professor prefers) or self-descriptive variables whenever you can.
+- Use the standard notation, your professor’s preferred notation, or self-descriptive variables whenever possible. Stay consistent within that document.
 - If anything gets too complicated, just define it nearby.
-- And once more, the number one thing is you being able to understand your work, so do what is the best for you (but give your future self or colleagues or whoever some leeway too)
+- The number one thing is that you are able to understand your own work, so do whatever works best for you. Just give your future self, colleagues, or anyone else reading it a little leeway too.
 
 I hope this helps, and I'm open to any suggestions.
