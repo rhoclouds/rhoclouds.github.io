@@ -102,23 +102,24 @@ I've left out some uppercase Greek letters which are the same as the English let
 
 I have genuinely spent several years stressing out over this. The most confusing thing remains distinguishing between $O$, $o$, and $0$. In case you didn't catch it, we have to unfortunately rely on size to distinguish between $O$ and $o$, while $0$ is very elongated. Additionally, it is often challenging to distinguish between $s$ and $5$, and you have to make sure the first stroke of the $5$ isn't curved at all.
 
-## Some Notes on Notation and Syntax
+## Advice on Notation and Syntax
 
 Now that we know how to write out what is supposed to be italicized, we face the issue of Roman (upright) text. When we typeset functions, descriptive subscripts, units, and elements (e.g., $\sin$ for the sine function or Al for aluminum), they are upright. We of course cannot reliably distinguish italicized letters from upright letters in handwriting, so deciding whether to keep these cases upright is your choice. I personally prefer to write them upright because there's usually enough context to tell.
 
-There is still unfortunately room for confusion here, especially when we are tired and more prone to mistakes. Richard Feynman encountered this issue as a child. He writes the following in *Surely You're Joking, Mr. Feynman!*:
+There is still unfortunately room for confusion here, especially when we are tired and more prone to mistakes. It can be difficult to tell what part of an expression is a function or and what part is a variable. Richard Feynman happened to have encountered this issue as a child. He writes the following in *Surely You're Joking, Mr. Feynman!*:
 
-"While I was doing all this trigonometry, I didn’t like the symbols for sine, cosine, tangent, and so on. To me, \(\sin f\) looked like \(s \times i \times n \times f\)! So I invented another symbol, like a square root sign, that was a \(\sigma\) with a long arm sticking out of it, and I put the \(f\) underneath. For the tangent it was a \(\tau\) with the top of the \(\tau\) extended, and for the cosine I made a kind of \(\gamma\), but it looked a little bit like the square root sign."
+"While I was doing all this trigonometry, I didn’t like the symbols for sine, cosine, tangent, and so on. To me, $\sin f$ looked like $s \times i \times n \times f$! So I invented another symbol, like a square root sign, that was a $\sigma$ with a long arm sticking out of it, and I put the $f$ underneath. For the tangent it was a $\tau$ with the top of the $\tau$ extended, and for the cosine I made a kind of $\gamma$, but it looked a little bit like the square root sign."
 
 We are fortunate enough that context can usually resolve any ambiguities. But I still can't help but find myself wishing we had another alphabet to make these ambiguities less common in general.
 
 Here are some general tips:
 
-- If you are using all of the following, use $*$ or parentheses or simply place things next to each other for multiplication, $\cdot$ for dot product, and $\times$ for cross product if possible. Write operators that go between letters smaller and centered vertically.
 - Try not to add unnecessary loops or curls. For instance, if you add on a loop to the bottom of an $s$, it might look like $\delta$.
 - Keep straight parts of letters straight and curved parts curved.
 - Finish your strokes completely. Don't leave space between strokes. For instance, an incomplete $e$ might look like a $c$.
+- If you are using all of the following, use $*$ or parentheses or simply place things next to each other for multiplication, $\cdot$ for dot product, and $\times$ for cross product if possible. Write operators that go between letters smaller and centered vertically.
 - Use brackets if there are too many parentheses.
+- Use parentheses around a function’s argument when the argument contains more than one term.
 - Keep your English text left-aligned.
 - Start a new line if you are transitioning to a new idea rather than continuing across the page in columns.
 - Make equations or expressions part of a coherent sentence rather than just dumping them on the page. You can introduce them using a clause with a colon and then put the equation or expression below. If you don't think it deserves a full line, embed it into a sentence like you would with a quote.
