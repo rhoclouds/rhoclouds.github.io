@@ -85,11 +85,143 @@
       padding: 0 2rem 0 0;
     }
 
-    @media (max-width: 640px) {
-      .location {
-        justify-content: center;
-      }
-    }
+  /* --------------------------------------------------
+   Homepage liquid glass navbar
+  -------------------------------------------------- */
+
+  @media (max-width: 640px) {
+
+  body.home-page .topbar {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding: 20px 16px 0;
+  }
+
+  body.home-page .site-brand {
+    justify-self: center;
+  }
+
+  body.home-page .topbar > div:last-child {
+    display: none;
+  }
+
+  body.home-page .content {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  body.home-page .container {
+    width: 100%;
+
+    padding: 0 22px;
+
+    box-sizing: border-box;
+  }
+
+  body.home-page .profile {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 38px;
+
+    align-items: stretch;
+  }
+
+  body.home-page .info {
+    order: 1;
+
+    width: 100%;
+
+    text-align: left;
+  }
+
+  body.home-page .arch-wrap {
+    order: 2;
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  body.home-page .intro {
+    text-align: left;
+
+    font-size: 1.05rem;
+  }
+
+  body.home-page .location {
+    justify-content: flex-start;
+
+    margin-left: -6px;
+  }
+
+  body.home-page .about-text {
+    text-align: left;
+  }
+
+  body.home-page .about-text p {
+    line-height: 1.65;
+  }
+
+  body.home-page .contact-row {
+    flex-wrap: wrap;
+
+    gap: 14px 20px;
+
+    margin-top: 22px;
+  }
+
+  body.home-page .profile-links {
+    margin: 0;
+  }
+
+  body.home-page .profile-email {
+    text-align: left;
+  }
+
+  body.home-page .arch {
+    width: 240px;
+    height: 350px;
+
+    border-radius:
+      120px 120px
+      0 0;
+  }
+
+  body.home-page .profile-pic {
+    width: 112px;
+    height: 112px;
+
+    border-width: 4px;
+  }
+
+  body.home-page .wrapper::before {
+    width: 560px;
+    height: 560px;
+
+    right: -280px;
+    top: 240px;
+
+    filter: blur(24px);
+
+    opacity: .72;
+  }
+
+  body.home-page .wrapper::after {
+    width: 620px;
+    height: 250px;
+
+    right: -330px;
+    top: 430px;
+
+    filter: blur(18px);
+
+    opacity: .55;
+  }
+}
   </style>
 
 </head>
