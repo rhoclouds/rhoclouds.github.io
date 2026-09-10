@@ -160,29 +160,92 @@
    Project cards
 -------------------------------------------------- */
 
+.project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
-
-  background: #f7f2e8;
-
+  overflow: hidden;
+  border-radius: 10px;
+  background: #faf5ec;
+  border: 1px solid rgba(49,45,61,.08);
   color: #312d3d;
-
   text-decoration: none;
+  box-shadow:
+    0 8px 22px rgba(45,36,68,.07);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 14px 30px rgba(45,36,68,.12);
+}
+
+.project-card-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  background: #fffdf8;
+}
+
+.project-card-image-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background:
+    linear-gradient(
+      90deg,
+      #24346c 0%,
+      #566094 22%,
+      #9b84ac 40%,
+      #d2b7c3 65%,
+      #eddcdf 86%,
+      #f6eceb 100%
+    );
 }
 
 .project-card-image {
   display: block;
-
   width: 100%;
-
-  aspect-ratio: 16 / 9;
-
+  height: 100%;
   object-fit: cover;
 }
 
-.project-card .listing-card-content {
+.project-card-image.contain {
+  object-fit: contain;
+  padding: 14px;
+  background: #fffdf8;
+}
+
+.project-card-content {
   flex: 1;
+  padding: 18px 20px 20px;
+}
+
+.project-card-title {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #312d3d;
+}
+
+.project-card-description {
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.55;
+  color: #706a76;
 }
 
 /* --------------------------------------------------
@@ -365,6 +428,10 @@
 @media (max-width: 800px) {
   .listing-card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card-grid {
+    grid-template-columns: 1fr;
   }
 }
 
