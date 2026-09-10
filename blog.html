@@ -132,7 +132,7 @@
 
               {% for post in creative_posts %}
 
-                {% assign card_number = forloop.index0 | modulo: 6 | plus: 1 %}
+                {% assign card_number = forloop.index0 | modulo: 8 | plus: 1 %}
 
                 {% if creative_writing_locked %}
                   <div class="listing-card creative-card creative-card-{{ card_number }} locked">

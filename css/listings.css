@@ -87,8 +87,19 @@
 
 .creative-card {
   display: flex;
-
   text-decoration: none;
+  background-image:
+    linear-gradient(
+      90deg,
+      #24346c 0%,
+      #566094 22%,
+      #9b84ac 40%,
+      #d2b7c3 65%,
+      #eddcdf 86%,
+      #f6eceb 100%
+    );
+  background-size: 800% 100%;
+  background-repeat: no-repeat;
 }
 
 .creative-card .listing-card-content {
@@ -96,75 +107,43 @@
 }
 
 .creative-card-1 {
-  background:
-    linear-gradient(
-      140deg,
-      #a99ecb 0%,
-      #8177aa 48%,
-      #514a7e 100%
-    );
-
+  background-position: 0% 0;
   color: #f7f2e8;
 }
 
 .creative-card-2 {
-  background:
-    linear-gradient(
-      145deg,
-      #f3e5db 0%,
-      #f3e5db 48%,
-      #c9bdd5 48%,
-      #aaa0c4 100%
-    );
-
-  color: #312d3d;
+  background-position: 14.285% 0;
+  color: #f7f2e8;
 }
 
 .creative-card-3 {
-  background:
-    linear-gradient(
-      135deg,
-      #24346c 0%,
-      #4f4a83 58%,
-      #6f628e 100%
-    );
-
+  background-position: 28.57% 0;
   color: #f7f2e8;
 }
 
 .creative-card-4 {
-  background:
-    linear-gradient(
-      135deg,
-      #eee1dc 0%,
-      #d8c9d1 100%
-    );
-
-  color: #312d3d;
+  background-position: 42.855% 0;
+  color: #f7f2e8;
 }
 
 .creative-card-5 {
-  background:
-    linear-gradient(
-      140deg,
-      #c9d0e8 0%,
-      #aeb6d5 48%,
-      #8589b3 100%
-    );
-
+  background-position: 57.14% 0;
   color: #312d3d;
 }
 
 .creative-card-6 {
-  background:
-    linear-gradient(
-      140deg,
-      #d4b8ca 0%,
-      #ad8fa8 50%,
-      #765f7f 100%
-    );
+  background-position: 71.425% 0;
+  color: #312d3d;
+}
 
-  color: #f7f2e8;
+.creative-card-7 {
+  background-position: 85.71% 0;
+  color: #312d3d;
+}
+
+.creative-card-8 {
+  background-position: 100% 0;
+  color: #312d3d;
 }
 
 .creative-card.locked {
@@ -173,7 +152,6 @@
 
 .creative-card.locked:hover {
   transform: none;
-
   box-shadow:
     0 8px 20px rgba(45,36,68,.07);
 }
