@@ -71,8 +71,3 @@ body.light-mode nav a:hover {
   color: #555;
   text-decoration: underline;
 }
-
-.topbar .site-nav {
-  margin: 0;
-  justify-self: center;
-}

@@ -194,15 +194,6 @@ footer {
   padding: 20px;
 }
 
-.topbar {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 48px 0;
-}
-
 /* --------------------------------------------------
    Index
 -------------------------------------------------- */
