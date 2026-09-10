@@ -167,6 +167,7 @@
 }
 
 .project-card {
+  position:relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -180,6 +181,26 @@
   transition:
     transform .25s ease,
     box-shadow .25s ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  z-index: 3;
+  background:
+    linear-gradient(
+      90deg,
+      #24346c 0%,
+      #566094 22%,
+      #9b84ac 40%,
+      #d2b7c3 65%,
+      #eddcdf 86%,
+      #f6eceb 100%
+    );
 }
 
 .project-card:hover {
@@ -246,6 +267,12 @@
   font-size: .88rem;
   line-height: 1.55;
   color: #706a76;
+}
+
+.project-card-date {
+  margin: -2px 0 8px;
+  font-size: .72rem;
+  color: #8a8290;
 }
 
 /* --------------------------------------------------
