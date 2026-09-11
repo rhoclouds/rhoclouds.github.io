@@ -337,6 +337,8 @@ footer {
 }
 
 .profile-links a {
+  color: var(--ink);
+
   text-decoration: none;
 
   opacity: .8;

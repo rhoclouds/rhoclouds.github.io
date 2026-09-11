@@ -9,7 +9,7 @@
 }
 
 .second-blurb a {
-  color: #4c4654;
+  color: var(--ink);
   text-decoration: none;
 }
 
@@ -77,8 +77,6 @@
   margin-top: 8px;
 
   font-size: .68rem;
-
-  opacity: .68;
 }
 
 /* --------------------------------------------------
@@ -128,22 +126,22 @@
 
 .creative-card-5 {
   background-position: 57.14% 0;
-  color: #312d3d;
+  color: var(--ink);
 }
 
 .creative-card-6 {
   background-position: 71.425% 0;
-  color: #312d3d;
+  color: var(--ink);
 }
 
 .creative-card-7 {
   background-position: 85.71% 0;
-  color: #312d3d;
+  color: var(--ink);
 }
 
 .creative-card-8 {
   background-position: 100% 0;
-  color: #312d3d;
+  color: var(--ink);
 }
 
 .creative-card.locked {
@@ -174,7 +172,7 @@
   border-radius: 10px;
   background: #faf5ec;
   border: 1px solid rgba(49,45,61,.08);
-  color: #312d3d;
+  color: var(--ink);
   text-decoration: none;
   box-shadow:
     0 8px 22px rgba(45,36,68,.07);
@@ -259,20 +257,20 @@
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.4;
-  color: #312d3d;
+  color: var(--ink);
 }
 
 .project-card-description {
   margin: 0;
   font-size: .88rem;
   line-height: 1.55;
-  color: #706a76;
+  color: var(--ink);
 }
 
 .project-card-date {
   margin: -2px 0 8px;
   font-size: .72rem;
-  color: #8a8290;
+  color: var(--ink);
 }
 
 /* --------------------------------------------------
@@ -291,7 +289,7 @@
   font-size: 1.65rem;
   font-weight: 400;
 
-  color: #312d3d;
+  color: var(--ink);
 
   border-bottom: 1px solid rgba(49,45,61,.16);
 }
@@ -317,7 +315,7 @@
   font-size: 1.25rem;
   font-weight: 500;
 
-  color: #312d3d;
+  color: var(--ink);
 
   border-bottom: 1px solid rgba(49,45,61,.14);
 }
@@ -390,11 +388,11 @@
   text-align: left;
   text-decoration: none;
 
-  color: #4c4654;
+  color: var(--ink);
 }
 
 .post-list a:hover {
-  color: #312d3d;
+  color: var(--ink);
 
   text-decoration: underline;
 }
@@ -404,7 +402,7 @@
 
   font-size: .8rem;
 
-  color: #8a8290;
+  color: var(--ink);
 
   white-space: nowrap;
 }
@@ -427,7 +425,7 @@
   font-size: 1.65rem;
   font-weight: 400;
 
-  color: #312d3d;
+  color: var(--ink);
 
   border-bottom: 1px solid rgba(49,45,61,.16);
 }
@@ -439,7 +437,7 @@
 .post-list a.locked-post {
   cursor: not-allowed;
 
-  color: #8a8290;
+  color: var(--ink);
 }
 
 .post-list a.locked-post:hover {
