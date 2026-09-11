@@ -5,7 +5,7 @@
 :root {
 
   --ivory: #f6efe3;
-  --ink: #312d3d;
+  --ink: #292642;
 
   --night-sky:
     radial-gradient(ellipse at 50% 18%, rgba(200,210,255,.05) 0%, transparent 62%),
@@ -134,8 +134,6 @@ body {
     var(--glass-inset);
 
   overflow: hidden;
-
-  color: rgba(245,246,255,.92);
 }
 
 .card::before {
@@ -187,8 +185,6 @@ body {
 }
 
 footer {
-  color: #555;
-
   text-align: center;
 
   padding: 20px;
@@ -341,8 +337,6 @@ footer {
 }
 
 .profile-links a {
-  color: #4c4654;
-
   text-decoration: none;
 
   opacity: .8;
@@ -364,8 +358,6 @@ footer {
   margin: 0;
 
   text-align: left;
-
-  color: #6d6672;
 }
 
 .profile-email p {
@@ -465,19 +457,13 @@ body.home-page .wrapper::after {
 }
 
 .name {
-
   font-size: 2rem;
 
   margin-bottom: .3rem;
-
-  color: #2f2a39;
 }
 
 .intro {
-
   font-size: 1.1rem;
-
-  color: #7b7482;
 
   margin-bottom: 0;
 }
@@ -492,25 +478,16 @@ body.home-page .wrapper::after {
 
   font-size: 1rem;
 
-  color: #4c4654;
-
   margin-top: 12px;
   margin-bottom: .6rem;
   margin-left: -6px;
 }
 
 .contact {
-
   display: flex;
-
   align-items: center;
-
   gap: .4rem;
-
   font-size: 1rem;
-
-  color: #4c4654;
-
   margin-top: 8px;
   margin-bottom: 4px;
   margin-left: -6px;
@@ -518,13 +495,10 @@ body.home-page .wrapper::after {
 
 .about-text {
 
-  color: #514b57;
 }
 
 .about-text p {
-
   line-height: 1.7;
-
   margin-top: 0;
 }
 
@@ -533,9 +507,6 @@ body.home-page .wrapper::after {
 }
 
 .about-text a {
-
-  color: #393347;
-
   text-decoration: underline;
 
   text-decoration-color:
@@ -547,7 +518,6 @@ body.home-page .wrapper::after {
 }
 
 .about-text a:hover {
-
   text-decoration-color:
     rgba(72,62,95,.7);
 }
