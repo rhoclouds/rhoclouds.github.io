@@ -509,6 +509,8 @@ body.home-page .wrapper::after {
 }
 
 .about-text a {
+  color: var(--ink);
+
   text-decoration: underline;
 
   text-decoration-color:
@@ -517,11 +519,6 @@ body.home-page .wrapper::after {
   text-decoration-thickness: 1px;
 
   text-underline-offset: .18em;
-}
-
-.about-text a:hover {
-  text-decoration-color:
-    rgba(72,62,95,.7);
 }
 
 /* --------------------------------------------------
