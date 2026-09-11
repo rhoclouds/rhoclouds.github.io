@@ -54,7 +54,7 @@ body {
 
   min-height: 100%;
 
-  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-family: "Noto Serif KR", system-ui, sans-serif;
   line-height: 1.6;
 
   color: var(--ink);
