@@ -82,6 +82,11 @@
           <ul class="post-list">
 
             <li>
+              <a href="/projects/heat-transfer.pdf" target="_blank" rel="noopener noreferrer">Heat Transfer</a>
+              <div class="post-current-date"></div>
+            </li>
+
+            <li>
               <a href="/projects/linear-algebra.pdf" target="_blank" rel="noopener noreferrer">Introduction to Linear Algebra</a>
               <div class="post-date">07/26/26</div>
             </li>
@@ -146,5 +151,18 @@
     </div>
 
   </div>
+
+<script>
+  document.querySelectorAll('.current-date').forEach(el => {
+    const today = new Date();
+
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    const year = String(today.getFullYear()).slice(-2);
+
+    el.textContent = `${month}/${day}/${year}`;
+  });
+</script>
+
 </body>
 </html>
