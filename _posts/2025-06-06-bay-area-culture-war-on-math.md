@@ -144,7 +144,7 @@ In other words, parents who do not want to or cannot afford to send their kids t
                     
 Not giving students the ability to take advanced math classes is sabotaging their dreams. Not giving them an outlet for ambition is intentionally holding them back. And while math classes are the foundation of it all, it's far from just being about math classes. At the end of the day, this is what is really hurting the middle class.
 
-Here is a signed list from AI industry leaders and another from STEM professionals who agree that math is essential for the success of the country.<sup><a class="cite" href="#ref-math-matters-ai"></a></sup><sup><a class="cite" href="#ref-k12-math-matters"></a></sup> Instead of holding back the middle class, let’s encourage students to flourish in math, and to use it to build a world where people are excited for the future.
+Many AI leaders, tech professionals, and academics who agree that math is essential for the success of the country have signed lists affirming their support of access to advanced math.<sup><a class="cite" href="#ref-math-matters-ai"></a></sup><sup><a class="cite" href="#ref-k12-math-matters"></a></sup> Instead of holding back the middle class, let’s encourage students to flourish in math, and to use it to build a world where people are excited for the future.
 
 ## References
 
