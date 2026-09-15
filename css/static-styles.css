@@ -232,10 +232,10 @@ footer {
 
 
 /* --------------------------------------------------
-   Arch
+   Starlight Card
 -------------------------------------------------- */
 
-.arch-wrap {
+.starlight-card-wrap {
   grid-column: 2;
 
   display: flex;
@@ -244,15 +244,13 @@ footer {
   align-items: center;
 }
 
-.arch {
+.starlight-card {
   position: relative;
 
   width: 360px;
   height: 540px;
 
-  border-radius:
-    180px 180px
-    0 0;
+  border-radius: 70px;
 
   background: var(--starlight);
 
@@ -265,11 +263,12 @@ footer {
   justify-content: center;
 
   box-shadow:
-    0 28px 70px rgba(29,21,48,.18),
-    0 7px 22px rgba(29,21,48,.08);
+    20px 20px 0px rgba(220,230,255,.4),
+    25px 25px 40px rgba(200,220,255,.2),
+    inset 2px 2px 5px rgba(255,255,255,.3);
 }
 
-.arch::before {
+.starlight-card::before {
   content: "";
 
   position: absolute;
@@ -583,14 +582,12 @@ body.home-page .wrapper::after {
     align-items: center;
   }
 
-  .arch {
+  .starlight-card {
 
     width: 280px;
     height: 400px;
 
-    border-radius:
-      140px 140px
-      0 0;
+    border-radius: 55px;
   }
 
   .profile-left {
