@@ -263,7 +263,7 @@ footer {
   justify-content: center;
 
   box-shadow:
-    20px 20px 0px rgba(220,230,255,.4),
+    20px 20px 0px rgba(143,138,190,.55),
     25px 25px 40px rgba(200,220,255,.2),
     inset 2px 2px 5px rgba(255,255,255,.3);
 }
