@@ -30,7 +30,7 @@ body {
 }
 
 .content {
-    padding-top: 20px;
+    padding-top: 36px;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .post-subheader {
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 36px;
     text-align: center;
     color: var(--ink);
     font-size: 17px;
