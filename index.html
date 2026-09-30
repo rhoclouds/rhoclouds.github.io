@@ -20,262 +20,238 @@
   <link rel="stylesheet" href="/css/nav.css">
 
   <style>
-    .container {
-      width: 80%;
-      max-width: 1080px;
-      gap: 1.5rem;
-    }
+  .container {
+    width: 80%;
+    max-width: 1080px;
+    gap: 1.5rem;
+  }
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
+  .profile-pic {
+    width: 150px;
+    height: 150px;
 
-      background:
-        url('/rhoCloudIcon.png')
-        center / cover
-        no-repeat;
+    background:
+      url('/rhoCloudIcon.png')
+      center / cover
+      no-repeat;
 
-      flex-shrink: 0;
+    flex-shrink: 0;
 
-      border: none;
-    }
+    border: none;
+  }
 
-    .sky-moon {
-      position: absolute;
+  .sky-moon {
+    position: absolute;
 
-      width: 82px;
-      height: 82px;
+    width: 82px;
+    height: 82px;
 
-      top: 58px;
-      left: 54px;
+    top: 58px;
+    left: 54px;
 
-      border-radius: 50%;
+    border-radius: 50%;
 
-      background:
-        radial-gradient(
-          circle at 35% 30%,
-          #fffdf6 0%,
-          #f7e9e1 55%,
-          #d9bfd5 100%
-        );
+    background:
+      radial-gradient(
+        circle at 35% 30%,
+        #fffdf6 0%,
+        #f7e9e1 55%,
+        #d9bfd5 100%
+      );
 
-      box-shadow:
-        0 0 12px rgba(255,240,225,.28),
-        0 0 30px rgba(217,191,213,.16);
+    box-shadow:
+      0 0 12px rgba(255,240,225,.28),
+      0 0 30px rgba(217,191,213,.16);
 
-      z-index: 1;
+    z-index: 1;
 
-      pointer-events: none;
-    }
+    pointer-events: none;
+  }
 
-    .sky-decoration {
-      position: absolute;
+  .sky-decoration {
+    position: absolute;
 
-      inset: 0;
+    inset: 0;
 
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
 
-      z-index: 1;
+    z-index: 1;
 
-      pointer-events: none;
-    }
+    pointer-events: none;
+  }
 
-    .hill-back {
-      fill: rgba(91,81,130,.50);
-    }
+  .hill-back {
+    fill: rgba(91,81,130,.50);
+  }
 
-    .hill-front {
-      fill: rgba(112,91,130,.80);
-    }
+  .hill-front {
+    fill: rgba(112,91,130,.80);
+  }
 
-    .twinkle {
-      fill: #fff1d8;
+  .twinkle {
+    fill: #fff1d8;
 
-      filter:
-        drop-shadow(0 0 3px rgba(255,237,210,.55));
-    }
+    filter:
+      drop-shadow(0 0 3px rgba(255,237,210,.55));
+  }
 
-    .twinkle-two {
-      opacity: .72;
-    }
+  .twinkle-two {
+    opacity: .72;
+  }
 
-    .twinkle-three {
-      opacity: .55;
-    }
+  .twinkle-three {
+    opacity: .55;
+  }
 
-    .profile-left {
-      position: relative;
+  .profile-left {
+    position: relative;
 
-      z-index: 2;
-    }
+    z-index: 2;
+  }
 
-    .info {
-      flex-grow: 1;
-    }
+  .info {
+    flex-grow: 1;
+  }
 
-    .name {
-      font-size: 2rem;
-      margin-bottom: 0.3rem;
-    }
+  .name {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
 
-    .blurb {
-      font-style: italic;
-      margin-bottom: 0.6rem;
-    }
+  .blurb {
+    font-style: italic;
+    margin-bottom: 0.6rem;
+  }
 
-    .about-list {
-      padding-left: 1.2rem;
-      margin-top: 1rem;
-      list-style: disc;
-    }
+  .about-list {
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+    list-style: disc;
+  }
 
-    .about-list li {
-      margin-bottom: 0.5rem;
-      line-height: 1.6;
-    }
+  .about-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
 
-    .card.section {
-      padding-left: var(--profile-indent);
-      padding: 1.5rem 2rem 1.5rem var(--profile-indent);
-    }
+  .card.section {
+    padding-left: var(--profile-indent);
+    padding: 1.5rem 2rem 1.5rem var(--profile-indent);
+  }
 
-    .section-inner {
-      padding: 0 2rem 0 0;
-    }
+  .section-inner {
+    padding: 0 2rem 0 0;
+  }
 
-    .site-name {
-      margin-bottom: 0.8rem;
-      font-size: 0.95rem;
-      font-weight: 300;
-    }
+  .site-name {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 300;
+  }
 
-.intro {
-  font-weight: 400;
+  .intro {
+    font-weight: 400;
   }
 
   @media (max-width: 640px) {
 
-  body.home-page .content {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    body.home-page .content {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+
+    body.home-page .container {
+      width: 100%;
+
+      padding: 0 22px;
+
+      box-sizing: border-box;
+    }
+
+    body.home-page .profile {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 38px;
+
+      align-items: stretch;
+    }
+
+    body.home-page .info {
+      order: 1;
+
+      width: 100%;
+
+      text-align: left;
+    }
+
+    body.home-page .starlight-card-wrap {
+      order: 2;
+
+      width: 100%;
+
+      justify-content: center;
+    }
+
+    body.home-page .intro {
+      text-align: left;
+
+      font-size: 1.05rem;
+    }
+
+    body.home-page .location {
+      justify-content: flex-start;
+
+      margin-left: -6px;
+    }
+
+    body.home-page .about-text {
+      text-align: left;
+    }
+
+    body.home-page .about-text p {
+      line-height: 1.65;
+    }
+
+    body.home-page .contact-row {
+      flex-wrap: wrap;
+
+      gap: 14px 20px;
+
+      margin-top: 22px;
+    }
+
+    body.home-page .profile-links {
+      margin: 0;
+    }
+
+    body.home-page .profile-email {
+      text-align: left;
+    }
+
+    body.home-page .starlight-card {
+      width: 240px;
+      height: 350px;
+
+      border-radius: 47px;
+    }
+
+    body.home-page .profile-pic {
+      width: 112px;
+      height: 112px;
+    }
+
+    body.home-page .sky-moon {
+      width: 55px;
+      height: 55px;
+
+      top: 38px;
+      left: 36px;
+    }
   }
-
-  body.home-page .container {
-    width: 100%;
-
-    padding: 0 22px;
-
-    box-sizing: border-box;
-  }
-
-  body.home-page .profile {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 38px;
-
-    align-items: stretch;
-  }
-
-  body.home-page .info {
-    order: 1;
-
-    width: 100%;
-
-    text-align: left;
-  }
-
-  body.home-page .starlight-card-wrap {
-    order: 2;
-
-    width: 100%;
-
-    justify-content: center;
-  }
-
-  body.home-page .intro {
-    text-align: left;
-
-    font-size: 1.05rem;
-  }
-
-  body.home-page .location {
-    justify-content: flex-start;
-
-    margin-left: -6px;
-  }
-
-  body.home-page .about-text {
-    text-align: left;
-  }
-
-  body.home-page .about-text p {
-    line-height: 1.65;
-  }
-
-  body.home-page .contact-row {
-    flex-wrap: wrap;
-
-    gap: 14px 20px;
-
-    margin-top: 22px;
-  }
-
-  body.home-page .profile-links {
-    margin: 0;
-  }
-
-  body.home-page .profile-email {
-    text-align: left;
-  }
-
-  body.home-page .starlight-card {
-    width: 240px;
-    height: 350px;
-
-    border-radius: 47px;
-  }
-
-  body.home-page .profile-pic {
-    width: 112px;
-    height: 112px;
-  }
-
-  body.home-page .wrapper::before {
-    width: 560px;
-    height: 560px;
-
-    right: -280px;
-    top: 240px;
-
-    filter: blur(24px);
-
-    opacity: .72;
-  }
-
-  body.home-page .wrapper::after {
-    width: 620px;
-    height: 250px;
-
-    right: -330px;
-    top: 430px;
-
-    filter: blur(18px);
-
-    opacity: .55;
-  }
-
-  body.home-page .sky-moon {
-  width: 55px;
-  height: 55px;
-
-  top: 38px;
-  left: 36px;
-  }
-}
-  </style>
+</style>
 
 </head>
 
