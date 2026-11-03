@@ -35,6 +35,7 @@ body {
 }
 
 .post-title {
+    font-weight: 500;
     font-size: 32px;
     margin: 10px 0;
 }
@@ -66,7 +67,7 @@ body {
   margin-top: 40px;
   font-size: 24px;
   color: var(--ink);
-  font-weight: bold
+  font-weight: 500
 }
 
 .post-content p {
