@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2026 Midterms: Predictions for the House and Senate
+title: "2026 Midterms: Predictions for the House and Senate"
 date: 2026-11-02
 category: post
 ---
