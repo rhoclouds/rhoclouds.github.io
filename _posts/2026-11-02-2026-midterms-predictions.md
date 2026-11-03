@@ -46,6 +46,14 @@ Some key races to watch include VA-01, PA-01, KY-06, NY-17, TX-15, MI-07, CA-22,
 
 Unlike the House, control of the Senate has been significantly more uncertain throughout this cycle. A few months ago, it was nearly split on whether Democrats would win a majority. However, the climate has shifted considerably. Democrats now lead in the polling averages of virtually every major battleground state. While I agree with most of the polls on Texas, Ohio, Michigan, Maine, and Kansas, I believe Republicans will hold on to Iowa.
 
+**Senate Prediction: 53 D – 47 R**
+
+<div class="image-block">
+    <div class="image-wrapper">
+        <img src="/blog-media/senate2026prediction.png" alt="Senate 2026 Prediction Map">
+    </div>
+</div>
+
 Let us break down some of the key battleground states.
 
 **Michigan (El-Sayed vs. Rogers):** All of the news right now is about Haley Stevens' absurd last-minute endorsement of Mike Rogers, largely because of El-Sayed’s views on Israel. Because of how late it was, we have very little data on its impact. I do not think that it is going to be significant here, but it remains a repulsive choice. I have to say that it does not surprise me.
