@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 2026 Midterms: Predictions for the House and Senate
@@ -10,7 +9,7 @@ category: post
 Here we are
 </div>
 
-**## Trump’s America**
+## Trump’s America
 
 We are going into Election Day with an America that is deeply divided, politically volatile, and more anxious about its future than any point I can remember. President Trump currently sits at an approval rating of approximately 38%, and the share of Americans who strongly support Trump has also fallen.<sup><a class="cite" href="#ref-trump-approval"></a></sup>
 
@@ -18,24 +17,24 @@ First and foremost, the economy has been stale in contrast with the economic ren
 
 Combined with the abhorrently racist rhetoric from Republican leaders and corruption across all fronts, it is quite difficult to see a world where Republicans emerge from tomorrow’s elections with their congressional majorities intact. Trump himself does not want to come to terms with this idea either, as he has essentially completely lost it. He has been campaigning in deep red states and rambling on with nonsense at every rally. It is quite evident that Trump is unprepared for a post-Trump world, and these midterms will potentially be the beginning of the end.<sup><a class="cite" href="#ref-trump-video"></a></sup>
 
-**## The Stakes**
+## The Stakes
 
 For Trump, losing either chamber would hamper his political dominance for his remaining two years in office. A flipped House would mean Democrats regaining the power to initiate impeachment proceedings against Trump and investigations into other federal officials for the unprecedented corruption and things like Hegseth’s handling of Iran. It would also make passing Trump's legislative agenda considerably more difficult. When it comes to the Senate, the possibility of two Supreme Court vacancies (Thomas and Alito) during Trump's presidency cannot be ignored. If Trump gets his picks, we will see an overwhelmingly conservative Supreme Court for probably another 40 years.
 
-**## Political Spending and Election Integrity**
+## Political Spending and Election Integrity
 
 This cycle has been characterized by an outrageous amount of money flowing into the system. We are looking at over $2.77 billion put into these midterms by the 50 largest donors alone, with around 60% of it going to Republicans.<sup><a class="cite" href="#ref-political-donors"></a></sup> Elon Musk alone has donated $472 million (and spent quite a bit of time fearmongering), setting a record that should not be seen as anything other than disturbing.<sup><a class="cite" href="#ref-musk-spending"></a></sup><sup><a class="cite" href="#ref-musk-tweet"></a></sup> Furthermore, organizations such as AIPAC and its affiliated super PAC, United Democracy Project, have poured millions into congressional races. Most notably, in Michigan's fiercely contested Democratic Senate primary, groups backing Haley Stevens outspent eventual Democratic nominee El-Sayed by tens of millions of dollars.
 
 Another major point of discussion has been that of election integrity. We are seeing reports of potential voter intimidation and no one is really sure what will happen. Given their track record, Republicans will no doubt point fingers if it comes midnight and crucial races have not been called. It will be important for Democrats to prepare for these allegations, to stay calm, and to rigorously address any allegations.
 
-**## Some Key Beliefs:**
+## Some Key Beliefs:
 
 - A polling lead of 2 to 3 percentage points is fragile and polling errors of 4-5 margin points can flip competitive races
 - Polling errors can be correlated
 - The incumbent party almost always loses seats in midterms
 - The map matters
 
-**## The House**
+## The House
 
 Predictions for the House have remained relatively stable for a while. Like most polls and analysts suggest, I am incredibly confident that Democrats will take the house. Nate Silver’s final generic-ballot average gives Democrats an advantage of roughly nine percentage points.<sup><a class="cite" href="#ref-flipr-forecast"></a></sup>
 
@@ -43,7 +42,7 @@ Predictions for the House have remained relatively stable for a while. Like most
 
 Some key races to watch include VA-01, PA-01, KY-06, NY-17, TX-15, MI-07, CA-22, and IA-02. Recall that in 2024, Trump flipped Starr County, Texas Republican for the first time since the 1890s. In Duval, Florida, Trump reversed one of Biden’s big wins in which Democrats were able to get Jacksonville back for the first time since 1976. Additionally, Latino districts will be among the most revealing. Even in places where Trump did not win, gains in places that were once Democratic constituencies were an early nail in the coffin for 2024.
 
-**## The Senate**
+## The Senate
 
 Unlike the House, control of the Senate has been significantly more uncertain throughout this cycle. A few months ago, it was nearly split on whether Democrats would win a majority. However, the climate has shifted considerably. Democrats now lead in the polling averages of virtually every major battleground state. While I agree with most of the polls on Texas, Ohio, Michigan, Maine, and Kansas, I believe Republicans will hold on to Iowa.
 
@@ -74,7 +73,7 @@ I am however still concerned about El-Sayed’s ability to get Black voters in D
 
 **Kansas (Hamilton vs. Marshall):** Kansas has been one of the biggest surprises of this election cycle. Adam Hamilton, a Methodist pastor, has been able to challenge incumbent Roger Marshall in a state that Trump won comfortably in 2024. Hamilton's religious background is also somewhat different from the rest of the Democrats, but something necessary to win in a place like Kansas. I'll be particularly interested in Johnson County and the Kansas City suburbs, where Democrats have made considerable gains in recent elections.
 
-**## References**
+## References
 
 <ol class="references">
 
